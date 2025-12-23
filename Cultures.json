@@ -207,5 +207,76 @@
         "Universal translator"
       ]
     }
+  },
+  {
+    "ID": "cul-borg",
+    "Name": "Borg",
+    "Identity": {
+      "SpeciesOrPeople": "Borg (cybernetic drones; the Borg Collective)",
+      "Affiliation": [
+        "Borg Collective"
+      ],
+      "PrimaryHomeworlds": [
+        "Unknown (Borg space centered in the Delta Quadrant)"
+      ],
+      "Regions": [
+        "Delta Quadrant (primary)",
+        "Alpha/Beta Quadrants (incursions)"
+      ]
+    },
+    "Profile": [
+      "The Borg are a cybernetic hive civilization whose population consists of drones—assimilated individuals rebuilt with implants and linked into a single Collective consciousness. Their stated goal is “perfection,” pursued by forcibly acquiring what they deem useful: biological and technological distinctiveness, knowledge, and capability, absorbed into the group mind rather than preserved as separate identities.",
+      "Assimilation is both conquest and manufacturing. A target is evaluated for distinctiveness, then converted into a drone and integrated into the network; individuality is treated as noise, and the Collective speaks and acts as “we.” This produces a society with extreme functional specialization—drones are tools of the whole—while also giving the Borg rapid coordination and the ability to deploy consistent tactics at scale.",
+      "Borg organization is distributed through constant connectivity. Drones communicate via subspace-linked systems, and even when the Collective presents a single “voice,” it behaves like a network rather than a conventional chain of command. Later-era canon also depicts a Borg Queen: a unique drone that can serve as a focal point and personified interface for the Collective, allowing the hive to act through an individual presence without abandoning the idea of a shared mind.",
+      "Daily life is utilitarian. Drones do not live around family units, ceremony, or leisure; instead, they cycle between tasking and regeneration. Regeneration alcoves function as storage and recovery spaces when drones are not needed for immediate work, reinforcing the sense that a Borg body is maintained as an instrument for Collective objectives.",
+      "Because the Borg treat cultures as raw material, they are feared as an existential threat: contact is framed as inevitable loss of autonomy. At the same time, canon repeatedly shows seams in the system—drones can be severed, liberated, or regain individuality under specific conditions—highlighting that “perfection” depends on continuous control rather than on the inherent absence of self."
+    ],
+    "Practices": [
+      {
+        "Name": "Assessment and assimilation",
+        "Description": "Species and technologies are evaluated for “distinctiveness,” then forcibly incorporated to advance Collective perfection; the process is framed as inevitable and impersonal rather than punitive."
+      },
+      {
+        "Name": "Collective coordination",
+        "Description": "Drones operate as a single networked intelligence, sharing information continuously and acting in synchronized, role-specific ways; individual preference is treated as irrelevant to outcomes."
+      },
+      {
+        "Name": "Regeneration cycles",
+        "Description": "When not actively tasked, drones enter regeneration alcoves to recover and be stored, returning to work without the social rhythms that define most organic cultures."
+      },
+      {
+        "Name": "Perfection through integration",
+        "Description": "Innovation is pursued by absorbing what already exists—biological traits, technical designs, and knowledge—then standardizing it into Borg systems across ships, bodies, and infrastructure."
+      }
+    ],
+    "FoodAndDrink": [
+      "Borg culture has no visible culinary tradition. Drones are depicted as being sustained and maintained through their cybernetic systems, with “living” time split between task execution and regeneration rather than shared meals or hospitality.",
+      "The closest analogue to sustenance is energy and maintenance: regeneration alcoves and onboard systems keep drones functional, emphasizing efficiency over taste, choice, or social eating."
+    ],
+    "CanonAnchors": [
+      "TNG — \"Q Who\": First major encounter; establishes the Borg as a Collective threat.",
+      "TNG — \"The Best of Both Worlds\" (Parts I–II): Assimilation of Picard (Locutus) and the Federation’s vulnerability.",
+      "Film — Star Trek: First Contact: Borg Queen depiction and assimilation as body-horror, plus a direct assault on Earth’s timeline.",
+      "VOY — \"Scorpion\" (Parts I–II): Borg limits and the Species 8472 crisis; diplomacy with Voyager under existential pressure.",
+      "VOY — \"Dark Frontier\": Borg Queen-centered narratives and the cost of liberation (Seven of Nine’s history).",
+      "VOY — \"Endgame\": Transwarp infrastructure as strategic advantage and a decisive attempt to cripple it."
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Locutus of Borg",
+        "Seven of Nine"
+      ],
+      "Organizations": [
+        "Borg Collective"
+      ],
+      "Planets": [
+        "Earth (target of incursions)"
+      ],
+      "Artifacts": [
+        "Assimilation tubules",
+        "Regeneration alcove",
+        "Transwarp hub"
+      ]
+    }
   }
 ]
