@@ -492,437 +492,500 @@
   </div>
 
   <script>
-    let culturesData = [];
-    const DATA_URL = "https://raw.githubusercontent.com/BigBird7827/Cul-Trek/main/Cultures.json";
+(function() {
+  'use strict';
 
-    const state = {
-      query: "",
-      selectedId: null
+  var DATA_URL = 'https://raw.githubusercontent.com/BigBird7827/Cul-Trek/main/Cultures.json';
+  var cultures = [];
+  var state = {
+    query: '',
+    selectedId: null
+  };
+
+  var elList = document.getElementById('list');
+  var elDetail = document.getElementById('detail');
+  var elSearch = document.getElementById('searchInput');
+  var elCount = document.getElementById('countLabel');
+  var elDetailTag = document.getElementById('detailTag');
+  var elClear = document.getElementById('clearBtn');
+
+  function norm(s) {
+    return (s == null ? '' : String(s)).trim().toLowerCase();
+  }
+
+  function asArray(v) {
+    if (Array.isArray(v)) return v;
+    if (v == null || v === '') return [];
+    return [v];
+  }
+
+  function normalizeCulture(c) {
+    c = c || {};
+    return {
+      id: c.ID || c.id || '',
+      name: c.Name || c.name || '',
+      species: c.SpeciesOrPeople || c.speciesOrPeople || '',
+      affiliations: asArray(c.Affiliation || c.affiliation),
+      homeworlds: asArray(c.PrimaryHomeworlds || c.primaryHomeworlds),
+      regions: asArray(c.Regions || c.regions),
+      overview: Array.isArray(c.Overview || c.overview) ? (c.Overview || c.overview) : asArray(c.Overview || c.overview),
+      coreTraits: asArray(c.CoreTraits || c.coreTraits).map(function(x) {
+        if (!x) return '';
+        if (typeof x === 'string') return x;
+        return x.Trait || x.trait || '';
+      }).filter(Boolean),
+      customs: asArray(c.Customs || c.customs),
+      everydayLife: c.EverydayLife || c.everydayLife || {},
+      relations: c.Relations || c.relations || {},
+      keyAppearances: asArray(c.KeyAppearances || c.keyAppearances),
+      related: c.RelatedEntries || c.relatedEntries || {}
     };
+  }
 
-    const elList = document.getElementById("list");
-    const elDetail = document.getElementById("detail");
-    const elSearch = document.getElementById("searchInput");
-    const elCount = document.getElementById("countLabel");
-    const elDetailTag = document.getElementById("detailTag");
-    const elClear = document.getElementById("clearBtn");
+  function getFiltered() {
+    var q = norm(state.query);
+    if (!q) return cultures.slice();
+    return cultures.filter(function(c) {
+      var misreads = (c.relations && Array.isArray(c.relations.CommonMisreads)) ? c.relations.CommonMisreads : [];
+      var hay = []
+        .concat([c.name, c.species])
+        .concat(c.affiliations || [])
+        .concat(c.homeworlds || [])
+        .concat(c.regions || [])
+        .concat(c.coreTraits || [])
+        .concat(misreads || [])
+        .map(norm)
+        .join(' | ');
+      return hay.indexOf(q) !== -1;
+    });
+  }
 
-    const norm = (s) => (s || "").toString().trim().toLowerCase();
+  function makeChip(txt) {
+    var chip = document.createElement('div');
+    chip.className = 'chip';
+    chip.textContent = txt;
+    return chip;
+  }
 
-    const normalizeCulture = (c) => {
-      const id = c.ID || c.id || "";
-      const name = c.Name || c.name || "";
-      const species = c.SpeciesOrPeople || c.speciesOrPeople || "";
-      const affiliations = c.Affiliation || c.affiliation || [];
-      const homeworlds = c.PrimaryHomeworlds || c.primaryHomeworlds || [];
-      const regions = c.Regions || c.regions || [];
-      const overview = c.Overview || c.overview || [];
-      const coreTraits = (c.CoreTraits || c.coreTraits || []).map(x => x && x.Trait).filter(Boolean);
-      const customs = c.Customs || c.customs || [];
-      const everydayLife = c.EverydayLife || c.everydayLife || {};
-      const relations = c.Relations || c.relations || {};
-      const keyAppearances = c.KeyAppearances || c.keyAppearances || [];
-      const related = c.RelatedEntries || c.relatedEntries || {};
+  function makeChips(arr) {
+    var wrap = document.createElement('div');
+    wrap.className = 'chips';
+    (arr || []).forEach(function(t) {
+      if (!t) return;
+      wrap.appendChild(makeChip(t));
+    });
+    return wrap;
+  }
 
-      return {
-        id,
-        name,
-        species,
-        affiliations: Array.isArray(affiliations) ? affiliations : [affiliations].filter(Boolean),
-        homeworlds: Array.isArray(homeworlds) ? homeworlds : [homeworlds].filter(Boolean),
-        regions: Array.isArray(regions) ? regions : [regions].filter(Boolean),
-        overview: Array.isArray(overview) ? overview : (overview ? [overview] : []),
-        coreTraits,
-        customs: Array.isArray(customs) ? customs : [],
-        everydayLife: everydayLife || {},
-        relations: relations || {},
-        keyAppearances: Array.isArray(keyAppearances) ? keyAppearances : [],
-        related: related || {}
-      };
-    };
+  function tile(label, value) {
+    var t = document.createElement('div');
+    t.className = 'tile';
 
-    const getFiltered = () => {
-      const q = norm(state.query);
-      if (!q) return culturesData.slice();
-      return culturesData.filter(c => {
-        const hay = [
-          c.name,
-          c.species,
-          ...(c.affiliations || []),
-          ...(c.homeworlds || []),
-          ...(c.regions || []),
-          ...(c.coreTraits || []),
-          ...((c.relations && c.relations.CommonMisreads) ? c.relations.CommonMisreads : [])
-        ].map(norm).join(" | ");
-        return hay.includes(q);
+    var k = document.createElement('div');
+    k.className = 'k';
+    k.textContent = label;
+
+    var v = document.createElement('div');
+    v.className = 'v';
+    v.textContent = value || '-';
+
+    t.appendChild(k);
+    t.appendChild(v);
+    return t;
+  }
+
+  function section(title, text) {
+    var s = document.createElement('div');
+    s.className = 'section';
+
+    var h = document.createElement('h3');
+    h.textContent = title;
+
+    s.appendChild(h);
+
+    var p = document.createElement('p');
+    p.textContent = text || '-';
+    s.appendChild(p);
+
+    return s;
+  }
+
+  function sectionParagraphs(title, paras) {
+    var s = document.createElement('div');
+    s.className = 'section';
+
+    var h = document.createElement('h3');
+    h.textContent = title;
+    s.appendChild(h);
+
+    var list = (paras || []).filter(Boolean);
+    if (!list.length) {
+      var p0 = document.createElement('p');
+      p0.textContent = '-';
+      s.appendChild(p0);
+      return s;
+    }
+
+    list.forEach(function(txt) {
+      var p = document.createElement('p');
+      p.textContent = txt;
+      s.appendChild(p);
+    });
+
+    return s;
+  }
+
+  function sectionCustoms(title, customs) {
+    var s = document.createElement('div');
+    s.className = 'section';
+
+    var h = document.createElement('h3');
+    h.textContent = title;
+    s.appendChild(h);
+
+    var items = (customs || []).filter(function(x) {
+      return x && (x.Name || x.WhatItIs || x.WhyItMatters);
+    });
+
+    if (!items.length) {
+      var p0 = document.createElement('p');
+      p0.textContent = '-';
+      s.appendChild(p0);
+      return s;
+    }
+
+    items.forEach(function(x) {
+      var box = document.createElement('div');
+      box.style.marginTop = '10px';
+
+      var n = document.createElement('div');
+      n.style.fontWeight = '900';
+      n.style.color = 'rgba(232,238,252,0.92)';
+      n.textContent = x.Name || 'Custom';
+
+      var w = document.createElement('div');
+      w.style.marginTop = '4px';
+      w.style.color = 'rgba(232,238,252,0.78)';
+      w.textContent = x.WhatItIs || '-';
+
+      var y = document.createElement('div');
+      y.style.marginTop = '4px';
+      y.style.color = 'rgba(232,238,252,0.72)';
+      y.textContent = 'Why it matters: ' + (x.WhyItMatters || '-');
+
+      box.appendChild(n);
+      box.appendChild(w);
+      box.appendChild(y);
+      s.appendChild(box);
+    });
+
+    return s;
+  }
+
+  function sectionKeyAppearances(title, apps) {
+    var s = document.createElement('div');
+    s.className = 'section';
+
+    var h = document.createElement('h3');
+    h.textContent = title;
+    s.appendChild(h);
+
+    var items = (apps || []).filter(function(x) {
+      return x && (x.Title || x.Series);
+    });
+
+    if (!items.length) {
+      var p0 = document.createElement('p');
+      p0.textContent = '-';
+      s.appendChild(p0);
+      return s;
+    }
+
+    items.forEach(function(x) {
+      var line = document.createElement('div');
+      line.style.marginTop = '10px';
+
+      var t = document.createElement('div');
+      t.style.fontWeight = '900';
+      t.style.color = 'rgba(232,238,252,0.92)';
+
+      var se = '';
+      if (x.Series && x.Season != null && x.Episode != null) {
+        se = x.Series + ' S' + x.Season + 'E' + x.Episode;
+      } else if (x.Series) {
+        se = x.Series;
+      }
+
+      var header = [];
+      if (se) header.push(se);
+      if (x.Title) header.push(x.Title);
+      t.textContent = header.join(' - ');
+
+      var why = document.createElement('div');
+      why.style.marginTop = '4px';
+      why.style.color = 'rgba(232,238,252,0.78)';
+      why.textContent = x.WhyRelevant || '-';
+
+      line.appendChild(t);
+      line.appendChild(why);
+      s.appendChild(line);
+    });
+
+    return s;
+  }
+
+  function makeCard(c) {
+    var card = document.createElement('div');
+    card.className = 'card' + (c.id === state.selectedId ? ' active' : '');
+    card.tabIndex = 0;
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', 'Open ' + (c.name || 'culture'));
+
+    var sigil = document.createElement('div');
+    sigil.className = 'sigil';
+    sigil.textContent = (c.name || '?').slice(0, 1).toUpperCase();
+
+    var main = document.createElement('div');
+    main.className = 'main';
+
+    var name = document.createElement('div');
+    name.className = 'name';
+    name.textContent = c.name || 'Unknown';
+
+    var meta = document.createElement('div');
+    meta.className = 'meta';
+
+    var lines = [];
+    if (c.homeworlds && c.homeworlds.length) lines.push('Homeworld: ' + c.homeworlds[0]);
+    if (c.regions && c.regions.length) lines.push('Region: ' + c.regions.join(', '));
+    if (c.affiliations && c.affiliations.length) lines.push('Affiliation: ' + c.affiliations[0]);
+
+    if (lines.length) {
+      lines.forEach(function(line) {
+        var d = document.createElement('div');
+        d.textContent = line;
+        meta.appendChild(d);
       });
-    };
+    }
 
-    const makeCard = (c) => {
-      const card = document.createElement("div");
-      card.className = "card" + (c.id === state.selectedId ? " active" : "");
-      card.tabIndex = 0;
-      card.setAttribute("role", "button");
-      card.setAttribute("aria-label", "Open " + (c.name || "culture"));
+    main.appendChild(name);
+    main.appendChild(meta);
 
-      const sigil = document.createElement("div");
-      sigil.className = "sigil";
-      sigil.textContent = (c.name || "?").slice(0, 1).toUpperCase();
+    card.appendChild(sigil);
+    card.appendChild(main);
 
-      const main = document.createElement("div");
-      main.className = "main";
+    function select() {
+      state.selectedId = c.id;
+      render();
+    }
 
-      const name = document.createElement("div");
-      name.className = "name";
-      name.textContent = c.name || "Unknown";
+    card.addEventListener('click', select);
+    card.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        select();
+      }
+    });
 
-      const meta = document.createElement("div");
-      meta.className = "meta";
+    return card;
+  }
 
-      const hw = c.homeworlds && c.homeworlds.length ? "Homeworld: " + c.homeworlds[0] : "";
-      const reg = c.regions && c.regions.length ? "Region: " + c.regions.join(", ") : "";
-      const aff = c.affiliations && c.affiliations.length ? "Affiliation: " + c.affiliations[0] : "";
-      meta.textContent = [hw, reg, aff].filter(Boolean).join("
-");
+  function renderList() {
+    var items = getFiltered();
+    elList.innerHTML = '';
+    items.forEach(function(c) {
+      elList.appendChild(makeCard(c));
+    });
+    elCount.textContent = items.length ? (items.length + ' culture' + (items.length === 1 ? '' : 's')) : '0 cultures';
+  }
 
-      main.appendChild(name);
-      main.appendChild(meta);
+  function renderDetail() {
+    var c = null;
+    for (var i = 0; i < cultures.length; i++) {
+      if (cultures[i].id === state.selectedId) { c = cultures[i]; break; }
+    }
 
-      card.appendChild(sigil);
-      card.appendChild(main);
+    elDetail.innerHTML = '';
 
-      const select = () => {
-        state.selectedId = c.id;
-        render();
-      };
+    if (!c) {
+      var empty = document.createElement('div');
+      empty.className = 'empty';
+      empty.textContent = 'Select a culture from the list to view details.';
+      elDetail.appendChild(empty);
+      elDetailTag.textContent = '';
+      return;
+    }
 
-      card.addEventListener("click", select);
-      card.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          select();
-        }
-      });
+    elDetailTag.textContent = c.id || '';
 
-      return card;
-    };
+    var hero = document.createElement('div');
+    hero.className = 'hero';
 
-    const renderList = () => {
-      const items = getFiltered();
-      elList.innerHTML = "";
-      items.forEach(c => elList.appendChild(makeCard(c)));
-      elCount.textContent = items.length ? (items.length + " culture" + (items.length === 1 ? "" : "s")) : "0 cultures";
-    };
+    var mark = document.createElement('div');
+    mark.className = 'mark';
+    mark.textContent = (c.name || '?').slice(0, 1).toUpperCase();
+    hero.appendChild(mark);
 
-    const chips = (arr) => {
-      const wrap = document.createElement("div");
-      wrap.className = "chips";
-      (arr || []).forEach(t => {
-        const c = document.createElement("div");
-        c.className = "chip";
-        c.textContent = t;
-        wrap.appendChild(c);
-      });
-      return wrap;
-    };
+    var head = document.createElement('div');
 
-    const tile = (k, v) => {
-      const t = document.createElement("div");
-      t.className = "tile";
-      const kk = document.createElement("div");
-      kk.className = "k";
-      kk.textContent = k;
-      const vv = document.createElement("div");
-      vv.className = "v";
-      vv.textContent = v || "—";
+    var h1 = document.createElement('div');
+    h1.className = 'h1';
+    h1.textContent = c.name || 'Unknown';
+
+    var lede = document.createElement('div');
+    lede.className = 'lede';
+    lede.textContent = (c.overview && c.overview.length) ? c.overview[0] : '';
+
+    head.appendChild(h1);
+    head.appendChild(lede);
+
+    var top = document.createElement('div');
+    top.className = 'top';
+    top.appendChild(hero);
+    top.appendChild(head);
+
+    elDetail.appendChild(top);
+
+    var kv = document.createElement('div');
+    kv.className = 'kv';
+    kv.appendChild(tile('People / Culture', c.species || '-'));
+    kv.appendChild(tile('Homeworlds', (c.homeworlds || []).join(', ')));
+    kv.appendChild(tile('Regions', (c.regions || []).join(', ')));
+    kv.appendChild(tile('Affiliation', (c.affiliations || []).join(', ')));
+    elDetail.appendChild(kv);
+
+    elDetail.appendChild(sectionParagraphs('Overview', c.overview || []));
+
+    var traits = document.createElement('div');
+    traits.className = 'section';
+    var th = document.createElement('h3');
+    th.textContent = 'Core traits';
+    traits.appendChild(th);
+    traits.appendChild(makeChips(c.coreTraits || []));
+    elDetail.appendChild(traits);
+
+    elDetail.appendChild(sectionCustoms('Customs', c.customs || []));
+
+    var fam = (c.everydayLife && c.everydayLife.FamilyAndSociety) ? c.everydayLife.FamilyAndSociety : '';
+    elDetail.appendChild(section('Family & society', fam));
+
+    var food = (c.everydayLife && c.everydayLife.FoodAndDrink) ? c.everydayLife.FoodAndDrink : '';
+    elDetail.appendChild(section('Food & drink', food));
+
+    var relText = (c.relations && c.relations.WithStarfleet) ? c.relations.WithStarfleet : '';
+    elDetail.appendChild(section('Relations with Starfleet', relText));
+
+    var misreads = (c.relations && Array.isArray(c.relations.CommonMisreads)) ? c.relations.CommonMisreads : [];
+    var mr = document.createElement('div');
+    mr.className = 'section';
+    var mrh = document.createElement('h3');
+    mrh.textContent = 'Common misreads';
+    mr.appendChild(mrh);
+    mr.appendChild(makeChips(misreads));
+    elDetail.appendChild(mr);
+
+    elDetail.appendChild(sectionKeyAppearances('Key appearances', c.keyAppearances || []));
+
+    var relatedWrap = document.createElement('div');
+    relatedWrap.className = 'section';
+    var rh = document.createElement('h3');
+    rh.textContent = 'Related entries';
+    relatedWrap.appendChild(rh);
+
+    var relGrid = document.createElement('div');
+    relGrid.className = 'kv';
+
+    var people = (c.related && Array.isArray(c.related.People)) ? c.related.People : [];
+    var orgs = (c.related && Array.isArray(c.related.Organizations)) ? c.related.Organizations : [];
+    var planets = (c.related && Array.isArray(c.related.Planets)) ? c.related.Planets : [];
+    var arts = (c.related && Array.isArray(c.related.Artifacts)) ? c.related.Artifacts : [];
+
+    function relTile(label, arr) {
+      var t = document.createElement('div');
+      t.className = 'tile';
+
+      var kk = document.createElement('div');
+      kk.className = 'k';
+      kk.textContent = label;
+
+      var vv = document.createElement('div');
+      vv.className = 'v';
+      vv.textContent = '';
+
       t.appendChild(kk);
       t.appendChild(vv);
+      t.appendChild(makeChips(arr || []));
       return t;
-    };
+    }
 
-    const section = (title, text) => {
-      const s = document.createElement("div");
-      s.className = "section";
-      const h = document.createElement("h3");
-      h.textContent = title;
-      const p = document.createElement("p");
-      p.textContent = text || "—";
-      s.appendChild(h);
-      s.appendChild(p);
-      return s;
-    };
+    relGrid.appendChild(relTile('People', people));
+    relGrid.appendChild(relTile('Organizations', orgs));
+    relGrid.appendChild(relTile('Planets', planets));
+    relGrid.appendChild(relTile('Artifacts', arts));
 
-    const sectionParagraphs = (title, paras) => {
-      const s = document.createElement("div");
-      s.className = "section";
-      const h = document.createElement("h3");
-      h.textContent = title;
-      s.appendChild(h);
+    relatedWrap.appendChild(relGrid);
+    elDetail.appendChild(relatedWrap);
+  }
 
-      const pList = (paras || []).filter(Boolean);
-      if (!pList.length) {
-        const p = document.createElement("p");
-        p.textContent = "—";
-        s.appendChild(p);
-        return s;
-      }
+  function render() {
+    renderList();
+    renderDetail();
+  }
 
-      pList.forEach(txt => {
-        const p = document.createElement("p");
-        p.textContent = txt;
-        s.appendChild(p);
-      });
-      return s;
-    };
+  function setEmpty(msg) {
+    elList.innerHTML = '';
+    var e = document.createElement('div');
+    e.className = 'empty';
+    e.textContent = msg;
+    elList.appendChild(e);
+    elCount.textContent = '';
+  }
 
-    const sectionCustoms = (title, customs) => {
-      const s = document.createElement("div");
-      s.className = "section";
-      const h = document.createElement("h3");
-      h.textContent = title;
-      s.appendChild(h);
+  function load() {
+    fetch(DATA_URL, { cache: 'no-store' })
+      .then(function(res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.text();
+      })
+      .then(function(txt) {
+        var raw = JSON.parse(txt);
+        var arr = Array.isArray(raw) ? raw : (raw && Array.isArray(raw.Cultures) ? raw.Cultures : []);
+        cultures = arr.map(normalizeCulture).filter(function(x) { return x.id || x.name; });
 
-      const items = (customs || []).filter(x => x && (x.Name || x.WhatItIs || x.WhyItMatters));
-      if (!items.length) {
-        const p = document.createElement("p");
-        p.textContent = "—";
-        s.appendChild(p);
-        return s;
-      }
-
-      items.forEach(x => {
-        const box = document.createElement("div");
-        box.style.marginTop = "10px";
-
-        const n = document.createElement("div");
-        n.style.fontWeight = "900";
-        n.style.color = "rgba(232,238,252,0.92)";
-        n.textContent = x.Name || "Custom";
-
-        const w = document.createElement("div");
-        w.style.marginTop = "4px";
-        w.style.color = "rgba(232,238,252,0.78)";
-        w.textContent = x.WhatItIs || "—";
-
-        const y = document.createElement("div");
-        y.style.marginTop = "4px";
-        y.style.color = "rgba(232,238,252,0.72)";
-        y.textContent = x.WhyItMatters ? ("Why it matters: " + x.WhyItMatters) : "Why it matters: —";
-
-        box.appendChild(n);
-        box.appendChild(w);
-        box.appendChild(y);
-        s.appendChild(box);
-      });
-
-      return s;
-    };
-
-    const sectionKeyAppearances = (title, apps) => {
-      const s = document.createElement("div");
-      s.className = "section";
-      const h = document.createElement("h3");
-      h.textContent = title;
-      s.appendChild(h);
-
-      const items = (apps || []).filter(x => x && (x.Title || x.Series));
-      if (!items.length) {
-        const p = document.createElement("p");
-        p.textContent = "—";
-        s.appendChild(p);
-        return s;
-      }
-
-      items.forEach(x => {
-        const line = document.createElement("div");
-        line.style.marginTop = "10px";
-
-        const t = document.createElement("div");
-        t.style.fontWeight = "900";
-        t.style.color = "rgba(232,238,252,0.92)";
-        const se = (x.Series && x.Season != null && x.Episode != null) ? (x.Series + " S" + x.Season + "E" + x.Episode) : (x.Series || "");
-        t.textContent = [se, x.Title].filter(Boolean).join(" — ");
-
-        const why = document.createElement("div");
-        why.style.marginTop = "4px";
-        why.style.color = "rgba(232,238,252,0.78)";
-        why.textContent = x.WhyRelevant || "—";
-
-        line.appendChild(t);
-        line.appendChild(why);
-        s.appendChild(line);
-      });
-
-      return s;
-    };
-
-    const renderDetail = () => {
-      const c = culturesData.find(x => x.id === state.selectedId);
-      elDetail.innerHTML = "";
-
-      if (!c) {
-        const empty = document.createElement("div");
-        empty.className = "empty";
-        empty.textContent = "Select a culture from the list to view details.";
-        elDetail.appendChild(empty);
-        elDetailTag.textContent = "";
-        return;
-      }
-
-      elDetailTag.textContent = c.id || "";
-
-      const hero = document.createElement("div");
-      hero.className = "hero";
-
-      const mark = document.createElement("div");
-      mark.className = "mark";
-      mark.textContent = (c.name || "?").slice(0, 1).toUpperCase();
-      hero.appendChild(mark);
-
-      const head = document.createElement("div");
-
-      const h1 = document.createElement("div");
-      h1.className = "h1";
-      h1.textContent = c.name || "Unknown";
-
-      const lede = document.createElement("div");
-      lede.className = "lede";
-      lede.textContent = (c.overview && c.overview.length) ? c.overview[0] : "";
-
-      head.appendChild(h1);
-      head.appendChild(lede);
-
-      const top = document.createElement("div");
-      top.className = "top";
-      top.appendChild(hero);
-      top.appendChild(head);
-
-      elDetail.appendChild(top);
-
-      const kv = document.createElement("div");
-      kv.className = "kv";
-      kv.appendChild(tile("People / Culture", c.species || "—"));
-      kv.appendChild(tile("Homeworlds", (c.homeworlds || []).join(", ")));
-      kv.appendChild(tile("Regions", (c.regions || []).join(", ")));
-      kv.appendChild(tile("Affiliation", (c.affiliations || []).join(", ")));
-      elDetail.appendChild(kv);
-
-      elDetail.appendChild(sectionParagraphs("Overview", c.overview));
-
-      const traits = document.createElement("div");
-      traits.className = "section";
-      const th = document.createElement("h3");
-      th.textContent = "Core traits";
-      traits.appendChild(th);
-      traits.appendChild(chips(c.coreTraits || []));
-      elDetail.appendChild(traits);
-
-      elDetail.appendChild(sectionCustoms("Customs", c.customs || []));
-
-      const fam = (c.everydayLife && c.everydayLife.FamilyAndSociety) ? c.everydayLife.FamilyAndSociety : "";
-      elDetail.appendChild(section("Family & society", fam));
-
-      const food = (c.everydayLife && c.everydayLife.FoodAndDrink) ? c.everydayLife.FoodAndDrink : "";
-      elDetail.appendChild(section("Food & drink", food));
-
-      const relText = (c.relations && c.relations.WithStarfleet) ? c.relations.WithStarfleet : "";
-      elDetail.appendChild(section("Relations with Starfleet", relText));
-
-      const misreads = (c.relations && Array.isArray(c.relations.CommonMisreads)) ? c.relations.CommonMisreads : [];
-      const mr = document.createElement("div");
-      mr.className = "section";
-      const mrh = document.createElement("h3");
-      mrh.textContent = "Common misreads";
-      mr.appendChild(mrh);
-      mr.appendChild(chips(misreads));
-      elDetail.appendChild(mr);
-
-      elDetail.appendChild(sectionKeyAppearances("Key appearances", c.keyAppearances || []));
-
-      const relatedWrap = document.createElement("div");
-      relatedWrap.className = "section";
-      const rh = document.createElement("h3");
-      rh.textContent = "Related entries";
-      relatedWrap.appendChild(rh);
-
-      const relGrid = document.createElement("div");
-      relGrid.className = "kv";
-
-      const people = (c.related && Array.isArray(c.related.People)) ? c.related.People : [];
-      const orgs = (c.related && Array.isArray(c.related.Organizations)) ? c.related.Organizations : [];
-      const planets = (c.related && Array.isArray(c.related.Planets)) ? c.related.Planets : [];
-      const arts = (c.related && Array.isArray(c.related.Artifacts)) ? c.related.Artifacts : [];
-
-      const relTile = (label, arr) => {
-        const t = document.createElement("div");
-        t.className = "tile";
-        const kk = document.createElement("div");
-        kk.className = "k";
-        kk.textContent = label;
-        const vv = document.createElement("div");
-        vv.className = "v";
-        vv.textContent = "";
-        t.appendChild(kk);
-        t.appendChild(vv);
-        t.appendChild(chips(arr || []));
-        return t;
-      };
-
-      relGrid.appendChild(relTile("People", people));
-      relGrid.appendChild(relTile("Organizations", orgs));
-      relGrid.appendChild(relTile("Planets", planets));
-      relGrid.appendChild(relTile("Artifacts", arts));
-
-      relatedWrap.appendChild(relGrid);
-      elDetail.appendChild(relatedWrap);
-    };
-
-    const render = () => {
-      renderList();
-      renderDetail();
-    };
-
-    const load = async () => {
-      try {
-        const res = await fetch(DATA_URL, { cache: "no-store" });
-        if (!res.ok) throw new Error("HTTP " + res.status);
-        const raw = await res.json();
-        const arr = Array.isArray(raw) ? raw : (raw && Array.isArray(raw.Cultures) ? raw.Cultures : []);
-        culturesData = arr.map(normalizeCulture).filter(x => x.id || x.name);
-
-        if (!culturesData.length) {
-          elList.innerHTML = '<div class="empty">No culture data found.</div>';
-          elCount.textContent = "0 cultures";
+        if (!cultures.length) {
+          setEmpty('No culture data found.');
+          elDetail.innerHTML = '<div class="empty">No culture selected.</div>';
           return;
         }
 
-        if (!state.selectedId) state.selectedId = culturesData[0].id;
+        if (!state.selectedId) state.selectedId = cultures[0].id;
         render();
-      } catch (err) {
-        elList.innerHTML = '<div class="empty">Failed to load data. Check the JSON URL and CORS access.</div>';
-        elCount.textContent = "";
-        elDetail.innerHTML = '<div class="empty">' + (err && err.message ? err.message : "Error") + "</div>";
-      }
-    };
+      })
+      .catch(function(err) {
+        setEmpty('Failed to load data. Check the JSON URL and that the file is valid JSON.');
+        elDetail.innerHTML = '<div class="empty">' + (err && err.message ? err.message : 'Error') + '</div>';
+      });
+  }
 
-    elSearch.addEventListener("input", (e) => {
-      state.query = e.target.value || "";
-      const items = getFiltered();
-      if (items.length && (!state.selectedId || !items.some(x => x.id === state.selectedId))) {
-        state.selectedId = items[0].id;
-      }
-      render();
-    });
+  elSearch.addEventListener('input', function(e) {
+    state.query = e.target.value || '';
+    var items = getFiltered();
+    if (items.length && (!state.selectedId || !items.some(function(x) { return x.id === state.selectedId; }))) {
+      state.selectedId = items[0].id;
+    }
+    render();
+  });
 
-    elClear.addEventListener("click", () => {
-      state.query = "";
-      elSearch.value = "";
-      if (culturesData.length) state.selectedId = culturesData[0].id;
-      render();
-      elSearch.focus();
-    });
+  elClear.addEventListener('click', function() {
+    state.query = '';
+    elSearch.value = '';
+    if (cultures.length) state.selectedId = cultures[0].id;
+    render();
+    elSearch.focus();
+  });
 
-    load();
-  </script>
+  load();
+})();
+</script>
 </body>
 </html>
