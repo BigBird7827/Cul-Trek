@@ -67,7 +67,13 @@
         "bat'leth",
         "d'k tahg"
       ]
-    }
+    },
+    "Misconceptions": "Klingons are often stereotyped as mindless brawlers who value violence for its own sake. In canon, they can be aggressive and competitive, but the culture also prizes poetry, ritual, loyalty, and the public keeping of one’s word; “honor” is argued, performed, and enforced through social rules as much as through combat.",
+    "DoAndDont": {
+      "Do": "Be direct, keep your promises, and show respect for reputation and oaths; competence and courage count more than flattery. If you must disagree, do it plainly and be ready to stand behind your position.",
+      "Dont": "Don’t insult a person’s House, family, or integrity casually, and don’t hide behind evasive language. Avoid treating their traditions as jokes, or assuming that every situation requires proving dominance."
+    },
+    "Trivia": "The most fully developed form of the Klingon language was created for the films by linguist Marc Okrand, who also coached actors on pronunciation and dialogue for multiple Star Trek productions."
   },
   {
     "ID": "cul-vulcan",
@@ -135,7 +141,13 @@
         "IDIC",
         "Kir'Shara"
       ]
-    }
+    },
+    "Misconceptions": "Vulcans are often mislabeled as emotionless or incapable of empathy. Canon consistently treats them as highly emotional by nature, but culturally committed to rigorous control, privacy, and disciplined habits that keep feeling from steering decisions or harming others.",
+    "DoAndDont": {
+      "Do": "Speak precisely, respect privacy, and give them room to deliberate; measured tone reads as courtesy, not coldness. When trust is offered through a ritual or personal disclosure, treat it as significant.",
+      "Dont": "Don’t bait them into emotional displays or assume restraint equals dishonesty. Avoid pressing into intimate topics (bonding, telepathy, family matters) as casual conversation."
+    },
+    "Trivia": "Leonard Nimoy created the Vulcan salute for \"Amok Time,\" drawing inspiration from a Jewish priestly blessing gesture he remembered from childhood."
   },
   {
     "ID": "cul-human",
@@ -206,7 +218,13 @@
         "Replicator",
         "Universal translator"
       ]
-    }
+    },
+    "Misconceptions": "Humans are sometimes seen as naïve idealists who assume cooperation is automatic, or as “Federation-default” to the point of cultural dominance. Canon shows both the optimism and the strain: Human-led institutions can be principled and inclusive, but they’re repeatedly tested by fear, war, and political pressure.",
+    "DoAndDont": {
+      "Do": "Lead with curiosity and hospitality; Humans often treat shared work, shared meals, and candid conversation as normal ways to build trust. Expect diversity—background, humor, and personal ritual vary widely even within the same crew.",
+      "Dont": "Don’t mistake friendliness for lack of boundaries, and don’t assume a single “Human way” represents everyone. Avoid treating Earth’s norms as the default for other cultures when working in mixed settings."
+    },
+    "Trivia": "In Star Trek usage, \"Terran\" is a common adjective for Humans and Earth-derived things, reflecting Terra as the Latin name for Earth."
   },
   {
     "ID": "cul-borg",
@@ -277,6 +295,12 @@
         "Regeneration alcove",
         "Transwarp hub"
       ]
-    }
+    },
+    "Misconceptions": "The Borg are often treated as a purely mechanical empire with a single tyrant at the top. Canon depicts them as a networked Collective of drones driven by “perfection,” sometimes personified by a Queen, but still functioning like a distributed hive that can lose coherence when severed or disrupted.",
+    "DoAndDont": {
+      "Do": "Treat Borg contact as a containment problem: minimize exposure, harden systems, and prioritize rapid evacuation and quarantine where possible. When engaging tactically, plan for adaptation and assume repeated attempts will be met with countermeasures.",
+      "Dont": "Don’t assume negotiation or deterrence works the way it does with conventional states, and don’t underestimate the risk of assimilation from brief contact. Avoid relying on a single trick; the Collective is built to learn fast."
+    },
+    "Trivia": "According to Star Trek reference material cited by Memory Alpha, writer Maurice Hurley derived the name \"Borg\" from the word \"cyborg.\""
   }
 ]
