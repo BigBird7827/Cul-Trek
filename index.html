@@ -738,6 +738,16 @@
     elDetail.appendChild(sectionPractices('Practices', c.practices || []));
     elDetail.appendChild(sectionParagraphs('Food & drink', c.foodAndDrink || []));
     elDetail.appendChild(sectionList('Canon anchors', c.canonAnchors || []));
+
+    elDetail.appendChild(sectionParagraphs('Misconceptions', [c.misconceptions]));
+
+    var dd = c.doAndDont || null;
+    var doTxt = dd && (dd.Do || dd.do) ? (dd.Do || dd.do) : '';
+    var dontTxt = dd && (dd.Dont || dd.dont) ? (dd.Dont || dd.dont) : '';
+    if (doTxt) elDetail.appendChild(sectionParagraphs('Do', [doTxt]));
+    if (dontTxt) elDetail.appendChild(sectionParagraphs("Don't", [dontTxt]));
+
+    elDetail.appendChild(sectionParagraphs('Trivia', [c.trivia]));
     var relatedWrap = document.createElement('div');
     relatedWrap.className = 'section';
     var rh = document.createElement('h3');
