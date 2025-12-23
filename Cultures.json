@@ -119,5 +119,123 @@
         "d'k tahg"
       ]
     }
+  },
+  {
+    "ID": "cul-vulcan",
+    "Name": "Vulcan",
+    "SpeciesOrPeople": "Vulcan",
+    "Affiliation": [
+      "United Federation of Planets"
+    ],
+    "PrimaryHomeworlds": [
+      "Vulcan"
+    ],
+    "Regions": [
+      "Alpha Quadrant"
+    ],
+    "Overview": [
+      "Vulcan culture is built around logic as a disciplined practice, developed to prevent the violence and chaos of earlier eras. Following the teachings associated with Surak, emotional control is treated as a lifelong responsibility supported by meditation, study, and social norms that favor restraint and careful speech.",
+      "This commitment to reason does not erase emotion; it channels it. Vulcans value intellectual rigor, ethical consistency, and an intentional respect for difference\u2014often summarized by the philosophy of Infinite Diversity in Infinite Combinations (IDIC). Privacy is also central: intimate matters are handled discreetly, and trust is signaled through ritual gestures and carefully bounded forms of closeness."
+    ],
+    "CoreTraits": [
+      {
+        "Trait": "Logic and emotional discipline"
+      },
+      {
+        "Trait": "Intellectual rigor and study"
+      },
+      {
+        "Trait": "Respect for diversity (IDIC)"
+      },
+      {
+        "Trait": "Privacy and restraint"
+      }
+    ],
+    "Customs": [
+      {
+        "Name": "Vulcan finger-touching",
+        "WhatItIs": "A ritualized two-finger touch used to convey greeting, respect, affection, or intimacy, ranging from a simple touch to more elaborate contact in specific contexts.",
+        "WhyItMatters": "It encodes closeness without overt display, reinforcing cultural restraint while still allowing clear, meaningful connection."
+      },
+      {
+        "Name": "Pon farr",
+        "WhatItIs": "A private mating cycle marked by intense physiological and psychological pressure, traditionally handled through ritual options that resolve the crisis and restore balance.",
+        "WhyItMatters": "It highlights the tension between biological drives and cultural discipline, and explains why Vulcans treat certain personal matters as strictly private."
+      },
+      {
+        "Name": "Kolinahr training",
+        "WhatItIs": "A monastic discipline pursued by some Vulcans to purge remaining emotional control lapses and pursue pure logic through intensive meditation and study.",
+        "WhyItMatters": "It represents an idealized endpoint of Vulcan self-mastery and the culture\u2019s belief that reason requires continual practice."
+      }
+    ],
+    "EverydayLife": {
+      "FamilyAndSociety": "Vulcan life places high value on education, self-control, and measured conduct in public. Many Vulcans train in mental disciplines from youth, and mentorship under teachers or masters is presented as a normal part of learning emotional regulation. Social closeness is often expressed through ritual gestures and formal language rather than open display, and deeply personal concerns are typically kept private. Vulcan abilities such as touch-telepathy and the mind meld add weight to consent and boundaries, making trust and discretion practical virtues as well as philosophical ones.",
+      "FoodAndDrink": "Canon Vulcan foods and beverages include plomeek soup (and plomeek broth) and dishes such as gespar, halak, pok tar, tevmel, and redspice. Drinks identified as Vulcan include plomeek tea and spice tea, along with tea, mocha, brandy, and port."
+    },
+    "Relations": {
+      "WithStarfleet": "Vulcans have long, foundational ties to Starfleet and the Federation, often contributing scientific expertise, diplomatic caution, and a strong preference for measured escalation. Cultural differences can create friction\u2014especially around emotional expression and risk tolerance\u2014but shared principles and long-term cooperation typically reinforce the partnership.",
+      "CommonMisreads": [
+        "Vulcans have no emotions",
+        "Logic means lack of compassion",
+        "All Vulcans think alike"
+      ]
+    },
+    "KeyAppearances": [
+      {
+        "Title": "Amok Time",
+        "Series": "TOS",
+        "Season": 2,
+        "Episode": 1,
+        "WhyRelevant": "Introduces pon farr and showcases Vulcan ritual behavior and privacy around intimate matters."
+      },
+      {
+        "Title": "The Savage Curtain",
+        "Series": "TOS",
+        "Season": 3,
+        "Episode": 22,
+        "WhyRelevant": "Features Surak as a touchstone for Vulcan philosophy and the culture\u2019s self-understanding."
+      },
+      {
+        "Title": "Star Trek: The Motion Picture",
+        "Series": "Film",
+        "Season": 0,
+        "Episode": 0,
+        "WhyRelevant": "Connects Vulcan spiritual discipline to Kolinahr and depicts Vulcan ceremonial life."
+      },
+      {
+        "Title": "Stigma",
+        "Series": "ENT",
+        "Season": 2,
+        "Episode": 14,
+        "WhyRelevant": "Explores cultural controversy around mind meld practice and the social consequences of stigma."
+      },
+      {
+        "Title": "Sarek",
+        "Series": "TNG",
+        "Season": 3,
+        "Episode": 23,
+        "WhyRelevant": "Shows Vulcan emotional discipline under strain and the significance of mind-to-mind connection."
+      }
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Surak",
+        "Sarek",
+        "Spock",
+        "T'Pol",
+        "Tuvok"
+      ],
+      "Organizations": [
+        "Vulcan Science Academy",
+        "Vulcan High Command"
+      ],
+      "Planets": [
+        "Vulcan"
+      ],
+      "Artifacts": [
+        "IDIC",
+        "Kir'Shara"
+      ]
+    }
   }
 ]
