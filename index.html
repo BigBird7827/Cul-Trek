@@ -1,879 +1,727 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Cultures Console</title><style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cultures Console</title>
+    <style>
     :root {
-      --bg0: #070a12;
-      --bg1: #0b1630;
-      --panel: rgba(14, 22, 46, 0.78);
-      --panel2: rgba(9, 14, 30, 0.75);
-      --gold: #d4b35e;
-      --gold2: #f3d88a;
-      --ink: #e8eefc;
-      --muted: rgba(232, 238, 252, 0.72);
-      --line: rgba(212, 179, 94, 0.55);
-      --line2: rgba(212, 179, 94, 0.25);
-      --shadow: 0 18px 38px rgba(0,0,0,0.55);
-      --soft: 0 10px 22px rgba(0,0,0,0.42);
-      --radius: 18px;
+    --bg0: #070a12;
+    --bg1: #0b1630;
+    --panel: rgba(14, 22, 46, 0.78);
+    --panel2: rgba(9, 14, 30, 0.75);
+    --gold: #d4b35e;
+    --gold2: #f3d88a;
+    --ink: #e8eefc;
+    --muted: rgba(232, 238, 252, 0.72);
+    --line: rgba(212, 179, 94, 0.55);
+    --line2: rgba(212, 179, 94, 0.25);
+    --shadow: 0 18px 38px rgba(0,0,0,0.55);
+    --soft: 0 10px 22px rgba(0,0,0,0.42);
+    --radius: 18px;
     }
-
     * { box-sizing: border-box; }
-
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(1200px 800px at 20% 15%, rgba(88, 140, 255, 0.20), transparent 55%),
-        radial-gradient(900px 600px at 85% 25%, rgba(212, 179, 94, 0.14), transparent 60%),
-        linear-gradient(135deg, var(--bg0), var(--bg1));
-      min-height: 100vh;
-      overflow-x: hidden;
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--ink);
+    background:
+    radial-gradient(1200px 800px at 20% 15%, rgba(88, 140, 255, 0.20), transparent 55%),
+    radial-gradient(900px 600px at 85% 25%, rgba(212, 179, 94, 0.14), transparent 60%),
+    linear-gradient(135deg, var(--bg0), var(--bg1));
+    min-height: 100vh;
+    overflow-x: hidden;
     }
-
     .wrap {
-      width: min(1260px, calc(100% - 28px));
-      margin: 16px auto 22px;
+    width: min(1260px, calc(100% - 28px));
+    margin: 16px auto 22px;
     }
-
     .topbar {
-      display: flex;
-      gap: 14px;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 14px 12px;
-      border-radius: var(--radius);
-      background: linear-gradient(180deg, rgba(20, 30, 62, 0.82), rgba(8, 12, 26, 0.68));
-      border: 2px solid var(--line);
-      box-shadow: var(--shadow);
-      position: sticky;
-      top: 10px;
-      z-index: 10;
-      backdrop-filter: blur(10px);
-      flex-wrap: wrap;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 14px 12px;
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, rgba(20, 30, 62, 0.82), rgba(8, 12, 26, 0.68));
+    border: 2px solid var(--line);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
     }
-
     .brand {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 240px;
     }
-
     .brand .title {
-      font-size: 26px;
-      line-height: 1.05;
-      letter-spacing: 0.6px;
-      font-weight: 800;
-      background: linear-gradient(180deg, var(--gold2), var(--gold));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+    font-size: 26px;
+    line-height: 1.05;
+    letter-spacing: 0.6px;
+    font-weight: 800;
+    background: linear-gradient(180deg, var(--gold2), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.35);
     }
-
     .brand .sub {
-      font-size: 13px;
-      color: var(--muted);
-      letter-spacing: 0.4px;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.4px;
     }
-
     .actions {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      justify-content: flex-end;
-      flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     }
-
     .btn {
-      appearance: none;
-      border: 2px solid var(--line2);
-      background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
-      color: var(--ink);
-      border-radius: 14px;
-      padding: 10px 14px;
-      cursor: pointer;
-      box-shadow: var(--soft);
-      transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
-      font-weight: 650;
-      letter-spacing: 0.2px;
-      white-space: nowrap;
+    appearance: none;
+    border: 2px solid var(--line2);
+    background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
+    color: var(--ink);
+    border-radius: 14px;
+    padding: 10px 14px;
+    cursor: pointer;
+    box-shadow: var(--soft);
+    transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+    font-weight: 650;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
     }
-
     #mainConsoleLink {
-      width: fit-content;
-      display: inline-flex;
-      margin-top: 10px;
+    width: fit-content;
+    display: inline-flex;
+    margin-top: 10px;
     }
-
     #clearBtn {
-      margin-left: 75px;
+    margin-left: 75px;
     }
-.btn:hover {
-      transform: translateY(-1px);
-      border-color: var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
+    .btn:hover {
+    transform: translateY(-1px);
+    border-color: var(--line);
+    background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
     }
-
     .btn:active { transform: translateY(0px); }
-
     .search {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 12px;
-      border-radius: 14px;
-      border: 2px solid var(--line2);
-      background: rgba(7, 10, 18, 0.40);
-      box-shadow: var(--soft);
-      width: min(260px, 23vw);
-      min-width: min(260px, 23vw);
-      max-width: min(260px, 23vw);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    border: 2px solid var(--line2);
+    background: rgba(7, 10, 18, 0.40);
+    box-shadow: var(--soft);
+    width: min(260px, 23vw);
+    min-width: min(260px, 23vw);
+    max-width: min(260px, 23vw);
     }
-
     .search input {
-      width: 100%;
-      border: 0;
-      outline: none;
-      background: transparent;
-      color: var(--ink);
-      font-size: 15px;
-      letter-spacing: 0.2px;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: var(--ink);
+    font-size: 15px;
+    letter-spacing: 0.2px;
     }
-
     .search .pill {
-      font-size: 12px;
-      color: rgba(10, 12, 18, 0.9);
-      background: linear-gradient(180deg, var(--gold2), var(--gold));
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(0,0,0,0.22);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
-      user-select: none;
+    font-size: 12px;
+    color: rgba(10, 12, 18, 0.9);
+    background: linear-gradient(180deg, var(--gold2), var(--gold));
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.22);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+    user-select: none;
     }
-
     .grid {
-      display: grid;
-      grid-template-columns: 400px 1fr;
-      gap: 14px;
-      margin-top: 14px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 14px;
+    margin-top: 14px;
     }
-
     .panel {
-      border-radius: var(--radius);
-      border: 2px solid var(--line2);
-      background: linear-gradient(180deg, var(--panel), var(--panel2));
-      box-shadow: var(--shadow);
-      overflow: hidden;
+    border-radius: var(--radius);
+    border: 2px solid var(--line2);
+    background: linear-gradient(180deg, var(--panel), var(--panel2));
+    box-shadow: var(--shadow);
+    overflow: hidden;
     }
-
     .panelhead {
-      padding: 12px 14px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid rgba(212, 179, 94, 0.22);
-      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(212, 179, 94, 0.22);
+    background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
     }
-
     .panelhead .label {
-      font-weight: 800;
-      letter-spacing: 0.4px;
-      color: rgba(243, 216, 138, 0.98);
-      text-shadow: 0 1px 0 rgba(0,0,0,0.35);
-      font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    color: rgba(243, 216, 138, 0.98);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+    font-size: 16px;
     }
-
     .panelbody { padding: 12px; }
-
     .list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
     }
-
     .card {
-      border-radius: 16px;
-      border: 2px solid rgba(212, 179, 94, 0.22);
-      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-      box-shadow: 0 12px 24px rgba(0,0,0,0.35);
-      padding: 12px;
-      cursor: pointer;
-      transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
-      display: grid;
-      grid-template-columns: 56px 1fr;
-      gap: 12px;
-      align-items: center;
+    border-radius: 16px;
+    border: 2px solid rgba(212, 179, 94, 0.22);
+    background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+    box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+    padding: 12px;
+    cursor: pointer;
+    transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 12px;
+    align-items: center;
     }
-
     .card:hover {
-      transform: translateY(-1px);
-      border-color: rgba(212, 179, 94, 0.55);
-      background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.05));
+    transform: translateY(-1px);
+    border-color: rgba(212, 179, 94, 0.55);
+    background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.05));
     }
-
     .card.active {
-      border-color: rgba(243, 216, 138, 0.92);
-      box-shadow: 0 16px 32px rgba(0,0,0,0.45);
+    border-color: rgba(243, 216, 138, 0.92);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.45);
     }
-
     .sigil {
-      width: 56px;
-      height: 56px;
-      border-radius: 16px;
-      border: 2px solid rgba(212, 179, 94, 0.40);
-      background:
-        radial-gradient(30px 30px at 30% 30%, rgba(243, 216, 138, 0.30), transparent 55%),
-        linear-gradient(180deg, rgba(18, 26, 54, 0.92), rgba(8, 12, 26, 0.80));
-      box-shadow: 0 12px 22px rgba(0,0,0,0.35);
-      display: grid;
-      place-items: center;
-      font-weight: 900;
-      color: rgba(243, 216, 138, 0.95);
-      letter-spacing: 0.5px;
-      text-shadow: 0 1px 0 rgba(0,0,0,0.45);
-      user-select: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    border: 2px solid rgba(212, 179, 94, 0.40);
+    background:
+    radial-gradient(30px 30px at 30% 30%, rgba(243, 216, 138, 0.30), transparent 55%),
+    linear-gradient(180deg, rgba(18, 26, 54, 0.92), rgba(8, 12, 26, 0.80));
+    box-shadow: 0 12px 22px rgba(0,0,0,0.35);
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    color: rgba(243, 216, 138, 0.95);
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    user-select: none;
     }
-
     .card .name {
-      font-weight: 850;
-      letter-spacing: 0.3px;
-      font-size: 16px;
-      line-height: 1.2;
+    font-weight: 850;
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    line-height: 1.2;
     }
-
     .card .meta {
-      margin-top: 3px;
-      font-size: 12.5px;
-      color: var(--muted);
-      line-height: 1.25;
-      white-space: pre-wrap;
+    margin-top: 3px;
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.25;
+    white-space: pre-wrap;
     }
-
     .detailTop {
-      display: grid;
-      grid-template-columns: 170px 1fr;
-      gap: 14px;
-      align-items: center;
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 14px;
+    align-items: center;
     }
-
     .hero {
-      width: 170px;
-      height: 170px;
-      border-radius: 22px;
-      border: 2px solid rgba(243, 216, 138, 0.60);
-      background:
-        radial-gradient(120px 120px at 35% 25%, rgba(88, 140, 255, 0.28), transparent 62%),
-        radial-gradient(120px 120px at 70% 70%, rgba(243, 216, 138, 0.20), transparent 62%),
-        linear-gradient(180deg, rgba(18, 26, 54, 0.90), rgba(8, 12, 26, 0.78));
-      box-shadow: 0 18px 32px rgba(0,0,0,0.45);
-      display: grid;
-      place-items: center;
-      overflow: hidden;
-      position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 22px;
+    border: 2px solid rgba(243, 216, 138, 0.60);
+    background:
+    radial-gradient(120px 120px at 35% 25%, rgba(88, 140, 255, 0.28), transparent 62%),
+    radial-gradient(120px 120px at 70% 70%, rgba(243, 216, 138, 0.20), transparent 62%),
+    linear-gradient(180deg, rgba(18, 26, 54, 0.90), rgba(8, 12, 26, 0.78));
+    box-shadow: 0 18px 32px rgba(0,0,0,0.45);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
     }
-
     .hero .mark {
-      font-size: 74px;
-      font-weight: 950;
-      background: linear-gradient(180deg, var(--gold2), var(--gold));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 2px 0 rgba(0,0,0,0.28);
-      letter-spacing: 1px;
-      transform: translateY(-2px);
-      user-select: none;
+    font-size: 74px;
+    font-weight: 950;
+    background: linear-gradient(180deg, var(--gold2), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.28);
+    letter-spacing: 1px;
+    transform: translateY(-2px);
+    user-select: none;
     }
-
     .hero img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
     }
-
     .h1 {
-      font-size: 30px;
-      font-weight: 900;
-      letter-spacing: 0.6px;
-      margin: 0 0 4px;
-      background: linear-gradient(180deg, var(--gold2), var(--gold));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 1px 0 rgba(0,0,0,0.40);
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+    margin: 0 0 4px;
+    background: linear-gradient(180deg, var(--gold2), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.40);
     }
-
     .h1::after {
-      content: "";
-      display: block;
-      height: 4px;
-      margin-top: 8px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, rgba(243, 216, 138, 0.0), rgba(243, 216, 138, 0.85), rgba(212, 179, 94, 0.85), rgba(243, 216, 138, 0.0));
-      box-shadow: 0 8px 18px rgba(212, 179, 94, 0.22);
+    content: "";
+    display: block;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(243, 216, 138, 0.0), rgba(243, 216, 138, 0.85), rgba(212, 179, 94, 0.85), rgba(243, 216, 138, 0.0));
+    box-shadow: 0 8px 18px rgba(212, 179, 94, 0.22);
     }
-
     .lede {
-      margin-top: 10px;
-      color: rgba(232, 238, 252, 0.84);
-      line-height: 1.45;
-      font-size: 15px;
+    margin-top: 10px;
+    color: rgba(232, 238, 252, 0.84);
+    line-height: 1.45;
+    font-size: 15px;
     }
-
     .kv {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 14px;
     }
-
     .tile {
-      border-radius: 16px;
-      border: 2px solid rgba(212, 179, 94, 0.22);
-      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
-      box-shadow: 0 12px 22px rgba(0,0,0,0.30);
-      padding: 12px;
+    border-radius: 16px;
+    border: 2px solid rgba(212, 179, 94, 0.22);
+    background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+    box-shadow: 0 12px 22px rgba(0,0,0,0.30);
+    padding: 12px;
     }
-
     .tile .k {
-      font-size: 12px;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-      color: rgba(243, 216, 138, 0.92);
-      margin-bottom: 6px;
-      font-weight: 850;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: rgba(243, 216, 138, 0.92);
+    margin-bottom: 6px;
+    font-weight: 850;
     }
-
     .tile .v {
-      font-size: 14.5px;
-      color: rgba(232, 238, 252, 0.86);
-      line-height: 1.35;
-      white-space: pre-wrap;
+    font-size: 14.5px;
+    color: rgba(232, 238, 252, 0.86);
+    line-height: 1.35;
+    white-space: pre-wrap;
     }
-
     .sections {
-      margin-top: 12px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
     }
-
     .section {
-      border-radius: 16px;
-      border: 2px solid rgba(212, 179, 94, 0.18);
-      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-      padding: 12px;
+    border-radius: 16px;
+    border: 2px solid rgba(212, 179, 94, 0.18);
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    padding: 12px;
     }
-
     .section h3 {
-      margin: 0 0 6px;
-      font-size: 14px;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      color: rgba(243, 216, 138, 0.92);
+    margin: 0 0 6px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: rgba(243, 216, 138, 0.92);
     }
-
     .section p {
-      margin: 0;
-      color: rgba(232, 238, 252, 0.86);
-      line-height: 1.5;
-      font-size: 14.5px;
-      white-space: pre-wrap;
+    margin: 0;
+    color: rgba(232, 238, 252, 0.86);
+    line-height: 1.5;
+    font-size: 14.5px;
+    white-space: pre-wrap;
     }
-
     .chips {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 6px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 6px;
     }
-
     .chip {
-      padding: 7px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(212, 179, 94, 0.32);
-      background: rgba(7, 10, 18, 0.28);
-      color: rgba(232, 238, 252, 0.84);
-      font-size: 12.5px;
-      box-shadow: 0 10px 18px rgba(0,0,0,0.28);
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(212, 179, 94, 0.32);
+    background: rgba(7, 10, 18, 0.28);
+    color: rgba(232, 238, 252, 0.84);
+    font-size: 12.5px;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.28);
     }
-
     .empty {
-      padding: 18px 14px;
-      border-radius: 16px;
-      border: 2px dashed rgba(212, 179, 94, 0.25);
-      color: rgba(232, 238, 252, 0.72);
-      line-height: 1.45;
-      background: rgba(7, 10, 18, 0.20);
+    padding: 18px 14px;
+    border-radius: 16px;
+    border: 2px dashed rgba(212, 179, 94, 0.25);
+    color: rgba(232, 238, 252, 0.72);
+    line-height: 1.45;
+    background: rgba(7, 10, 18, 0.20);
     }
-
     .foot {
-      margin-top: 14px;
-      color: rgba(232, 238, 252, 0.55);
-      font-size: 12px;
-      text-align: center;
-      letter-spacing: 0.3px;
+    margin-top: 14px;
+    color: rgba(232, 238, 252, 0.55);
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.3px;
     }
-
     @media (max-width: 980px) {
-      .grid { grid-template-columns: 1fr; }
-      .search { min-width: 0; width: 100%; }
-      .brand { min-width: 0; }
-      .detailTop { grid-template-columns: 1fr; }
-      .hero { width: 100%; height: 220px; }
-      .kv { grid-template-columns: 1fr; }
+    .grid { grid-template-columns: 1fr; }
+    .search { min-width: 0; width: 100%; }
+    .brand { min-width: 0; }
+    .detailTop { grid-template-columns: 1fr; }
+    .hero { width: 100%; height: 220px; }
+    .kv { grid-template-columns: 1fr; }
     }
-
     .titlebox {
-      width: calc(100% - 50px);
-      margin: 0 25px 14px 25px;
-      padding: 14px 25px;
-      box-sizing: border-box;
-      text-align: left;
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0)), var(--panel);
-      border: 1px solid var(--edge);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+    width: calc(100% - 50px);
+    margin: 0 25px 14px 25px;
+    padding: 14px 25px;
+    box-sizing: border-box;
+    text-align: left;
+    background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0)), var(--panel);
+    border: 1px solid var(--edge);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     }
-
-.lede { line-height: 1.6; }
-.section p { margin: 0 0 14px; line-height: 1.6; }
-.section p:last-child { margin-bottom: 0; }
-
-.h1, .section h3 { color: #d8b55a; }
-.title { color: #d8b55a; }
-
-
-.topbar { justify-content: flex-start !important; text-align: left !important; }
-.topbar .title, .topbar .subtitle { text-align: left !important; }
-
-
-.titlebox { width: 100% !important; margin: 0 !important; }
-
-</style></head><body><div class="wrap"><div class="topbar"><div class="titlebox"><div class="brand"><div class="title">Cultures Console</div><div class="sub">Star Trek cultures & societies</div></div><a id="mainConsoleLink" class="btn" href="https://bigbird7827.github.io/Main-Console/">MAIN CONSOLE</a></div><div class="search"><span class="pill">SEARCH</span><input id="searchInput" type="text" placeholder="Type to search cultures (e.g., Klingon, Bajoran, Vulcan)..." autocomplete="off" /></div><div class="actions"><button class="btn" id="clearBtn">Clear</button></div></div><div class="grid"><div class="panel"><div class="panelhead"><div class="label">Culture List</div><div class="label" id="countLabel" style="opacity:.85;font-weight:800;font-size:13px;"></div></div><div class="panelbody"><div class="list" id="list"></div></div></div><div class="panel"><div class="panelhead"><div class="label">Detail View</div><div class="label" id="detailTag" style="opacity:.85;font-weight:800;font-size:13px;"></div></div><div class="panelbody" id="detail"></div></div></div><div class="foot"></div></div><script>
-(function() {
-  'use strict';
-
-  var DATA_URL = 'https://raw.githubusercontent.com/BigBird7827/Cul-Trek/main/Cultures.json';
-  var FALLBACK = [
-  {
-    "ID": "cul-klingon",
-    "Name": "Klingon",
-    "SpeciesOrPeople": "Klingon",
-    "Affiliation": ["Klingon Empire"],
-    "PrimaryHomeworlds": ["Qo'noS"],
-    "Regions": ["Beta Quadrant"],
-    "Overview": [
-      "Klingon culture centers on honor as a public measure of worth: courage under pressure, directness in conflict, and a life judged by deeds rather than intentions. Reputation matters because it is shared, and respect is often earned through competence, candor, and the willingness to face risk.",
-      "Social and political life is shaped by the Great Houses and the institutions of the Empire, including the Klingon High Council and its Chancellor. Tradition is treated as binding, and honor has legal weight: standing can be elevated by service and loyalty, or damaged through disgrace that affects families across generations.",
-      "Klingons also preserve identity through ceremony, poetry, and performance as much as through warfare. Legendary figures such as Kahless the Unforgettable are invoked to frame values and legitimacy, while rituals around adulthood and marriage reinforce the idea that commitment is proven through endurance and shared hardship."
-    ],
-    "CoreTraits": [
-      {"Trait": "Honor measured by deeds"},
-      {"Trait": "House loyalty and lineage"},
-      {"Trait": "Ritualized courage and endurance"},
-      {"Trait": "Pride, candor, and direct challenge"}
-    ],
-    "Customs": [
-      {
-        "Name": "Klingon tea ceremony",
-        "WhatItIs": "A test of courage in which two participants drink tea brewed from a poisonous plant and recite poetry to one another.",
-        "WhyItMatters": "It treats shared danger as a form of intimacy and respect."
-      },
-      {
-        "Name": "Rite of Ascension (Age of Inclusion)",
-        "WhatItIs": "A coming-of-age ritual in which a child symbolically becomes a warrior by lighting a kor'tova candle.",
-        "WhyItMatters": "It marks identity as something affirmed through ritual responsibility."
-      },
-      {
-        "Name": "Klingon wedding",
-        "WhatItIs": "A highly ritualized ceremony with House involvement and traditional story recitation as part of the rite.",
-        "WhyItMatters": "Marriage is framed as a binding union of duty and lineage."
-      }
-    ],
-    "EverydayLife": {
-      "FamilyAndSociety": "Klingon society places heavy weight on family reputation, ancestry, and duty to one's House. Status is openly negotiated through displays of competence and courage, and insults or slights can become formal matters rather than private disagreements. The Great Houses provide identity and political leverage, and their rivalries can shape alliances and legal outcomes. Institutions such as the High Council link personal honor to public standing. Disgrace can be socially and legally consequential, staining a family name across generations.",
-      "FoodAndDrink": "Klingon cuisine is known for intense flavors and for dishes that can be challenging to outsiders. Canon examples include gagh, racht, heart of targ, and rokeg blood pie. Among beverages, bloodwine is widely associated with Klingon celebration and is typically served warm, and warnog is a traditional Klingon beer."
-    },
-    "Relations": {
-      "WithStarfleet": "Klingon-Federation relations shift across eras from hostility to peace and cooperation. Even in alliance periods, internal Klingon politics and differing concepts of honor can strain cooperation, while shared external threats tend to push the relationship back toward partnership.",
-      "CommonMisreads": [
-        "Honor is the same as aggression",
-        "All Klingons share one outlook",
-        "Tradition means they cannot change"
-      ]
-    },
-    "KeyAppearances": [
-      {"Title":"Sins of the Father","Series":"TNG","Season":3,"Episode":17,"WhyRelevant":"Great House politics and the mechanics of honor and disgrace are central."},
-      {"Title":"A Matter of Honor","Series":"TNG","Season":2,"Episode":8,"WhyRelevant":"Riker's exchange tour spotlights Klingon command culture and norms."},
-      {"Title":"Rightful Heir","Series":"TNG","Season":6,"Episode":23,"WhyRelevant":"Explores Klingon belief and Kahless as a cultural touchstone."},
-      {"Title":"Firstborn","Series":"TNG","Season":7,"Episode":21,"WhyRelevant":"Depicts the Rite of Ascension and youth expectations."},
-      {"Title":"You Are Cordially Invited","Series":"DS9","Season":6,"Episode":7,"WhyRelevant":"Shows a Klingon wedding and the role of ritual and family."}
-    ],
-    "RelatedEntries": {
-      "People": ["Worf","Kahless","Gowron","Martok","K'mpec","Duras"],
-      "Organizations": ["Klingon High Council","Great Houses"],
-      "Planets": ["Qo'noS","Khitomer"],
-      "Artifacts": ["bat'leth","d'k tahg"]
-    }
-  }
-];
-
-  var cultures = [];
-  var state = {
+    .lede { line-height: 1.6; }
+    .section p { margin: 0 0 14px; line-height: 1.6; }
+    .section p:last-child { margin-bottom: 0; }
+    .h1, .section h3 { color: #d8b55a; }
+    .title { color: #d8b55a; }
+    .topbar { justify-content: flex-start !important; text-align: left !important; }
+    .topbar .title, .topbar .subtitle { text-align: left !important; }
+    .titlebox { width: 100% !important; margin: 0 !important; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="topbar">
+        <div class="titlebox">
+          <div class="brand">
+            <div class="title">Cultures Console</div>
+            <div class="sub">Star Trek cultures & societies</div>
+          </div>
+          <a id="mainConsoleLink" class="btn" href="https://bigbird7827.github.io/Main-Console/">MAIN CONSOLE</a>
+        </div>
+        <div class="search">
+          <span class="pill">SEARCH</span>
+          <input id="searchInput" type="text" placeholder="Type to search cultures (e.g., Klingon, Bajoran, Vulcan)..." autocomplete="off" />
+        </div>
+        <div class="actions">
+          <button class="btn" id="clearBtn">Clear</button>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="panel">
+          <div class="panelhead">
+            <div class="label">Culture List</div>
+            <div class="label" id="countLabel" style="opacity:.85;font-weight:800;font-size:13px;">
+            </div>
+          </div>
+          <div class="panelbody">
+            <div class="list" id="list">
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panelhead">
+            <div class="label">Detail View</div>
+            <div class="label" id="detailTag" style="opacity:.85;font-weight:800;font-size:13px;">
+            </div>
+          </div>
+          <div class="panelbody" id="detail">
+          </div>
+        </div>
+      </div>
+      <div class="foot">
+      </div>
+    </div>
+    <script>
+    (function() {
+    'use strict';
+    var DATA_URL = 'https://raw.githubusercontent.com/BigBird7827/Cul-Trek/main/Cultures.json';
+    var cultures = [];
+    var state = {
     query: '',
     selectedId: null,
-    usingFallback: false,
-    lastError: '',
-    lastBytes: 0
-  };
-
-  var elList = document.getElementById('list');
-  var elDetail = document.getElementById('detail');
-  var elSearch = document.getElementById('searchInput');
-  var elCount = document.getElementById('countLabel');
-  var elDetailTag = document.getElementById('detailTag');
-  var elClear = document.getElementById('clearBtn');
-
-  function norm(s) {
+    lastError: ''
+    };
+    var elList = document.getElementById('list');
+    var elDetail = document.getElementById('detail');
+    var elSearch = document.getElementById('searchInput');
+    var elCount = document.getElementById('countLabel');
+    var elDetailTag = document.getElementById('detailTag');
+    var elClear = document.getElementById('clearBtn');
+    function norm(s) {
     return (s == null ? '' : String(s)).trim().toLowerCase();
-  }
-
-  function asArray(v) {
+    }
+    function asArray(v) {
     if (Array.isArray(v)) return v;
     if (v == null || v === '') return [];
     return [v];
-  }
-
-  function normalizeCulture(c) {
+    }
+    function normalizeCulture(c) {
     c = c || {};
+    var id = c.ID || c.id || '';
+    var name = c.Name || c.name || '';
+    var identity = c.Identity || c.identity || null;
+    var species = '';
+    var affiliations = [];
+    var homeworlds = [];
+    var regions = [];
+    if (identity) {
+    species = identity.SpeciesOrPeople || identity.speciesOrPeople || '';
+    affiliations = asArray(identity.Affiliation || identity.affiliation);
+    homeworlds = asArray(identity.PrimaryHomeworlds || identity.primaryHomeworlds);
+    regions = asArray(identity.Regions || identity.regions);
+    } else {
+    species = c.SpeciesOrPeople || c.speciesOrPeople || '';
+    affiliations = asArray(c.Affiliation || c.affiliation);
+    homeworlds = asArray(c.PrimaryHomeworlds || c.primaryHomeworlds);
+    regions = asArray(c.Regions || c.regions);
+    }
+    var profile = Array.isArray(c.Profile || c.profile) ? (c.Profile || c.profile) : asArray(c.Profile || c.profile);
+    var practices = asArray(c.Practices || c.practices);
+    var food = Array.isArray(c.FoodAndDrink || c.foodAndDrink) ? (c.FoodAndDrink || c.foodAndDrink) : asArray(c.FoodAndDrink || c.foodAndDrink);
+    var anchors = asArray(c.CanonAnchors || c.canonAnchors);
+    var related = c.RelatedEntries || c.relatedEntries || {};
+    var relatedPeople = asArray(related.People || related.people);
+    var relatedOrgs = asArray(related.Organizations || related.organizations);
+    var relatedPlanets = asArray(related.Planets || related.planets);
+    var relatedArtifacts = asArray(related.Artifacts || related.artifacts);
     return {
-      id: c.ID || c.id || '',
-      name: c.Name || c.name || '',
-      species: c.SpeciesOrPeople || c.speciesOrPeople || '',
-      affiliations: asArray(c.Affiliation || c.affiliation),
-      homeworlds: asArray(c.PrimaryHomeworlds || c.primaryHomeworlds),
-      regions: asArray(c.Regions || c.regions),
-      overview: Array.isArray(c.Overview || c.overview) ? (c.Overview || c.overview) : asArray(c.Overview || c.overview),
-      coreTraits: asArray(c.CoreTraits || c.coreTraits).map(function(x) {
-        if (!x) return '';
-        if (typeof x === 'string') return x;
-        return x.Trait || x.trait || '';
-      }).filter(Boolean),
-      customs: asArray(c.Customs || c.customs),
-      everydayLife: c.EverydayLife || c.everydayLife || {},
-      relations: c.Relations || c.relations || {},
-      keyAppearances: asArray(c.KeyAppearances || c.keyAppearances),
-      related: c.RelatedEntries || c.relatedEntries || {}
+    id: id,
+    name: name,
+    species: species,
+    affiliations: affiliations,
+    homeworlds: homeworlds,
+    regions: regions,
+    profile: profile.filter(Boolean),
+    practices: practices,
+    foodAndDrink: food.filter(Boolean),
+    canonAnchors: anchors.filter(Boolean),
+    related: {
+    people: relatedPeople,
+    organizations: relatedOrgs,
+    planets: relatedPlanets,
+    artifacts: relatedArtifacts
+    }
     };
-  }
-
-  function getFiltered() {
+    }
+    function getFiltered() {
     var q = norm(state.query);
     if (!q) return cultures.slice();
     return cultures.filter(function(c) {
-      var misreads = (c.relations && Array.isArray(c.relations.CommonMisreads)) ? c.relations.CommonMisreads : [];
-      var hay = []
-        .concat([c.name, c.species])
-        .concat(c.affiliations || [])
-        .concat(c.homeworlds || [])
-        .concat(c.regions || [])
-        .concat(c.coreTraits || [])
-        .concat(misreads || [])
-        .map(norm)
-        .join(' | ');
-      return hay.indexOf(q) !== -1;
+    var hay = []
+    .concat([c.name, c.species])
+    .concat(c.affiliations || [])
+    .concat(c.homeworlds || [])
+    .concat(c.regions || [])
+    .concat((c.profile || []).slice(0, 2))
+    .map(norm)
+    .join(' | ');
+    return hay.indexOf(q) !== -1;
     });
-  }
-
-  function makeChip(txt) {
+    }
+    function makeChip(txt) {
     var chip = document.createElement('div');
     chip.className = 'chip';
     chip.textContent = txt;
     return chip;
-  }
-
-  function makeChips(arr) {
+    }
+    function makeChips(arr) {
     var wrap = document.createElement('div');
     wrap.className = 'chips';
     (arr || []).forEach(function(t) {
-      if (!t) return;
-      wrap.appendChild(makeChip(t));
+    if (!t) return;
+    wrap.appendChild(makeChip(t));
     });
     return wrap;
-  }
-
-  function tile(label, value) {
+    }
+    function tile(label, value) {
     var t = document.createElement('div');
     t.className = 'tile';
-
     var k = document.createElement('div');
     k.className = 'k';
     k.textContent = label;
-
     var v = document.createElement('div');
     v.className = 'v';
     v.textContent = value || '-';
-
     t.appendChild(k);
     t.appendChild(v);
     return t;
-  }
-
-  function section(title, text) {
+    }
+    function sectionParagraphs(title, paras) {
     var s = document.createElement('div');
     s.className = 'section';
-
-    var h = document.createElement('h3');
-    h.textContent = title;
-
-    s.appendChild(h);
-
-    var p = document.createElement('p');
-    p.textContent = text || '-';
-    s.appendChild(p);
-
-    return s;
-  }
-
-  function sectionParagraphs(title, paras) {
-    var s = document.createElement('div');
-    s.className = 'section';
-
     var h = document.createElement('h3');
     h.textContent = title;
     s.appendChild(h);
-
     var list = (paras || []).filter(Boolean);
     if (!list.length) {
-      var p0 = document.createElement('p');
-      p0.textContent = '-';
-      s.appendChild(p0);
-      return s;
+    var p0 = document.createElement('p');
+    p0.textContent = '-';
+    s.appendChild(p0);
+    return s;
     }
-
     list.forEach(function(txt) {
-      var p = document.createElement('p');
-      p.textContent = txt;
-      s.appendChild(p);
+    var p = document.createElement('p');
+    p.textContent = txt;
+    s.appendChild(p);
     });
-
     return s;
-  }
-
-  function sectionCustoms(title, customs) {
+    }
+    function sectionPractices(title, items) {
     var s = document.createElement('div');
     s.className = 'section';
-
     var h = document.createElement('h3');
     h.textContent = title;
     s.appendChild(h);
-
-    var items = (customs || []).filter(function(x) {
-      return x && (x.Name || x.WhatItIs || x.WhyItMatters);
+    var list = (items || []).filter(function(x) {
+    return x && (x.Name || x.name || x.Description || x.description);
     });
-
-    if (!items.length) {
-      var p0 = document.createElement('p');
-      p0.textContent = '-';
-      s.appendChild(p0);
-      return s;
-    }
-
-    items.forEach(function(x) {
-      var box = document.createElement('div');
-      box.style.marginTop = '10px';
-
-      var n = document.createElement('div');
-      n.style.fontWeight = '900';
-      n.style.color = 'rgba(232,238,252,0.92)';
-      n.textContent = x.Name || 'Custom';
-
-      var w = document.createElement('div');
-      w.style.marginTop = '4px';
-      w.style.color = 'rgba(232,238,252,0.78)';
-      w.textContent = x.WhatItIs || '-';
-
-      var y = document.createElement('div');
-      y.style.marginTop = '4px';
-      y.style.color = 'rgba(232,238,252,0.72)';
-      y.textContent = 'Why it matters: ' + (x.WhyItMatters || '-');
-
-      box.appendChild(n);
-      box.appendChild(w);
-      box.appendChild(y);
-      s.appendChild(box);
-    });
-
+    if (!list.length) {
+    var p0 = document.createElement('p');
+    p0.textContent = '-';
+    s.appendChild(p0);
     return s;
-  }
-
-  function sectionKeyAppearances(title, apps) {
+    }
+    list.forEach(function(x) {
+    var box = document.createElement('div');
+    box.style.marginTop = '10px';
+    var n = document.createElement('div');
+    n.style.fontWeight = '900';
+    n.style.color = 'rgba(232,238,252,0.92)';
+    n.textContent = x.Name || x.name || 'Practice';
+    var d = document.createElement('div');
+    d.style.marginTop = '4px';
+    d.style.color = 'rgba(232,238,252,0.78)';
+    d.textContent = x.Description || x.description || '-';
+    box.appendChild(n);
+    box.appendChild(d);
+    s.appendChild(box);
+    });
+    return s;
+    }
+    function sectionList(title, items) {
     var s = document.createElement('div');
     s.className = 'section';
-
     var h = document.createElement('h3');
     h.textContent = title;
     s.appendChild(h);
-
-    var items = (apps || []).filter(function(x) {
-      return x && (x.Title || x.Series);
-    });
-
-    if (!items.length) {
-      var p0 = document.createElement('p');
-      p0.textContent = '-';
-      s.appendChild(p0);
-      return s;
-    }
-
-    items.forEach(function(x) {
-      var line = document.createElement('div');
-      line.style.marginTop = '10px';
-
-      var t = document.createElement('div');
-      t.style.fontWeight = '900';
-      t.style.color = 'rgba(232,238,252,0.92)';
-
-      var se = '';
-      if (x.Series && x.Season != null && x.Episode != null) {
-        se = x.Series + ' S' + x.Season + 'E' + x.Episode;
-      } else if (x.Series) {
-        se = x.Series;
-      }
-
-      var header = [];
-      if (se) header.push(se);
-      if (x.Title) header.push(x.Title);
-      t.textContent = header.join(' - ');
-
-      var why = document.createElement('div');
-      why.style.marginTop = '4px';
-      why.style.color = 'rgba(232,238,252,0.78)';
-      why.textContent = x.WhyRelevant || '-';
-
-      line.appendChild(t);
-      line.appendChild(why);
-      s.appendChild(line);
-    });
-
+    var list = (items || []).filter(Boolean);
+    if (!list.length) {
+    var p0 = document.createElement('p');
+    p0.textContent = '-';
+    s.appendChild(p0);
     return s;
-  }
-
-  function makeCard(c) {
+    }
+    list.forEach(function(txt) {
+    var p = document.createElement('p');
+    p.textContent = txt;
+    s.appendChild(p);
+    });
+    return s;
+    }
+    function makeCard(c) {
     var card = document.createElement('div');
     card.className = 'card' + (c.id === state.selectedId ? ' active' : '');
     card.tabIndex = 0;
     card.setAttribute('role', 'button');
     card.setAttribute('aria-label', 'Open ' + (c.name || 'culture'));
-
     var sigil = document.createElement('div');
     sigil.className = 'sigil';
     sigil.textContent = (c.name || '?').slice(0, 1).toUpperCase();
-
     var main = document.createElement('div');
     main.className = 'main';
-
     var name = document.createElement('div');
     name.className = 'name';
     name.textContent = c.name || 'Unknown';
-
     var meta = document.createElement('div');
     meta.className = 'meta';
-
     var lines = [];
     if (c.homeworlds && c.homeworlds.length) lines.push('Homeworld: ' + c.homeworlds[0]);
     if (c.regions && c.regions.length) lines.push('Region: ' + c.regions.join(', '));
     if (c.affiliations && c.affiliations.length) lines.push('Affiliation: ' + c.affiliations[0]);
-
     if (lines.length) {
-      lines.forEach(function(line) {
-        var d = document.createElement('div');
-        d.textContent = line;
-        meta.appendChild(d);
-      });
+    lines.forEach(function(line) {
+    var d = document.createElement('div');
+    d.textContent = line;
+    meta.appendChild(d);
+    });
     }
-
     main.appendChild(name);
     main.appendChild(meta);
-
     card.appendChild(sigil);
     card.appendChild(main);
-
     function select() {
-      state.selectedId = c.id;
-      render();
+    state.selectedId = c.id;
+    render();
     }
-
     card.addEventListener('click', select);
     card.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        select();
-      }
+    if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    select();
+    }
     });
-
     return card;
-  }
-
-  function renderList() {
+    }
+    function renderList() {
     var items = getFiltered();
     elList.innerHTML = '';
     items.forEach(function(c) {
-      elList.appendChild(makeCard(c));
+    elList.appendChild(makeCard(c));
     });
     var label = items.length ? (items.length + ' culture' + (items.length === 1 ? '' : 's')) : '0 cultures';
-    elCount.textContent = state.usingFallback ? (label + ' (fallback)') : label;
-  }
-
-  function renderDetail() {
+    elCount.textContent = label;
+    }
+    function renderDetail() {
     var c = null;
     for (var i = 0; i < cultures.length; i++) {
-      if (cultures[i].id === state.selectedId) { c = cultures[i]; break; }
+    if (cultures[i].id === state.selectedId) { c = cultures[i]; break; }
     }
-
     elDetail.innerHTML = '';
-
     if (!c) {
-      var empty = document.createElement('div');
-      empty.className = 'empty';
-      empty.textContent = 'Select a culture from the list to view details.';
-      elDetail.appendChild(empty);
-      elDetailTag.textContent = '';
-      return;
+    var empty = document.createElement('div');
+    empty.className = 'empty';
+    empty.textContent = 'Select a culture from the list to view details.';
+    elDetail.appendChild(empty);
+    elDetailTag.textContent = '';
+    return;
     }
-
     elDetailTag.textContent = c.id || '';
-
     var hero = document.createElement('div');
     hero.className = 'hero';
-
     var mark = document.createElement('div');
     mark.className = 'mark';
     mark.textContent = (c.name || '?').slice(0, 1).toUpperCase();
     hero.appendChild(mark);
-
     var head = document.createElement('div');
-
     var h1 = document.createElement('div');
     h1.className = 'h1';
     h1.textContent = c.name || 'Unknown';
-
     var lede = document.createElement('div');
     lede.className = 'lede';
-    lede.textContent = (c.overview && c.overview.length) ? c.overview[0] : '';
-
+    lede.textContent = (c.profile && c.profile.length) ? c.profile[0] : '';
     head.appendChild(h1);
     head.appendChild(lede);
-
     var top = document.createElement('div');
     top.className = 'top';
     top.appendChild(hero);
     top.appendChild(head);
-
     elDetail.appendChild(top);
-
     var kv = document.createElement('div');
     kv.className = 'kv';
     kv.appendChild(tile('People / Culture', c.species || '-'));
@@ -881,160 +729,109 @@
     kv.appendChild(tile('Regions', (c.regions || []).join(', ')));
     kv.appendChild(tile('Affiliation', (c.affiliations || []).join(', ')));
     elDetail.appendChild(kv);
-
-    var overviewAll = c.overview || [];
-    var overviewRest = overviewAll.length > 1 ? overviewAll.slice(1) : [];
-    if (overviewRest.length) {
-      elDetail.appendChild(sectionParagraphs('Overview', overviewRest));
+    var profileRest = (c.profile || []).length > 1 ? (c.profile || []).slice(1) : [];
+    if (profileRest.length) {
+    elDetail.appendChild(sectionParagraphs('Profile', profileRest));
+    } else {
+    elDetail.appendChild(sectionParagraphs('Profile', []));
     }
-
-    var traits = document.createElement('div');
-    traits.className = 'section';
-    var th = document.createElement('h3');
-    th.textContent = 'Core traits';
-    traits.appendChild(th);
-    traits.appendChild(makeChips(c.coreTraits || []));
-    elDetail.appendChild(traits);
-
-    elDetail.appendChild(sectionCustoms('Customs', c.customs || []));
-
-    var fam = (c.everydayLife && c.everydayLife.FamilyAndSociety) ? c.everydayLife.FamilyAndSociety : '';
-    elDetail.appendChild(section('Family & society', fam));
-
-    var food = (c.everydayLife && c.everydayLife.FoodAndDrink) ? c.everydayLife.FoodAndDrink : '';
-    elDetail.appendChild(section('Food & drink', food));
-
-    var relText = (c.relations && c.relations.WithStarfleet) ? c.relations.WithStarfleet : '';
-    elDetail.appendChild(section('Relations with Starfleet', relText));
-
-    var misreads = (c.relations && Array.isArray(c.relations.CommonMisreads)) ? c.relations.CommonMisreads : [];
-    var mr = document.createElement('div');
-    mr.className = 'section';
-    var mrh = document.createElement('h3');
-    mrh.textContent = 'Common misreads';
-    mr.appendChild(mrh);
-    mr.appendChild(makeChips(misreads));
-    elDetail.appendChild(mr);
-
-    elDetail.appendChild(sectionKeyAppearances('Key appearances', c.keyAppearances || []));
-
+    elDetail.appendChild(sectionPractices('Practices', c.practices || []));
+    elDetail.appendChild(sectionParagraphs('Food & drink', c.foodAndDrink || []));
+    elDetail.appendChild(sectionList('Canon anchors', c.canonAnchors || []));
     var relatedWrap = document.createElement('div');
     relatedWrap.className = 'section';
     var rh = document.createElement('h3');
     rh.textContent = 'Related entries';
     relatedWrap.appendChild(rh);
-
     var relGrid = document.createElement('div');
     relGrid.className = 'kv';
-
-    var people = (c.related && Array.isArray(c.related.People)) ? c.related.People : [];
-    var orgs = (c.related && Array.isArray(c.related.Organizations)) ? c.related.Organizations : [];
-    var planets = (c.related && Array.isArray(c.related.Planets)) ? c.related.Planets : [];
-    var arts = (c.related && Array.isArray(c.related.Artifacts)) ? c.related.Artifacts : [];
-
     function relTile(label, arr) {
-      var t = document.createElement('div');
-      t.className = 'tile';
-
-      var kk = document.createElement('div');
-      kk.className = 'k';
-      kk.textContent = label;
-
-      var vv = document.createElement('div');
-      vv.className = 'v';
-      vv.textContent = '';
-
-      t.appendChild(kk);
-      t.appendChild(vv);
-      t.appendChild(makeChips(arr || []));
-      return t;
+    var t = document.createElement('div');
+    t.className = 'tile';
+    var kk = document.createElement('div');
+    kk.className = 'k';
+    kk.textContent = label;
+    var vv = document.createElement('div');
+    vv.className = 'v';
+    vv.textContent = '';
+    t.appendChild(kk);
+    t.appendChild(vv);
+    t.appendChild(makeChips(arr || []));
+    return t;
     }
-
-    relGrid.appendChild(relTile('People', people));
-    relGrid.appendChild(relTile('Organizations', orgs));
-    relGrid.appendChild(relTile('Planets', planets));
-    relGrid.appendChild(relTile('Artifacts', arts));
-
+    relGrid.appendChild(relTile('People', (c.related && c.related.people) ? c.related.people : []));
+    relGrid.appendChild(relTile('Organizations', (c.related && c.related.organizations) ? c.related.organizations : []));
+    relGrid.appendChild(relTile('Planets', (c.related && c.related.planets) ? c.related.planets : []));
+    relGrid.appendChild(relTile('Artifacts', (c.related && c.related.artifacts) ? c.related.artifacts : []));
     relatedWrap.appendChild(relGrid);
     elDetail.appendChild(relatedWrap);
-
     if (state.lastError) {
-      var diag = document.createElement('div');
-      diag.className = 'section';
-      var dh = document.createElement('h3');
-      dh.textContent = 'Load status';
-      diag.appendChild(dh);
-
-      var dp = document.createElement('p');
-      dp.textContent = state.lastError;
-      diag.appendChild(dp);
-
-      elDetail.appendChild(diag);
+    var diag = document.createElement('div');
+    diag.className = 'section';
+    var dh = document.createElement('h3');
+    dh.textContent = 'Load status';
+    diag.appendChild(dh);
+    var dp = document.createElement('p');
+    dp.textContent = state.lastError;
+    diag.appendChild(dp);
+    elDetail.appendChild(diag);
     }
-  }
-
-  function render() {
+    }
+    function render() {
     renderList();
     renderDetail();
-  }
-
-  function setEmpty(msg) {
+    }
+    function setEmpty(msg) {
     elList.innerHTML = '';
     var e = document.createElement('div');
     e.className = 'empty';
     e.textContent = msg;
     elList.appendChild(e);
     elCount.textContent = msg;
-  }
-
-  function applyRaw(raw, usingFallback, note) {
+    }
+    function applyRaw(raw, note) {
     var arr = Array.isArray(raw) ? raw : (raw && Array.isArray(raw.Cultures) ? raw.Cultures : []);
     cultures = arr.map(normalizeCulture).filter(function(x) { return x.id || x.name; });
-    state.usingFallback = !!usingFallback;
     state.lastError = note || '';
     if (!cultures.length) {
-      setEmpty('No culture data found.');
-      elDetail.innerHTML = '<div class="empty">No culture selected.</div>';
-      return;
+    setEmpty('No culture data found.');
+    elDetail.innerHTML = '<div class="empty">No culture selected.</div>';
+    return;
     }
     if (!state.selectedId) state.selectedId = cultures[0].id;
     render();
-  }
-
-  function load() {
+    }
+    function load() {
     fetch(DATA_URL, { cache: 'no-store' })
-      .then(function(res) {
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        return res.text();
-      })
-      .then(function(txt) {
-        state.lastBytes = txt.length;
-        var raw = JSON.parse(txt);
-        applyRaw(raw, false, '');
-      })
-      .catch(function(err) {
-        var msg = 'Using fallback. Fetch failed or JSON invalid. ' + (err && err.message ? err.message : 'Error');
-        applyRaw(FALLBACK, true, msg);
-      });
-  }
-
-  elSearch.addEventListener('input', function(e) {
+    .then(function(res) {
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    return res.text();
+    })
+    .then(function(txt) {
+    var raw = JSON.parse(txt);
+    applyRaw(raw, '');
+    })
+    .catch(function(err) {
+    applyRaw([], 'Fetch failed or JSON invalid. ' + (err && err.message ? err.message : 'Error'));
+    });
+    }
+    elSearch.addEventListener('input', function(e) {
     state.query = e.target.value || '';
     var items = getFiltered();
     if (items.length && (!state.selectedId || !items.some(function(x) { return x.id === state.selectedId; }))) {
-      state.selectedId = items[0].id;
+    state.selectedId = items[0].id;
     }
     render();
-  });
-
-  elClear.addEventListener('click', function() {
+    });
+    elClear.addEventListener('click', function() {
     state.query = '';
     elSearch.value = '';
     if (cultures.length) state.selectedId = cultures[0].id;
     render();
     elSearch.focus();
-  });
-
-  load();
-})();
-</script></body></html>
+    });
+    load();
+    })();
+    </script>
+  </body>
+</html>
