@@ -2,100 +2,49 @@
   {
     "ID": "cul-klingon",
     "Name": "Klingon",
-    "SpeciesOrPeople": "Klingon",
-    "Affiliation": [
-      "Klingon Empire"
-    ],
-    "PrimaryHomeworlds": [
-      "Qo'noS"
-    ],
-    "Regions": [
-      "Beta Quadrant"
-    ],
-    "Overview": [
+    "Identity": {
+      "SpeciesOrPeople": "Klingon",
+      "Affiliation": [
+        "Klingon Empire"
+      ],
+      "PrimaryHomeworlds": [
+        "Qo'noS"
+      ],
+      "Regions": [
+        "Beta Quadrant"
+      ]
+    },
+    "Profile": [
       "Klingon culture treats honor as a public measure of worth: courage under pressure, truth spoken plainly, and a life judged by deeds and accountability. Reputation is shared—an individual’s actions reflect on family and House—so respect is earned through competence, loyalty kept under stress, and the willingness to accept consequences rather than evade them. Even conflict is expected to have rules: a challenge should be direct, the stakes understood, and the outcome faced without excuses.",
       "Power and status are shaped by the Great Houses and the institutions of the Empire, including the Klingon High Council and its Chancellor. Tradition is binding in both politics and law, and “honor” carries practical force: it can elevate a House through service and leadership, or diminish standing through disgrace that stains a family name for generations. Because Houses compete for influence, oaths, alliances, and public conduct become political currency, and questions of legitimacy are often argued through lineage, ritual precedent, and demonstrations of strength.",
-      "Klingons preserve identity through ceremony, poetry, and performance alongside warfare. Legendary figures such as Kahless the Unforgettable are invoked as touchstones for legitimacy and conduct, and rites around adulthood and marriage present commitment as something proven through endurance and shared hardship. Belief about the honored dead reaching Sto-vo-kor gives the culture a long horizon: how one lives is treated as inseparable from how one will be remembered, sung about, and judged."
+      "Klingons preserve identity through ceremony, poetry, and performance alongside warfare. Legendary figures such as Kahless the Unforgettable are invoked as touchstones for legitimacy and conduct, and rites around adulthood and marriage present commitment as something proven through endurance and shared hardship. Belief about the honored dead reaching Sto-vo-kor gives the culture a long horizon: how one lives is treated as inseparable from how one will be remembered, sung about, and judged.",
+      "Klingon society places heavy weight on family reputation, ancestry, and duty to one’s House. Status is negotiated in the open: skill, courage, and reliability in crisis matter, and insults that touch a family name can escalate into formal challenges rather than private arguments. The Great Houses provide identity and leverage, and their rivalries can shape careers, alliances, and legal outcomes; the High Council turns tradition into governance, linking personal conduct to public standing. Because honor is communal, Klingons may accept personal sacrifice to protect a House’s future, and disgrace can be socially devastating. At the same time, everyday life includes mentorship, competitive fellowship, story, song, and the repeated testing of character in small ways—keeping one’s word, paying debts, honoring oaths, and showing composure when provoked.",
+      "Klingon–Federation relations shift across eras from hostility to peace and cooperation, with major treaties such as the Khitomer Accords forming a foundation for reconciliation. Even during alliance periods, internal Klingon politics and differing assumptions about honor can strain cooperation: Klingons often prize decisive action and personal accountability, while Starfleet may emphasize procedure, diplomacy, and restraint. Cultural misunderstanding is common—what Starfleet reads as reckless aggression may be, to Klingons, an honest willingness to stand and be counted—yet trusted personal bonds between officers and shared defense against common threats repeatedly pull the relationship back toward partnership.",
+      "Common misreads include: Honor is the same as aggression; All Klingons share one outlook; Tradition means they cannot change."
     ],
-    "CoreTraits": [
-      {
-        "Trait": "Honor measured by deeds"
-      },
-      {
-        "Trait": "House loyalty and lineage"
-      },
-      {
-        "Trait": "Ritualized courage and endurance"
-      },
-      {
-        "Trait": "Pride, candor, and direct challenge"
-      }
-    ],
-    "Customs": [
+    "Practices": [
       {
         "Name": "Klingon tea ceremony",
-        "WhatItIs": "A ritual test of courage in which two participants drink tea brewed from a poisonous plant while reciting poetry to one another. The ceremony is conducted face-to-face, and composure is part of the trial: the point is not to pretend the danger is absent, but to master fear without losing dignity.",
-        "WhyItMatters": "It frames shared risk as a form of respect and connection—bravery is proven together, not alone. The use of poetry also signals that Klingon identity includes art and eloquence; a person can be fierce and still be expected to speak well, remember tradition, and honor the moment with words."
+        "Description": "A ritual test of courage in which two participants drink tea brewed from a poisonous plant while reciting poetry to one another. The ceremony is conducted face-to-face, and composure is part of the trial: the point is not to pretend the danger is absent, but to master fear without losing dignity. It frames shared risk as a form of respect and connection—bravery is proven together, not alone. The use of poetry also signals that Klingon identity includes art and eloquence; a person can be fierce and still be expected to speak well, remember tradition, and honor the moment with words."
       },
       {
         "Name": "Rite of Ascension (Age of Inclusion)",
-        "WhatItIs": "A coming-of-age rite performed when a child reaches the Age of Inclusion, in which the youth lights a kor'tova candle to symbolize the fire burning in a warrior’s heart and publicly declares the intention to become a warrior. The act is simple, but it is witnessed and remembered: it is meant to mark a turning point from childhood to responsibility.",
-        "WhyItMatters": "The rite makes identity communal. Becoming a “true” Klingon warrior is not just personal self-image; it is a pledge made in front of others, tying the youth to House expectations and to an inherited standard. The emphasis on public declaration also shows how Klingon honor is built through visible commitments and follow-through."
+        "Description": "A coming-of-age rite performed when a child reaches the Age of Inclusion, in which the youth lights a kor'tova candle to symbolize the fire burning in a warrior’s heart and publicly declares the intention to become a warrior. The act is simple, but it is witnessed and remembered: it is meant to mark a turning point from childhood to responsibility. The rite makes identity communal. Becoming a “true” Klingon warrior is not just personal self-image; it is a pledge made in front of others, tying the youth to House expectations and to an inherited standard. The emphasis on public declaration also shows how Klingon honor is built through visible commitments and follow-through."
       },
       {
         "Name": "Klingon marriage rites",
-        "WhatItIs": "Klingon weddings are strongly ritualized, often involving traditional recitation, formal roles, and social tests that treat the ceremony as a serious cultural performance rather than a private exchange of vows. House expectations can loom over the event, and the ritual can require the couple to demonstrate unity under pressure rather than romance in public.",
-        "WhyItMatters": "Marriage is framed as duty, lineage, and reputation as much as affection. The ceremony asserts that commitment is proven through endurance and clarity of intent—two people are binding themselves in a way that reflects on their families and may affect House standing. When a Klingon wedding goes poorly, it is not merely awkward; it can be read as a sign that the union lacks the discipline and strength the culture expects."
+        "Description": "Klingon weddings are strongly ritualized, often involving traditional recitation, formal roles, and social tests that treat the ceremony as a serious cultural performance rather than a private exchange of vows. House expectations can loom over the event, and the ritual can require the couple to demonstrate unity under pressure rather than romance in public. Marriage is framed as duty, lineage, and reputation as much as affection. The ceremony asserts that commitment is proven through endurance and clarity of intent—two people are binding themselves in a way that reflects on their families and may affect House standing. When a Klingon wedding goes poorly, it is not merely awkward; it can be read as a sign that the union lacks the discipline and strength the culture expects."
       }
     ],
-    "EverydayLife": {
-      "FamilyAndSociety": "Klingon society places heavy weight on family reputation, ancestry, and duty to one’s House. Status is negotiated in the open: skill, courage, and reliability in crisis matter, and insults that touch a family name can escalate into formal challenges rather than private arguments. The Great Houses provide identity and leverage, and their rivalries can shape careers, alliances, and legal outcomes; the High Council turns tradition into governance, linking personal conduct to public standing. Because honor is communal, Klingons may accept personal sacrifice to protect a House’s future, and disgrace can be socially devastating. At the same time, everyday life includes mentorship, competitive fellowship, story, song, and the repeated testing of character in small ways—keeping one’s word, paying debts, honoring oaths, and showing composure when provoked.",
-      "FoodAndDrink": "Klingon cuisine is associated with intense flavors and bold presentation, and meals can function as a social test of toughness and sincerity. Canon examples include gagh (a well-known dish of serpent worms), racht, heart of targ, and rokeg blood pie, along with other referenced foods such as bregit lung and pipius claw; the emphasis on freshness and texture can challenge outsiders’ expectations, and Klingons may treat willingness to partake as a sign of comfort with their ways. Drinks carry cultural meaning in celebration and camaraderie: bloodwine is strongly associated with Klingon gatherings and is traditionally served warm, and warnog is a familiar point of reference as Klingon beer. Sharing food and drink often helps establish credibility—participation can be taken as respect, while refusal may be read as discomfort depending on context."
-    },
-    "Relations": {
-      "WithStarfleet": "Klingon–Federation relations shift across eras from hostility to peace and cooperation, with major treaties such as the Khitomer Accords forming a foundation for reconciliation. Even during alliance periods, internal Klingon politics and differing assumptions about honor can strain cooperation: Klingons often prize decisive action and personal accountability, while Starfleet may emphasize procedure, diplomacy, and restraint. Cultural misunderstanding is common—what Starfleet reads as reckless aggression may be, to Klingons, an honest willingness to stand and be counted—yet trusted personal bonds between officers and shared defense against common threats repeatedly pull the relationship back toward partnership.",
-      "CommonMisreads": [
-        "Honor is the same as aggression",
-        "All Klingons share one outlook",
-        "Tradition means they cannot change"
-      ]
-    },
-    "KeyAppearances": [
-      {
-        "Title": "Sins of the Father",
-        "Series": "TNG",
-        "Season": 3,
-        "Episode": 17,
-        "WhyRelevant": "A clear look at Great House politics and the mechanics of honor, disgrace, and inherited reputation, showing how personal choices become legal and political judgments inside the Empire."
-      },
-      {
-        "Title": "A Matter of Honor",
-        "Series": "TNG",
-        "Season": 2,
-        "Episode": 8,
-        "WhyRelevant": "Riker’s exchange service highlights Klingon command expectations, blunt social norms, and how belonging is tested through conduct at the table and on duty."
-      },
-      {
-        "Title": "Rightful Heir",
-        "Series": "TNG",
-        "Season": 6,
-        "Episode": 23,
-        "WhyRelevant": "Explores faith and legitimacy through Kahless, showing how spiritual tradition and political authority can collide and reshape personal identity."
-      },
-      {
-        "Title": "Firstborn",
-        "Series": "TNG",
-        "Season": 7,
-        "Episode": 21,
-        "WhyRelevant": "Depicts the Rite of Ascension and pressures on Klingon youth, illustrating that not every Klingon fits the warrior ideal the culture celebrates."
-      },
-      {
-        "Title": "You Are Cordially Invited",
-        "Series": "DS9",
-        "Season": 6,
-        "Episode": 7,
-        "WhyRelevant": "A practical view of Klingon marriage as tradition and social obligation, with ritual requirements and public tests shaping what the union means."
-      }
+    "FoodAndDrink": [
+      "Klingon cuisine is associated with intense flavors and bold presentation, and meals can function as a social test of toughness and sincerity. Canon examples include gagh (a well-known dish of serpent worms), racht, heart of targ, and rokeg blood pie, along with other referenced foods such as bregit lung and pipius claw; the emphasis on freshness and texture can challenge outsiders’ expectations, and Klingons may treat willingness to partake as a sign of comfort with their ways. Drinks carry cultural meaning in celebration and camaraderie: bloodwine is strongly associated with Klingon gatherings and is traditionally served warm, and warnog is a familiar point of reference as Klingon beer. Sharing food and drink often helps establish credibility—participation can be taken as respect, while refusal may be read as discomfort depending on context."
+    ],
+    "CanonAnchors": [
+      "TNG S3E17 — Sins of the Father: A clear look at Great House politics and the mechanics of honor, disgrace, and inherited reputation, showing how personal choices become legal and political judgments inside the Empire.",
+      "TNG S2E8 — A Matter of Honor: Riker’s exchange service highlights Klingon command expectations, blunt social norms, and how belonging is tested through conduct at the table and on duty.",
+      "TNG S6E23 — Rightful Heir: Explores faith and legitimacy through Kahless, showing how spiritual tradition and political authority can collide and reshape personal identity.",
+      "TNG S7E21 — Firstborn: Depicts the Rite of Ascension and pressures on Klingon youth, illustrating that not every Klingon fits the warrior ideal the culture celebrates.",
+      "DS9 S6E7 — You Are Cordially Invited: A practical view of Klingon marriage as tradition and social obligation, with ritual requirements and public tests shaping what the union means."
     ],
     "RelatedEntries": {
       "People": [
@@ -123,100 +72,49 @@
   {
     "ID": "cul-vulcan",
     "Name": "Vulcan",
-    "SpeciesOrPeople": "Vulcan",
-    "Affiliation": [
-      "United Federation of Planets"
-    ],
-    "PrimaryHomeworlds": [
-      "Vulcan"
-    ],
-    "Regions": [
-      "Alpha Quadrant"
-    ],
-    "Overview": [
+    "Identity": {
+      "SpeciesOrPeople": "Vulcan",
+      "Affiliation": [
+        "United Federation of Planets"
+      ],
+      "PrimaryHomeworlds": [
+        "Vulcan"
+      ],
+      "Regions": [
+        "Alpha Quadrant"
+      ]
+    },
+    "Profile": [
       "Vulcan culture is built around logic as a disciplined practice adopted after an earlier violent past and associated with the teachings of Surak. Emotional control is treated as a lifelong responsibility supported by meditation, study, and social norms that favor restraint, careful speech, and deliberate action. Reason is not portrayed as instinctive; it is trained and maintained through habit, and a Vulcan is expected to manage impulses rather than be ruled by them.",
       "Vulcans acknowledge emotion rather than deny it, but they treat unmanaged emotion as harmful to self and society. Intellectual rigor, ethical consistency, and non-imposition are prized, and the philosophy of Infinite Diversity in Infinite Combinations (IDIC) is often used as shorthand for valuing difference without abandoning principle. This produces a culture that respects competence and evidence, but also expects individuals to take responsibility for their own self-control.",
-      "Privacy is a defining norm. Deeply personal matters—bonding, telepathic intimacy, and family commitments—are handled discreetly, with trust signaled through specific rituals and carefully bounded forms of closeness. The outward reserve is often misread as coldness, but it is frequently intended as respect and restraint: limiting one’s emotional impact on others and keeping intimate life protected rather than performed."
+      "Privacy is a defining norm. Deeply personal matters—bonding, telepathic intimacy, and family commitments—are handled discreetly, with trust signaled through specific rituals and carefully bounded forms of closeness. The outward reserve is often misread as coldness, but it is frequently intended as respect and restraint: limiting one’s emotional impact on others and keeping intimate life protected rather than performed.",
+      "Education and self-mastery are central to Vulcan daily life. Training in mental disciplines begins early, and many Vulcans study with teachers or masters to refine meditation, focus, and emotional regulation; public conduct tends to be formal and measured, and disagreements are often framed as questions of logic and evidence rather than displays of feeling. Family life can reflect tradition and obligation: canon depicts arranged engagements and long-standing commitments, and personal choices are weighed against duty, reputation, and cultural continuity. Telepathic practices carry special weight because of their intimacy—consent and discretion are treated as essential—and the mind meld is depicted as a serious act rather than casual contact, sometimes even surrounded by stigma in certain eras. Institutions of learning and service are prestigious, and competence is often treated as an ethical obligation to apply reason responsibly.",
+      "Vulcans have long-standing ties to Starfleet and the Federation, frequently contributing scientific expertise, diplomatic caution, and a preference for measured escalation. Cultural differences can create friction—especially around emotional expression, improvisation, and risk tolerance—but shared principles and sustained cooperation usually reinforce the partnership. Vulcans may be perceived as judgmental when attempting to prevent harm through caution, while Vulcans may perceive Starfleet as reckless when it values speed over deliberation; the relationship works best when both sides recognize that the same ethical goal—reducing harm—can produce different instincts about how to act.",
+      "Common misreads include: Vulcans have no emotions; Logic means lack of compassion; All Vulcans think alike."
     ],
-    "CoreTraits": [
-      {
-        "Trait": "Logic and emotional discipline"
-      },
-      {
-        "Trait": "Intellectual rigor and study"
-      },
-      {
-        "Trait": "Respect for diversity (IDIC)"
-      },
-      {
-        "Trait": "Privacy and restraint"
-      }
-    ],
-    "Customs": [
+    "Practices": [
       {
         "Name": "Vulcan salute and restrained greetings",
-        "WhatItIs": "Vulcans commonly greet with formal restraint rather than exuberant display, using culturally recognized gestures and phrases to convey respect without intrusion. The familiar split-finger salute and associated saying function as a courteous, socially acceptable expression of goodwill that does not require emotional display.",
-        "WhyItMatters": "The greeting style reflects a broader Vulcan norm: communicate clearly, but do not impose. It allows warmth to exist in a controlled form, signaling respect and connection while maintaining the boundaries that Vulcans treat as essential to self-mastery and privacy."
+        "Description": "Vulcans commonly greet with formal restraint rather than exuberant display, using culturally recognized gestures and phrases to convey respect without intrusion. The familiar split-finger salute and associated saying function as a courteous, socially acceptable expression of goodwill that does not require emotional display. The greeting style reflects a broader Vulcan norm: communicate clearly, but do not impose. It allows warmth to exist in a controlled form, signaling respect and connection while maintaining the boundaries that Vulcans treat as essential to self-mastery and privacy."
       },
       {
         "Name": "Pon farr",
-        "WhatItIs": "A private mating cycle marked by intense physiological and psychological pressure, traditionally handled through established options that resolve the crisis and restore stability. It is treated as both a biological imperative and a social responsibility, with strong expectations of discretion and cultural structure around how it is addressed.",
-        "WhyItMatters": "Pon farr highlights the tension between powerful biological drives and a culture built on discipline. The seriousness with which it is handled helps explain Vulcan privacy around bonding and marriage, and why intimate matters are considered inappropriate for casual discussion."
+        "Description": "A private mating cycle marked by intense physiological and psychological pressure, traditionally handled through established options that resolve the crisis and restore stability. It is treated as both a biological imperative and a social responsibility, with strong expectations of discretion and cultural structure around how it is addressed. Pon farr highlights the tension between powerful biological drives and a culture built on discipline. The seriousness with which it is handled helps explain Vulcan privacy around bonding and marriage, and why intimate matters are considered inappropriate for casual discussion."
       },
       {
         "Name": "Kolinahr training",
-        "WhatItIs": "A demanding mental discipline pursued by some Vulcans to purge remaining emotional disturbances and pursue a state of pure logic through sustained meditation and study. Participation is not universal, and the path is depicted as a rigorous commitment rather than a simple certification.",
-        "WhyItMatters": "Kolinahr represents an idealized endpoint of Vulcan self-mastery and the belief that logic requires continual practice. It also underscores diversity within Vulcan society: some strive for absolute emotional purgation, while others pursue balance, service, and practical discipline without seeking that extreme."
+        "Description": "A demanding mental discipline pursued by some Vulcans to purge remaining emotional disturbances and pursue a state of pure logic through sustained meditation and study. Participation is not universal, and the path is depicted as a rigorous commitment rather than a simple certification. Kolinahr represents an idealized endpoint of Vulcan self-mastery and the belief that logic requires continual practice. It also underscores diversity within Vulcan society: some strive for absolute emotional purgation, while others pursue balance, service, and practical discipline without seeking that extreme."
       }
     ],
-    "EverydayLife": {
-      "FamilyAndSociety": "Education and self-mastery are central to Vulcan daily life. Training in mental disciplines begins early, and many Vulcans study with teachers or masters to refine meditation, focus, and emotional regulation; public conduct tends to be formal and measured, and disagreements are often framed as questions of logic and evidence rather than displays of feeling. Family life can reflect tradition and obligation: canon depicts arranged engagements and long-standing commitments, and personal choices are weighed against duty, reputation, and cultural continuity. Telepathic practices carry special weight because of their intimacy—consent and discretion are treated as essential—and the mind meld is depicted as a serious act rather than casual contact, sometimes even surrounded by stigma in certain eras. Institutions of learning and service are prestigious, and competence is often treated as an ethical obligation to apply reason responsibly.",
-      "FoodAndDrink": "Vulcan cuisine is typically depicted as simple and functional, with traditional staples becoming cultural shorthand for restraint. Canon examples include plomeek soup (and plomeek broth), which is often described as bland and associated with routine meals, along with other named foods such as gespar, halak, pok tar, tevmel, and redspice. Beverages identified in Vulcan contexts include plomeek tea and spice tea, and references also include tea, mocha, brandy, and port. In canon, Vulcan food-and-drink moments frequently serve as character cues: preference for plain staples can signal commitment to discipline, while variations and exceptions underline that Vulcan life includes individuality within strong social norms."
-    },
-    "Relations": {
-      "WithStarfleet": "Vulcans have long-standing ties to Starfleet and the Federation, frequently contributing scientific expertise, diplomatic caution, and a preference for measured escalation. Cultural differences can create friction—especially around emotional expression, improvisation, and risk tolerance—but shared principles and sustained cooperation usually reinforce the partnership. Vulcans may be perceived as judgmental when attempting to prevent harm through caution, while Vulcans may perceive Starfleet as reckless when it values speed over deliberation; the relationship works best when both sides recognize that the same ethical goal—reducing harm—can produce different instincts about how to act.",
-      "CommonMisreads": [
-        "Vulcans have no emotions",
-        "Logic means lack of compassion",
-        "All Vulcans think alike"
-      ]
-    },
-    "KeyAppearances": [
-      {
-        "Title": "Amok Time",
-        "Series": "TOS",
-        "Season": 2,
-        "Episode": 1,
-        "WhyRelevant": "A cornerstone depiction of Vulcan ritual life and privacy, introducing pon farr and showing how tradition and obligation can override ordinary professional routines."
-      },
-      {
-        "Title": "The Savage Curtain",
-        "Series": "TOS",
-        "Season": 3,
-        "Episode": 22,
-        "WhyRelevant": "Uses Surak as a philosophical reference point, reinforcing logic as an intentional response to Vulcan history and a foundation for cultural identity."
-      },
-      {
-        "Title": "Star Trek: The Motion Picture",
-        "Series": "Film",
-        "Season": 0,
-        "Episode": 0,
-        "WhyRelevant": "Connects Vulcan spiritual discipline to kolinahr and depicts ceremonial and monastic aspects of Vulcan life as lived practice."
-      },
-      {
-        "Title": "Stigma",
-        "Series": "ENT",
-        "Season": 2,
-        "Episode": 14,
-        "WhyRelevant": "Explores stigma around mind meld practice and the social consequences of taboo, highlighting reputation and institutional power inside Vulcan society."
-      },
-      {
-        "Title": "Sarek",
-        "Series": "TNG",
-        "Season": 3,
-        "Episode": 23,
-        "WhyRelevant": "Shows Vulcan emotional discipline under strain and frames mind-to-mind contact as intimate, powerful, and personally costly."
-      }
+    "FoodAndDrink": [
+      "Vulcan cuisine is typically depicted as simple and functional, with traditional staples becoming cultural shorthand for restraint. Canon examples include plomeek soup (and plomeek broth), which is often described as bland and associated with routine meals, along with other named foods such as gespar, halak, pok tar, tevmel, and redspice. Beverages identified in Vulcan contexts include plomeek tea and spice tea, and references also include tea, mocha, brandy, and port. In canon, Vulcan food-and-drink moments frequently serve as character cues: preference for plain staples can signal commitment to discipline, while variations and exceptions underline that Vulcan life includes individuality within strong social norms."
+    ],
+    "CanonAnchors": [
+      "TOS S2E1 — Amok Time: A cornerstone depiction of Vulcan ritual life and privacy, introducing pon farr and showing how tradition and obligation can override ordinary professional routines.",
+      "TOS S3E22 — The Savage Curtain: Uses Surak as a philosophical reference point, reinforcing logic as an intentional response to Vulcan history and a foundation for cultural identity.",
+      "Film — Star Trek: The Motion Picture: Connects Vulcan spiritual discipline to kolinahr and depicts ceremonial and monastic aspects of Vulcan life as lived practice.",
+      "ENT S2E14 — Stigma: Explores stigma around mind meld practice and the social consequences of taboo, highlighting reputation and institutional power inside Vulcan society.",
+      "TNG S3E23 — Sarek: Shows Vulcan emotional discipline under strain and frames mind-to-mind contact as intimate, powerful, and personally costly."
     ],
     "RelatedEntries": {
       "People": [
