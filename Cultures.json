@@ -302,5 +302,84 @@
       "Dont": "Don’t assume negotiation or deterrence works the way it does with conventional states, and don’t underestimate the risk of assimilation from brief contact. Avoid relying on a single trick; the Collective is built to learn fast."
     },
     "Trivia": "During development, the Borg concept began as an insectoid hive species, but the depiction was changed to cybernetic drones largely because of television budget constraints."
+  },
+  {
+    "ID": "cul-ferengi",
+    "Name": "Ferengi",
+    "Identity": {
+      "SpeciesOrPeople": "Ferengi (Ferengi Alliance)",
+      "Affiliation": [
+        "Ferengi Alliance"
+      ],
+      "PrimaryHomeworlds": [
+        "Ferenginar"
+      ],
+      "Regions": [
+        "Alpha Quadrant",
+        "Ferengi Alliance space"
+      ]
+    },
+    "Profile": [
+      "Ferengi culture is built around commerce as both identity and moral language: profit is treated as virtue, negotiation as social skill, and business as the place where intelligence, courage, and status are proven. The Rules of Acquisition function like a shared canon of sayings and principles—quoted, debated, and used to justify decisions—so even personal relationships can get framed as deals, investments, or liabilities.",
+      "Government and business are tightly braided. The Ferengi Alliance is led by the Grand Nagus, and commercial life is policed through trade by-laws and regulators, most visibly the Ferengi Commerce Authority (FCA). In practice, this means “free enterprise” still has rules: licenses can be granted or revoked, contracts enforced, and penalties imposed when someone breaks the system that keeps profit flowing.",
+      "Social life is transactional but not emotionless. Family and reputation matter, yet they are often measured in economic terms—inheritance, obligations, and the expected return on loyalty. Canon shows constant attention to leverage: who owes whom, what information is worth, and what a concession signals about strength or desperation.",
+      "Deep Space Nine, in particular, treats Ferengi society as something that can argue with itself. Episodes centered on Quark’s family and Ferenginar show how official rules collide with practical reality—especially around gender restrictions, corruption, and the hidden costs of exploitation—while still keeping the culture’s core premise intact: most problems are assumed to be solvable through the logic of profit, until lived consequences force a reckoning."
+    ],
+    "Practices": [
+      {
+        "Name": "Rules-of-Acquisition thinking",
+        "Description": "The Rules of Acquisition are treated as guiding precepts for deals and life decisions, frequently quoted as shorthand for how a “proper” Ferengi should think about opportunity, risk, family, and reputation."
+      },
+      {
+        "Name": "Contract-first social norms",
+        "Description": "Promises, favors, and even friendships are often expressed as obligations and terms; people keep score, expect repayment, and view generosity as either strategy, weakness, or an investment."
+      },
+      {
+        "Name": "Regulation and enforcement",
+        "Description": "The FCA oversees business practice under Ferengi trade by-laws, with liquidators empowered to investigate, levy penalties, and strip a Ferengi of the right to conduct business when they violate the system."
+      },
+      {
+        "Name": "Bargaining ritual",
+        "Description": "Haggling is not just tolerated but expected; opening offers are performative, concessions signal strength or desperation, and the negotiation itself is a test of competence."
+      }
+    ],
+    "FoodAndDrink": [
+      "Tube grubs are a Ferengi delicacy, commonly eaten live (though they can also be prepared in other ways), and they show up repeatedly as a cultural marker rather than a novelty gag.",
+      "Slug-o-Cola is a Ferengi soft drink known for its odd composition—described as containing live algae—and it’s used on screen as a quick shorthand for Ferengi mass-market commerce and taste."
+    ],
+    "CanonAnchors": [
+      "DS9 — \"The Nagus\": Establishes Ferengi political/economic power and the cultural weight of profit.",
+      "DS9 — \"Family Business\": FCA enforcement and Ferengi social rules collide with Ishka’s illegal profit-making.",
+      "DS9 — \"Body Parts\": Contracts, penalties, and the consequences of FCA enforcement become personal.",
+      "DS9 — \"Profit and Lace\": Ferengi gender norms and legal change become an explicit plot driver.",
+      "DS9 — \"The Dogs of War\": Late-series reforms and Rom’s rise to Grand Nagus."
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Quark",
+        "Rom",
+        "Nog",
+        "Ishka",
+        "Grand Nagus Zek",
+        "Brunt"
+      ],
+      "Organizations": [
+        "Ferengi Alliance",
+        "Ferengi Commerce Authority"
+      ],
+      "Planets": [
+        "Ferenginar"
+      ],
+      "Artifacts": [
+        "Rules of Acquisition",
+        "Gold-pressed latinum"
+      ]
+    },
+    "Misconceptions": "Ferengi are often dismissed as a one-note culture of greed and bad faith. Canon—especially in DS9—shows a society with a codified legal and social framework around commerce, where profit is treated as ethics, regulation exists to protect the system, and individuals can be both ruthless and sincerely loyal depending on what they believe they owe.",
+    "DoAndDont": {
+      "Do": "Assume negotiation is normal and come prepared with clear terms, limits, and a sense of what you’re willing to trade. Treat business competence as respect, and remember that reputation travels quickly through networks of favors and contracts.",
+      "Dont": "Don’t open by moralizing about profit as if it’s self-evidently shameful, and don’t rely on vague promises when specific terms are expected. Avoid being casually generous in ways that create obligations you don’t intend to pay."
+    },
+    "Trivia": "By the 22nd century canon references 173 Rules of Acquisition, while 24th-century Ferengi commonly cite 285—suggesting the “sacred” rulebook is continuously expanded over time."
   }
 ]
