@@ -1,0 +1,65 @@
+[
+  {
+    "ID": "cul-klingon",
+    "Name": "Klingon",
+    "SpeciesOrPeople": "Klingon",
+    "Affiliation": [
+      "Klingon Empire"
+    ],
+    "PrimaryHomeworlds": [
+      "Qo'noS"
+    ],
+    "Regions": [
+      "Alpha Quadrant"
+    ],
+    "Overview": [
+      "Paragraph 1.",
+      "Paragraph 2.",
+      "Paragraph 3 (only if there’s enough canon detail)."
+    ],
+    "CoreTraits": [
+      {
+        "Trait": "Honor"
+      },
+      {
+        "Trait": "House loyalty"
+      },
+      {
+        "Trait": "Martial reputation"
+      }
+    ],
+    "Customs": [
+      {
+        "Name": "Ritual challenge",
+        "WhatItIs": "1–2 sentences.",
+        "WhyItMatters": "1 sentence."
+      }
+    ],
+    "EverydayLife": {
+      "FamilyAndSociety": "4–8 sentences (or 1 short paragraph).",
+      "FoodAndDrink": "As much canon-verifiable detail as possible (paragraph-style)."
+    },
+    "Relations": {
+      "WithStarfleet": "2–4 sentences.",
+      "CommonMisreads": [
+        "Short phrase",
+        "Short phrase"
+      ]
+    },
+    "KeyAppearances": [
+      {
+        "Title": "Sins of the Father",
+        "Series": "TNG",
+        "Season": 3,
+        "Episode": 17,
+        "WhyRelevant": "1 sentence."
+      }
+    ],
+    "RelatedEntries": {
+      "People": [],
+      "Organizations": [],
+      "Planets": [],
+      "Artifacts": []
+    }
+  }
+]
