@@ -1,65 +1,2060 @@
-[
-  {
-    "ID": "cul-klingon",
-    "Name": "Klingon",
-    "SpeciesOrPeople": "Klingon",
-    "Affiliation": [
-      "Klingon Empire"
-    ],
-    "PrimaryHomeworlds": [
-      "Qo'noS"
-    ],
-    "Regions": [
-      "Alpha Quadrant"
-    ],
-    "Overview": [
-      "Paragraph 1.",
-      "Paragraph 2.",
-      "Paragraph 3 (only if there’s enough canon detail)."
-    ],
-    "CoreTraits": [
-      {
-        "Trait": "Honor"
+{
+  "Schema": "Cultures-1",
+  "Generated": "2025-12-22",
+  "Cultures": [
+    {
+      "ID": "cul-klingon",
+      "Name": "Klingon",
+      "SpeciesOrPeople": "Klingon",
+      "Affiliation": [
+        "Klingon Empire"
+      ],
+      "PrimaryHomeworlds": [
+        "Qo'noS (Kronos)"
+      ],
+      "Regions": [
+        "Beta Quadrant"
+      ],
+      "EraNotes": "Across the 23rd–24th centuries, Klingon identity is anchored in an honor code, warrior prestige, and the political weight of the Great Houses. On screen, the same ideals can be expressed as principled duty or as reputation politics depending on the house, era, and leadership.",
+      "Aliases": [],
+      "Overview": {
+        "OneLiner": "",
+        "Summary": [
+          "Klingon culture is a martial honor society where personal worth is measured by courage, competence, and the willingness to face hardship without complaint. Warriors seek glory and a remembered name; speech is direct, emotions are worn openly, and feasts, song, and ritual reinforce solidarity.",
+          "Social life is strongly shaped by the Great Houses and their standing in the High Council. Status is public and political: honor can be earned, challenged, defended, and—through formal shunning—taken away. Rival houses compete for influence, and leaders must balance tradition with the practical needs of governing an empire.",
+          "Everyday customs emphasize endurance and shared risk, from courage-testing ceremonies to highly theatrical weddings. Food and drink often signal toughness and authenticity, and remembrance of the dead is treated as an obligation owed to the living reputation of a house."
+        ]
       },
-      {
-        "Trait": "House loyalty"
+      "CoreValues": [
+        {
+          "Value": "Honor",
+          "WhatItMeans": "Reputation and moral standing proven through deeds and upheld in public.",
+          "HowItShowsUp": [
+            "Oaths",
+            "Public challenges",
+            "Remembrance of the dead"
+          ]
+        },
+        {
+          "Value": "Courage",
+          "WhatItMeans": "Meeting danger and pain without retreat; fear is acknowledged but not obeyed.",
+          "HowItShowsUp": [
+            "Ritual tests",
+            "Battle conduct",
+            "Stoic endurance"
+          ]
+        },
+        {
+          "Value": "Glory",
+          "WhatItMeans": "A life aimed at achievements worth singing about—victory, sacrifice, and legacy.",
+          "HowItShowsUp": [
+            "Hero-sagas",
+            "Warrior songs",
+            "Celebration of victory"
+          ]
+        },
+        {
+          "Value": "House loyalty",
+          "WhatItMeans": "Duty to family and house standing, often above personal preference.",
+          "HowItShowsUp": [
+            "House politics",
+            "Marriage alliances",
+            "Defense of lineage"
+          ]
+        },
+        {
+          "Value": "Candor",
+          "WhatItMeans": "Plain speech and clear intent; evasiveness can read as weakness or disrespect.",
+          "HowItShowsUp": [
+            "Direct negotiation",
+            "Blunt critique",
+            "Ritual declarations"
+          ]
+        },
+        {
+          "Value": "Tradition",
+          "WhatItMeans": "Ritual continuity as proof of legitimacy; the past is a tool for meaning and authority.",
+          "HowItShowsUp": [
+            "Ceremonies",
+            "Formal titles",
+            "Council pageantry"
+          ]
+        }
+      ],
+      "SocialStructure": {
+        "KinshipAndHouses": "Klingon society is strongly house-centered: family lineage and the honor of one’s house shape upbringing, alliances, and political opportunity. A house’s standing can elevate its members—or mark them for shunning—across generations.",
+        "Leadership": [
+          "Chancellor of the High Council",
+          "Klingon High Council (leading houses)",
+          "House heads / matriarchs and patriarchs",
+          "Military commanders and ship captains"
+        ],
+        "ClassOrCastes": [
+          "Warrior prestige dominates public status (even when citizens serve in other roles)",
+          "House status creates an informal nobility among the most influential lineages",
+          "The dishonored/shunned exist as social pariahs with limited rights and protection"
+        ],
+        "NotableTensions": [
+          "Honor ideal vs. political expedience",
+          "House rivalry and succession disputes",
+          "Personal truth vs. imperial stability",
+          "Tradition vs. pragmatic alliance with outsiders"
+        ]
       },
-      {
-        "Trait": "Martial reputation"
+      "CustomsAndEtiquette": {
+        "Greetings": [
+          "Direct address and strong eye contact; plain-spoken introductions",
+          "Respect shown through acknowledging rank, deeds, and house standing",
+          "Martial bravado is common, but competence is the real measure"
+        ],
+        "Hospitality": [
+          "Shared food and drink as a test of trust and toughness",
+          "Guests may be offered strong traditional dishes to gauge courage",
+          "Storytelling and song during feasts reinforce bonds and status"
+        ],
+        "Taboos": [
+          "Public cowardice or refusal to face an earned consequence",
+          "Dishonoring one’s house or refusing a legitimate challenge",
+          "Insults to ancestral reputation without willingness to answer for them"
+        ]
+      },
+      "RitesAndRituals": [
+        {
+          "Name": "House Oaths and Public Challenge",
+          "Type": "Social/Political",
+          "Purpose": "To bind loyalty and resolve disputes through ritualized confrontation.",
+          "Steps": [
+            "Declaration",
+            "Witnesses",
+            "Accepted terms of contest or judgment"
+          ],
+          "Variations": "Terms and venue vary by house and political circumstance."
+        },
+        {
+          "Name": "Warrior’s Remembrance",
+          "Type": "Funerary",
+          "Purpose": "To honor the dead through collective memory, story, and affirmation of legacy.",
+          "Steps": [
+            "Invocation of name",
+            "Story or song",
+            "Recognition of service"
+          ],
+          "Variations": "May be intimate for family or grand for celebrated figures."
+        },
+        {
+          "Name": "Discommendation",
+          "Type": "Legal/Social",
+          "Purpose": "To strip honor and standing through formal shunning, often extending consequences to an entire house.",
+          "Steps": [
+            "Council judgment or public decree",
+            "Ceremonial shunning by peers",
+            "Loss of rights/status; long-term stigma"
+          ],
+          "Variations": "Severity and scope vary; on screen, it can be used to avert wider conflict while preserving political stability."
+        },
+        {
+          "Name": "Rite of Ascension",
+          "Type": "Coming-of-age",
+          "Purpose": "To mark a child’s transition into the warrior path through symbolic endurance and affirmation.",
+          "Steps": [
+            "Preparation and instruction",
+            "Lighting the kor'tova candle",
+            "Public acknowledgment of inclusion"
+          ],
+          "Variations": "Specific details vary by family and era; it’s often framed as the first of multiple ascension rites."
+        },
+        {
+          "Name": "Klingon tea ceremony",
+          "Type": "Courage test",
+          "Purpose": "To teach that facing discomfort and death is best shared, through poetry and poisonous tea.",
+          "Steps": [
+            "Brewing tea from a dangerous plant",
+            "Recited poetry between participants",
+            "Shared endurance of the tea’s effects"
+          ],
+          "Variations": "Can be performed as a bond-building test between comrades."
+        },
+        {
+          "Name": "Klingon wedding and Kal'Hyah",
+          "Type": "Marriage",
+          "Purpose": "To bind two people (and their houses) through a theatrical ceremony preceded by trials of clarity and endurance.",
+          "Steps": [
+            "Kal'Hyah: fasting and trials with close friends",
+            "Drums and ceremonial reception",
+            "Recitation of creation story and vows",
+            "Post-ceremony sparring/celebratory challenge"
+          ],
+          "Variations": "Officiant and details vary by house; non-Klingon partners are often tested by the house matriarch."
+        }
+      ],
+      "ReligionAndPhilosophy": {
+        "CoreBeliefs": [
+          "Sto-vo-kor as an honored afterlife ideal for worthy warriors",
+          "Gre'thor as a feared fate tied to dishonor and spiritual failure",
+          "Legacy: a remembered name is treated as a kind of immortality"
+        ],
+        "Practices": [
+          "Honoring the dead through name, story, and song",
+          "Invoking ancient heroes and house ancestors to justify duty",
+          "Ritual language around shame, redemption, and obligation"
+        ],
+        "Notes": "On screen, faith and philosophy often function as both belief and social technology: they bind houses to shared myths and make reputation feel spiritually consequential."
+      },
+      "ArtAndMedia": {
+        "Music": [
+          "Opera",
+          "Battle songs",
+          "Drumming and chant in ceremony"
+        ],
+        "Literature": [
+          "Heroic sagas",
+          "House histories",
+          "Poetry used in ritual tests"
+        ],
+        "VisualAesthetics": [
+          "House iconography and banners",
+          "Weapons as symbolic objects",
+          "Ceremonial halls and council pageantry"
+        ]
+      },
+      "FoodAndDrink": {
+        "Staples": [
+          "Hearty meats and stews",
+          "Worm/serpent-worm dishes",
+          "Strong spirits and bitter stimulants"
+        ],
+        "NotableItems": [
+          {
+            "Name": "Gagh",
+            "Type": "Dish",
+            "Context": "Serpent worms; traditionally served alive (though also stewed or cold)."
+          },
+          {
+            "Name": "Racht",
+            "Type": "Dish",
+            "Context": "Live worms resembling a larger version of gagh; freshness matters."
+          },
+          {
+            "Name": "Heart of targ",
+            "Type": "Dish",
+            "Context": "Traditional dish of targ heart served on greens; a toughness-and-courage signal."
+          },
+          {
+            "Name": "Rokeg blood pie",
+            "Type": "Dish",
+            "Context": "Traditional dish associated with the Day of Honor; often treated as an acquired taste."
+          },
+          {
+            "Name": "Bloodwine",
+            "Type": "Drink",
+            "Context": "Popular ceremonial beverage, commonly served warm; often tied to celebration and remembrance."
+          },
+          {
+            "Name": "Warnog",
+            "Type": "Drink",
+            "Context": "Traditional clear beer; authenticity matters (real vs replicated)."
+          }
+        ],
+        "MealEtiquette": [
+          "Communal meals are often loud and status-conscious, with storytelling, song, and challenges.",
+          "Serving ‘authentic’ traditional items can function as a test of courage for guests."
+        ]
+      },
+      "DailyLife": {
+        "FamilyLife": [
+          "House identity shapes upbringing, marriage alliances, and lifelong obligations.",
+          "Children are taught endurance and the meaning of honor early, through story and supervised trial."
+        ],
+        "WorkAndService": [
+          "Military service is the prestige path, but civilian labor exists and is often framed as serving the empire and one’s house.",
+          "A captain’s reputation can elevate an entire lineage; failure can stain it."
+        ],
+        "Education": [
+          "Martial training and discipline",
+          "History through heroic saga and house narrative",
+          "Etiquette around challenge, respect, and public consequence"
+        ]
+      },
+      "LawAndJustice": {
+        "JusticeModel": "Honor-based accountability where public consequence and reputation matter as much as written statute.",
+        "CommonDisputes": [
+          "Accusations between houses",
+          "Treason and betrayal charges",
+          "Challenges to leadership legitimacy and succession",
+          "Questions of family honor and lineage"
+        ],
+        "ResolutionMechanisms": [
+          "High Council judgment",
+          "Ritual shunning (discommendation) and later reinstatement",
+          "Formal challenge/duel under agreed terms",
+          "Political compromise framed as ‘protecting the empire’"
+        ]
+      },
+      "TechnologyAndMaterialCulture": {
+        "SignatureItems": [
+          "Bat'leth (traditional blade)",
+          "House crests and banners",
+          "Ceremonial drinking vessels"
+        ],
+        "Notes": "Material culture emphasizes durability, tradition, and symbolic status—especially in arms, clothing, and ritual objects."
+      },
+      "StarfleetInteractions": {
+        "FirstContactTone": "Historically adversarial, later a pragmatic alliance shaped by shifting politics and shared threats.",
+        "CommonMisunderstandings": [
+          "Starfleet procedure and indirect diplomacy can read as evasive",
+          "Different meanings of honor (intent vs outcome vs reputation)",
+          "Misreading ritual bravado as irrationality"
+        ],
+        "BridgeConcepts": [
+          "Competence and courage earn respect",
+          "Clear intent and direct speech reduce escalation",
+          "Acknowledging house standing and personal deeds builds trust"
+        ]
+      },
+      "NotableExamples": [
+        {
+          "OnScreenExample": "An exchange officer learns that Klingon bluntness often masks a strict internal code and expectation of competence.",
+          "WhyItMatters": "Highlights that ‘honor’ is practiced through behavior and responsibility, not just aggression."
+        },
+        {
+          "OnScreenExample": "House politics can force an individual to accept public shame to prevent civil war.",
+          "WhyItMatters": "Shows honor as law and social control, with real costs to families and reputations."
+        },
+        {
+          "OnScreenExample": "Marriage rituals test not only the couple but the willingness of a house to accept an outsider.",
+          "WhyItMatters": "Illustrates how tradition polices identity and preserves house authority."
+        }
+      ],
+      "KeyEpisodesAndFilms": [
+        {
+          "Title": "A Matter of Honor",
+          "Series": "TNG",
+          "Season": 2,
+          "Episode": 8,
+          "Relevance": "Exchange service aboard a Klingon ship; food, etiquette, and competence as respect."
+        },
+        {
+          "Title": "Sins of the Father",
+          "Series": "TNG",
+          "Season": 3,
+          "Episode": 17,
+          "Relevance": "Discommendation, Great House politics, honor as public law."
+        },
+        {
+          "Title": "Rightful Heir",
+          "Series": "TNG",
+          "Season": 6,
+          "Episode": 23,
+          "Relevance": "Faith, legitimacy, and tradition (Kahless) intersecting with politics."
+        },
+        {
+          "Title": "Firstborn",
+          "Series": "TNG",
+          "Season": 7,
+          "Episode": 21,
+          "Relevance": "Rites of ascension and the social expectation of the warrior path."
+        },
+        {
+          "Title": "You Are Cordially Invited",
+          "Series": "DS9",
+          "Season": 6,
+          "Episode": 7,
+          "Relevance": "Klingon wedding customs, Kal'Hyah, and house acceptance."
+        },
+        {
+          "Title": "Day of Honor",
+          "Series": "VOY",
+          "Season": 4,
+          "Episode": 3,
+          "Relevance": "Day of Honor tradition and Klingon identity in a mixed heritage context."
+        }
+      ],
+      "ContinuityAndVariations": [
+        {
+          "Topic": "Honor in practice vs. ideal",
+          "Notes": "Some stories emphasize a principled code; others depict honor as reputation management tied to politics and power."
+        },
+        {
+          "Topic": "House influence across eras",
+          "Notes": "Political structures persist, but the balance between council authority and house rivalry shifts with leadership."
+        },
+        {
+          "Topic": "Outsiders and adoption into houses",
+          "Notes": "Joining a house (by marriage, oath, or sponsorship) can be possible but is often mediated by tests and matriarchal authority."
+        }
+      ],
+      "RelatedEntries": {
+        "People": [
+          "Worf",
+          "Martok",
+          "Gowron",
+          "Kahless"
+        ],
+        "Organizations": [
+          "Klingon High Council",
+          "Klingon Empire"
+        ],
+        "Planets": [
+          "Qo'noS"
+        ],
+        "Species": [
+          "Klingon"
+        ],
+        "Artifacts": [
+          "Bat'leth"
+        ]
+      },
+      "Sources": [],
+      "Meta": {
+        "ImageURL": "",
+        "Tags": [
+          "warrior culture",
+          "honor",
+          "Great Houses",
+          "ritual"
+        ],
+        "SearchTerms": [
+          "Klingon",
+          "Qo'noS",
+          "Klingon Empire",
+          "High Council",
+          "bloodwine",
+          "gagh"
+        ],
+        "LastUpdated": "2025-12-22"
       }
-    ],
-    "Customs": [
-      {
-        "Name": "Ritual challenge",
-        "WhatItIs": "1–2 sentences.",
-        "WhyItMatters": "1 sentence."
-      }
-    ],
-    "EverydayLife": {
-      "FamilyAndSociety": "4–8 sentences (or 1 short paragraph).",
-      "FoodAndDrink": "As much canon-verifiable detail as possible (paragraph-style)."
     },
-    "Relations": {
-      "WithStarfleet": "2–4 sentences.",
-      "CommonMisreads": [
-        "Short phrase",
-        "Short phrase"
-      ]
-    },
-    "KeyAppearances": [
-      {
-        "Title": "Sins of the Father",
-        "Series": "TNG",
-        "Season": 3,
-        "Episode": 17,
-        "WhyRelevant": "1 sentence."
+    {
+      "ID": "cul-vulcan",
+      "Name": "Vulcan",
+      "SpeciesOrPeople": "Vulcan",
+      "Affiliation": [
+        "Vulcan High Command (historical)",
+        "United Federation of Planets"
+      ],
+      "PrimaryHomeworlds": [
+        "Vulcan"
+      ],
+      "Regions": [
+        "Alpha Quadrant"
+      ],
+      "EraNotes": "Modern Vulcan culture is built on Surak’s reforms; practices and institutions shift notably between the pre-Federation and Federation eras.",
+      "Aliases": [
+        "Vulcan Culture",
+        "Vulcan Society"
+      ],
+      "Overview": {
+        "OneLiner": "A disciplined society built around logic, emotional control, and the belief that reasoned conduct prevents self-destruction.",
+        "Summary": [
+          "Vulcan culture centers on logic as a life practice: meditation, restraint, and reasoned dialogue as tools to master intense emotions.",
+          "Surak’s teachings shape identity through ritual, study, and social expectations that prize self-control and clarity over impulse.",
+          "Privacy around intimate matters and a preference for ordered solutions can make Vulcans appear aloof to outsiders, even when acting from genuine care."
+        ]
+      },
+      "CoreValues": [
+        {
+          "Value": "Logic",
+          "WhatItMeans": "Reason as an ethical discipline and a practical method for decision-making.",
+          "HowItShowsUp": [
+            "Meditation",
+            "Careful speech",
+            "Analytical institutions"
+          ]
+        },
+        {
+          "Value": "Emotional Mastery",
+          "WhatItMeans": "Control and channel strong emotions through training rather than denial of feeling.",
+          "HowItShowsUp": [
+            "Ritual practice",
+            "Social restraint",
+            "Private management of crisis states"
+          ]
+        },
+        {
+          "Value": "IDIC",
+          "WhatItMeans": "Infinite Diversity in Infinite Combinations as a framework for tolerance and learning.",
+          "HowItShowsUp": [
+            "Respect for difference",
+            "Scientific curiosity",
+            "Intercultural cooperation (varies by era)"
+          ]
+        }
+      ],
+      "SocialStructure": {
+        "KinshipAndFamilies": "Families can be tightly bonded but are often publicly reserved; marriages and bonds may involve long-standing arrangements.",
+        "Institutions": [
+          "Vulcan Science Academy",
+          "Vulcan High Command (historical)",
+          "Cultural/monastic orders"
+        ],
+        "ClassOrCastes": [
+          "No formal caste system emphasized on screen; social status often correlates with scholarship, service, and lineage."
+        ],
+        "NotableTensions": [
+          "Orthodoxy vs. reform",
+          "Security posture vs. openness to humans (especially in early ENT era)"
+        ]
+      },
+      "CustomsAndEtiquette": {
+        "Communication": [
+          {
+            "Rule": "Precision and understatement are valued.",
+            "Example": "Avoiding exaggeration; stating probabilities and evidence."
+          }
+        ],
+        "Privacy": [
+          {
+            "Rule": "Certain experiences are culturally private.",
+            "Example": "Pon farr matters are treated as confidential and not discussed casually."
+          }
+        ],
+        "Conflict": [
+          {
+            "Rule": "Emotional escalation is discouraged; structured resolution is preferred.",
+            "Example": "Formal negotiation or ritualized mediation rather than shouting matches."
+          }
+        ]
+      },
+      "RitesAndRituals": [
+        {
+          "Name": "Kolinahr",
+          "Type": "Spiritual/Philosophical",
+          "Purpose": "A path aimed at purging all remaining emotion to achieve pure logic.",
+          "Steps": [
+            "Withdrawal",
+            "Meditative discipline",
+            "Formal completion recognition"
+          ],
+          "Variations": "Not all Vulcans pursue it; interpretations differ across schools."
+        },
+        {
+          "Name": "Pon farr",
+          "Type": "Biocultural",
+          "Purpose": "A recurring mating drive managed through private ritual and social norms.",
+          "Steps": [
+            "Return to traditional setting when possible",
+            "Ritual challenge or bonding",
+            "Resolution to prevent harm"
+          ],
+          "Variations": "Handled discreetly; individual cases differ."
+        }
+      ],
+      "ReligionAndPhilosophy": {
+        "CoreBeliefs": [
+          "Surakian logic as cultural foundation"
+        ],
+        "Practices": [
+          "Meditation",
+          "Ritual journeys and trials",
+          "Study and debate"
+        ],
+        "Notes": "Vulcan ‘religion’ often presents as philosophy, but is sustained through ritual and community tradition."
+      },
+      "ArtAndMedia": {
+        "Music": [
+          "Ceremonial chants",
+          "Formal performance traditions (varies by depiction)"
+        ],
+        "Literature": [
+          "Philosophical texts",
+          "Historical teachings tied to Surak"
+        ],
+        "VisualAesthetics": [
+          "Minimalist geometry",
+          "Symbolic artifacts (IDIC)",
+          "Sacred landscapes (Forge, Mount Seleya)"
+        ]
+      },
+      "FoodAndDrink": {
+        "Staples": [
+          "Often portrayed as largely vegetarian",
+          "Teas and traditional beverages"
+        ],
+        "NotableItems": [
+          {
+            "Name": "Plomeek soup",
+            "Type": "Dish",
+            "Context": "A common cultural touchstone in Federation-era depictions."
+          }
+        ],
+        "MealEtiquette": [
+          "Meals are typically quiet, orderly, and conversationally restrained."
+        ]
+      },
+      "DailyLife": {
+        "FamilyLife": [
+          "Deep bonds are present but often expressed indirectly; duty and discipline shape upbringing."
+        ],
+        "WorkAndService": [
+          "Scholarship and service roles are culturally prestigious."
+        ],
+        "Education": [
+          "Rigorous study",
+          "Mental discipline training",
+          "Philosophical grounding in logic"
+        ]
+      },
+      "LawAndJustice": {
+        "JusticeModel": "Order-focused; disputes are expected to be resolved rationally through procedure.",
+        "CommonDisputes": [
+          "Political security vs. openness",
+          "Orthodoxy conflicts",
+          "Individual exceptions to strict norms"
+        ],
+        "ResolutionMechanisms": [
+          "Councils",
+          "Institutional process",
+          "Philosophical mediation"
+        ]
+      },
+      "TechnologyAndMaterialCulture": {
+        "SignatureItems": [
+          "IDIC symbol",
+          "Ceremonial garments and artifacts",
+          "Academic institutions"
+        ],
+        "Notes": "Material culture often emphasizes function, craftsmanship, and symbolic minimalism."
+      },
+      "StarfleetInteractions": {
+        "FirstContactTone": "Cautious mentorship in early encounters; later equals within the Federation.",
+        "CommonMisunderstandings": [
+          "Human informality reads as illogical",
+          "Vulcan restraint reads as coldness"
+        ],
+        "BridgeConcepts": [
+          "Evidence-first dialogue",
+          "Respect for privacy and ritual in sensitive matters"
+        ]
+      },
+      "NotableExamples": [
+        {
+          "OnScreenExample": "Vulcan tradition collides with Starfleet duty during pon farr.",
+          "WhyItMatters": "Shows how private ritual can become a public ethical and medical crisis."
+        }
+      ],
+      "KeyEpisodesAndFilms": [
+        {
+          "Title": "Amok Time",
+          "Series": "TOS",
+          "Season": 2,
+          "Episode": 5,
+          "Relevance": "Introduces major Vulcan cultural concepts including pon farr and ritual challenge."
+        },
+        {
+          "Title": "The Forge",
+          "Series": "ENT",
+          "Season": 4,
+          "Episode": 7,
+          "Relevance": "Surak’s legacy and Vulcan internal politics in the pre-Federation era."
+        }
+      ],
+      "ContinuityAndVariations": [
+        {
+          "Topic": "Emotion vs. suppression",
+          "Notes": "Depictions vary between ‘suppression’ and ‘mastery’; many stories frame logic as disciplined control rather than absence of feeling."
+        },
+        {
+          "Topic": "Institutional posture",
+          "Notes": "ENT-era Vulcan institutions are portrayed as more security-driven and insular than later Federation-era norms."
+        }
+      ],
+      "RelatedEntries": {
+        "People": [
+          "Surak",
+          "Sarek",
+          "Spock",
+          "T'Pol",
+          "T'Pau"
+        ],
+        "Organizations": [
+          "Vulcan Science Academy",
+          "Vulcan High Command"
+        ],
+        "Planets": [
+          "Vulcan"
+        ],
+        "Species": [
+          "Vulcan"
+        ],
+        "Artifacts": [
+          "IDIC symbol"
+        ]
+      },
+      "Sources": [
+        {
+          "Type": "OnScreen",
+          "Citations": [
+            "TOS: Amok Time",
+            "ENT: The Forge"
+          ]
+        },
+        {
+          "Type": "Reference",
+          "Citations": [
+            "Memory Alpha: Vulcan",
+            "Memory Alpha: Vulcan philosophy",
+            "Memory Alpha: Pon farr"
+          ]
+        }
+      ],
+      "Meta": {
+        "ImageURL": "",
+        "Tags": [
+          "Logic",
+          "Surak",
+          "Ritual",
+          "Discipline"
+        ],
+        "SearchTerms": [
+          "IDIC",
+          "Kolinahr",
+          "pon farr",
+          "Vulcan philosophy",
+          "Mount Seleya"
+        ],
+        "LastUpdated": "2025-12-22"
       }
-    ],
-    "RelatedEntries": {
-      "People": [],
-      "Organizations": [],
-      "Planets": [],
-      "Artifacts": []
+    },
+    {
+      "ID": "cul-bajoran",
+      "Name": "Bajoran",
+      "SpeciesOrPeople": "Bajoran",
+      "Affiliation": [
+        "Bajor (Provisional Government)",
+        "Bajoran religious orders"
+      ],
+      "PrimaryHomeworlds": [
+        "Bajor"
+      ],
+      "Regions": [
+        "Alpha Quadrant"
+      ],
+      "EraNotes": "Modern Bajoran identity is heavily shaped by the Cardassian Occupation, resistance memory, and the central role of the Prophets in public life.",
+      "Aliases": [
+        "Bajoran Culture",
+        "The Way of the Prophets (cultural framework)"
+      ],
+      "Overview": {
+        "OneLiner": "A spiritually centered society where faith, identity, and politics intertwine—especially in the long shadow of occupation and liberation.",
+        "Summary": [
+          "Bajoran culture blends everyday life with religious meaning: prayer, symbols, and ceremony are woven into family, governance, and community decisions.",
+          "The pagh (life force) and reverence for the Prophets shape ethics and leadership legitimacy, while the Kai and Vedek Assembly carry both spiritual and political weight.",
+          "Older social structures like the d’jarra caste system remain a historical fault line—relevant when Bajor weighs unity, justice, and Federation membership."
+        ]
+      },
+      "CoreValues": [
+        {
+          "Value": "Faith and Guidance",
+          "WhatItMeans": "Spiritual practice as a lived source of meaning and communal cohesion.",
+          "HowItShowsUp": [
+            "Prayer and blessings",
+            "Pilgrimage and ceremony",
+            "Orb-based revelation experiences"
+          ]
+        },
+        {
+          "Value": "Resilience",
+          "WhatItMeans": "Survival and continuity through oppression, loss, and rebuilding.",
+          "HowItShowsUp": [
+            "Community solidarity",
+            "Resistance memory",
+            "Restoration of culture post-Occupation"
+          ]
+        },
+        {
+          "Value": "Identity and Belonging",
+          "WhatItMeans": "Strong connection to family, tradition, and symbols of faith.",
+          "HowItShowsUp": [
+            "Earrings as personal/cultural symbols",
+            "Family line traditions",
+            "Local customs and festivals"
+          ]
+        }
+      ],
+      "SocialStructure": {
+        "FamilyAndCommunity": "Local community ties and family lineage are important; traditions are often inherited and practiced at home as well as in temple contexts.",
+        "ReligiousLeadership": [
+          "Kai",
+          "Vedeks",
+          "Vedek Assembly"
+        ],
+        "HistoricalCastes": "The d’jarra system historically assigned occupation and social rank by birth; its attempted restoration becomes a flashpoint.",
+        "NotableTensions": [
+          "Secular governance vs. spiritual authority",
+          "Orthodoxy vs. reform",
+          "Justice vs. reconciliation after occupation"
+        ]
+      },
+      "CustomsAndEtiquette": {
+        "Greetings": [
+          {
+            "Rule": "Spiritual gestures can be part of everyday interaction.",
+            "Example": "Seeking a blessing or acknowledging another’s pagh."
+          }
+        ],
+        "Symbols": [
+          {
+            "Rule": "Religious jewelry and tokens carry personal and family meaning.",
+            "Example": "Earrings worn as identity markers and expressions of faith."
+          }
+        ],
+        "Taboos": [
+          {
+            "Rule": "Disrespect toward sacred sites and relics is deeply offensive.",
+            "Example": "Treating Orbs as mere objects rather than holy artifacts."
+          }
+        ]
+      },
+      "RitesAndRituals": [
+        {
+          "Name": "Blessings and Ear-Touch (Pagh Assessment)",
+          "Type": "Spiritual",
+          "Purpose": "To offer guidance, comfort, or discern spiritual strength through customary touch and prayer.",
+          "Steps": [
+            "Invocation",
+            "Gentle ear-touch gesture",
+            "Spoken blessing"
+          ],
+          "Variations": "Varies by cleric and region; may be intimate or ceremonial."
+        },
+        {
+          "Name": "Orb Experience",
+          "Type": "Religious/Experiential",
+          "Purpose": "To seek visions or insight through contact with sacred Orbs of the Prophets.",
+          "Steps": [
+            "Preparation/prayer",
+            "Orb contact",
+            "Vision and interpretation"
+          ],
+          "Variations": "Experiences differ widely; interpretation may be contested."
+        }
+      ],
+      "ReligionAndPhilosophy": {
+        "CoreBeliefs": [
+          "The Prophets as the center of faith",
+          "The Celestial Temple as sacred space"
+        ],
+        "HierarchyAndOrders": [
+          "Kai",
+          "Vedek Assembly",
+          "Monastic roles and temples"
+        ],
+        "Concepts": [
+          "Pagh (life force)",
+          "Orbs (Tears of the Prophets)"
+        ],
+        "Notes": "Religious authority often carries civic influence, especially during political transition and Federation negotiations."
+      },
+      "ArtAndMedia": {
+        "Music": [
+          "Devotional performance traditions (varies by depiction)"
+        ],
+        "Literature": [
+          "Sacred texts and prophecies",
+          "Occupation-era testimony and remembrance"
+        ],
+        "VisualAesthetics": [
+          "Temple design motifs",
+          "Family heirlooms",
+          "Sacred iconography around Orbs and Prophets"
+        ]
+      },
+      "FoodAndDrink": {
+        "Staples": [
+          "Home cooking traditions tied to family and region (varies)"
+        ],
+        "NotableItems": [],
+        "MealEtiquette": [
+          "Meals often serve as communal anchors during rebuilding and family ritual."
+        ]
+      },
+      "DailyLife": {
+        "FamilyLife": [
+          "Extended family and inherited tradition are central; faith is commonly practiced at home."
+        ],
+        "WorkAndService": [
+          "Post-Occupation rebuilding creates a strong ethic of service and restoration."
+        ],
+        "Education": [
+          "Faith-informed worldview is common; debates arise when secular science conflicts with religious interpretation."
+        ]
+      },
+      "LawAndJustice": {
+        "JusticeModel": "A mix of secular governance and strong moral authority from religious leadership.",
+        "CommonDisputes": [
+          "Religious vs. secular teaching",
+          "Post-Occupation justice",
+          "Caste discrimination (d’jarra)"
+        ],
+        "ResolutionMechanisms": [
+          "Civil courts/government",
+          "Religious mediation",
+          "Public discourse through the Kai/Vedeks"
+        ]
+      },
+      "TechnologyAndMaterialCulture": {
+        "SignatureItems": [
+          "Earrings as cultural identifiers",
+          "Orbs as sacred artifacts"
+        ],
+        "Notes": "Material culture is strongly tied to faith symbols and to reclamation of heritage after occupation."
+      },
+      "StarfleetInteractions": {
+        "FirstContactTone": "Cooperative but complicated by differing assumptions about faith and governance.",
+        "CommonMisunderstandings": [
+          "Scientific framing of the wormhole vs. sacred framing of the Celestial Temple"
+        ],
+        "BridgeConcepts": [
+          "Respect for belief systems",
+          "Clear boundaries between teaching, policy, and spiritual authority"
+        ]
+      },
+      "NotableExamples": [
+        {
+          "OnScreenExample": "A conflict erupts when secular education challenges orthodox interpretation of a sacred phenomenon.",
+          "WhyItMatters": "Shows how faith, policy, and identity can collide in daily life."
+        }
+      ],
+      "KeyEpisodesAndFilms": [
+        {
+          "Title": "Emissary",
+          "Series": "DS9",
+          "Season": 1,
+          "Episode": 1,
+          "Relevance": "Introduces the Emissary role, pagh concept, and the intertwining of faith and politics."
+        },
+        {
+          "Title": "In the Hands of the Prophets",
+          "Series": "DS9",
+          "Season": 1,
+          "Episode": 20,
+          "Relevance": "Religious orthodoxy vs. secular teaching; political impact of spiritual authority."
+        },
+        {
+          "Title": "Accession",
+          "Series": "DS9",
+          "Season": 4,
+          "Episode": 17,
+          "Relevance": "D’jarra caste system conflict and Federation membership implications."
+        }
+      ],
+      "ContinuityAndVariations": [
+        {
+          "Topic": "Faith as literal vs. interpretive",
+          "Notes": "Some stories treat religious phenomena as direct divine intervention; others emphasize interpretation and political consequences."
+        },
+        {
+          "Topic": "D’jarra memory",
+          "Notes": "Caste is both historical structure and modern warning, resurfacing during political transition."
+        }
+      ],
+      "RelatedEntries": {
+        "People": [
+          "Kira Nerys",
+          "Kai Opaka",
+          "Kai Winn",
+          "Benjamin Sisko"
+        ],
+        "Organizations": [
+          "Vedek Assembly"
+        ],
+        "Planets": [
+          "Bajor"
+        ],
+        "Species": [
+          "Bajoran"
+        ],
+        "Artifacts": [
+          "Orbs of the Prophets"
+        ]
+      },
+      "Sources": [
+        {
+          "Type": "OnScreen",
+          "Citations": [
+            "DS9: Emissary",
+            "DS9: In the Hands of the Prophets",
+            "DS9: Accession"
+          ]
+        },
+        {
+          "Type": "Reference",
+          "Citations": [
+            "Memory Alpha: Bajoran religion",
+            "Memory Alpha: Pagh",
+            "Memory Alpha: D'jarra",
+            "Memory Alpha: Vedek Assembly",
+            "Memory Alpha: Kai",
+            "Memory Alpha: Orb"
+          ]
+        }
+      ],
+      "Meta": {
+        "ImageURL": "",
+        "Tags": [
+          "Faith",
+          "Identity",
+          "Occupation",
+          "Prophets"
+        ],
+        "SearchTerms": [
+          "pagh",
+          "Celestial Temple",
+          "Orbs",
+          "Vedek",
+          "Kai",
+          "d'jarra"
+        ],
+        "LastUpdated": "2025-12-22"
+      }
+    },
+    {
+      "ID": "cul-ferengi",
+      "Name": "Ferengi",
+      "SpeciesOrPeople": "Ferengi",
+      "Affiliation": [
+        "Ferengi Alliance"
+      ],
+      "PrimaryHomeworlds": [
+        "Ferenginar"
+      ],
+      "Regions": [
+        "Alpha Quadrant"
+      ],
+      "EraNotes": "Ferengi society is depicted as profit-driven and rule-bound, with notable reforms in the late 2370s affecting gender rights and labor norms.",
+      "Aliases": [
+        "Ferengi Culture",
+        "Ferengi Society"
+      ],
+      "Overview": {
+        "OneLiner": "A commerce-first society where profit is moral language and the Rules of Acquisition shape ethics, status, and identity.",
+        "Summary": [
+          "Ferengi culture frames commerce as both livelihood and worldview: negotiation is social skill, contracts are sacred, and status is measured in influence and acquisition.",
+          "The Rules of Acquisition act as a shared canon of sayings that justify behavior and set expectations for how deals should be pursued and defended.",
+          "Late-24th-century reforms—driven by political shifts and internal activism—challenge long-standing restrictions, especially around women’s rights and labor protections."
+        ]
+      },
+      "CoreValues": [
+        {
+          "Value": "Profit",
+          "WhatItMeans": "The ultimate measure of success and a key justification for choices.",
+          "HowItShowsUp": [
+            "Business-first decision-making",
+            "Status through wealth",
+            "Competitive entrepreneurship"
+          ]
+        },
+        {
+          "Value": "Deal-Making",
+          "WhatItMeans": "Negotiation as a cultural art; leverage and timing as virtues.",
+          "HowItShowsUp": [
+            "Bargaining rituals",
+            "Contract language",
+            "Strategic alliances"
+          ]
+        },
+        {
+          "Value": "Pragmatism",
+          "WhatItMeans": "Flexibility in means to achieve advantage, within the culture’s accepted boundaries.",
+          "HowItShowsUp": [
+            "Opportunistic partnerships",
+            "Risk assessment",
+            "Adapting rules to circumstances"
+          ]
+        }
+      ],
+      "SocialStructure": {
+        "GovernmentAndLeadership": "The Ferengi Alliance is overseen by the Grand Nagus; law and commerce are closely linked.",
+        "Institutions": [
+          "Tower of Commerce (seat of Nagus)",
+          "Ferengi Commerce Authority (FCA)"
+        ],
+        "StatusMarkers": [
+          "Wealth",
+          "Business network reach",
+          "Reputation for shrewdness"
+        ],
+        "NotableTensions": [
+          "Traditional restrictions vs. reform",
+          "Profit vs. social stability",
+          "Public moralizing vs. private exploitation"
+        ]
+      },
+      "CustomsAndEtiquette": {
+        "Greetings": [
+          {
+            "Rule": "Business framing is common even in personal exchanges.",
+            "Example": "Opening conversations by establishing terms, value, or advantage."
+          }
+        ],
+        "Taboos": [
+          {
+            "Rule": "Breaking a deal is socially corrosive unless justified as outplayed strategy.",
+            "Example": "Reneging without leverage or legal cover invites retaliation."
+          }
+        ],
+        "Hospitality": [
+          {
+            "Rule": "Hospitality can be transactional.",
+            "Example": "Favors and gifts imply future obligations."
+          }
+        ]
+      },
+      "RitesAndRituals": [
+        {
+          "Name": "Rule Invocation",
+          "Type": "Social/Legal",
+          "Purpose": "To frame decisions as culturally legitimate by quoting the Rules of Acquisition.",
+          "Steps": [
+            "Select a relevant rule",
+            "Apply it to the situation",
+            "Use it to justify or pressure agreement"
+          ],
+          "Variations": "Some use rules sincerely; others use them performatively."
+        }
+      ],
+      "ReligionAndPhilosophy": {
+        "CoreBeliefs": [
+          "Commerce as virtue",
+          "Acquisition as moral success"
+        ],
+        "Practices": [
+          "Rule-quoting as ethical language",
+          "Market-like social relationships"
+        ],
+        "Notes": "Belief is often expressed as cultural doctrine rather than formal religion."
+      },
+      "ArtAndMedia": {
+        "Music": [
+          "Less emphasized on screen; comedy and satire often carry cultural commentary in Ferengi stories."
+        ],
+        "Literature": [
+          "Rules and economic doctrine",
+          "Business case narratives (implied)"
+        ],
+        "VisualAesthetics": [
+          "Commerce iconography",
+          "Bars/marketplaces as social hubs",
+          "Status displays through possessions"
+        ]
+      },
+      "FoodAndDrink": {
+        "Staples": [
+          "Snacks and beverages tied to social bargaining spaces (often bars/markets)"
+        ],
+        "NotableItems": [],
+        "MealEtiquette": [
+          "Meals and drinks often serve negotiation and relationship management."
+        ]
+      },
+      "DailyLife": {
+        "FamilyLife": [
+          "Families often function as business units; loyalty and profit can intertwine."
+        ],
+        "WorkAndService": [
+          "Entrepreneurship is culturally prized; wage labor is often framed as subordinate."
+        ],
+        "Education": [
+          "Commercial skills and rule literacy are culturally useful; mentorship through practice is common."
+        ]
+      },
+      "LawAndJustice": {
+        "JusticeModel": "Commercial legality and enforcement culture; disputes revolve around contracts, fraud, and profit impact.",
+        "CommonDisputes": [
+          "Contract conflicts",
+          "Fraud and bribery",
+          "Regulatory enforcement by authorities like the FCA"
+        ],
+        "ResolutionMechanisms": [
+          "Regulatory action",
+          "Financial penalties",
+          "Power leverage and negotiated settlements"
+        ]
+      },
+      "TechnologyAndMaterialCulture": {
+        "SignatureItems": [
+          "Rules of Acquisition",
+          "Commercial instruments and ledgers (contextual)"
+        ],
+        "Notes": "Material culture is often a visible ledger of success—things are meant to signal leverage and prosperity."
+      },
+      "StarfleetInteractions": {
+        "FirstContactTone": "Wary pragmatism; Ferengi test boundaries for advantage, while Starfleet pushes ethical constraints.",
+        "CommonMisunderstandings": [
+          "Federation altruism reads as naive",
+          "Ferengi bargaining reads as predatory"
+        ],
+        "BridgeConcepts": [
+          "Clear contracts and boundaries",
+          "Mutual benefit framing"
+        ]
+      },
+      "NotableExamples": [
+        {
+          "OnScreenExample": "Labor organization emerges in a Ferengi-run workplace, challenging a traditional employer-centric worldview.",
+          "WhyItMatters": "Shows cultural friction between profit doctrine and worker rights."
+        }
+      ],
+      "KeyEpisodesAndFilms": [
+        {
+          "Title": "The Nagus",
+          "Series": "DS9",
+          "Season": 1,
+          "Episode": 10,
+          "Relevance": "Power of the Grand Nagus and the political theater of commerce."
+        },
+        {
+          "Title": "Bar Association",
+          "Series": "DS9",
+          "Season": 4,
+          "Episode": 16,
+          "Relevance": "Labor rights conflict within a profit-first culture."
+        },
+        {
+          "Title": "Profit and Lace",
+          "Series": "DS9",
+          "Season": 6,
+          "Episode": 23,
+          "Relevance": "Political turbulence around reforms affecting Ferengi women and clothing rights."
+        }
+      ],
+      "ContinuityAndVariations": [
+        {
+          "Topic": "Rules as ethics vs. satire",
+          "Notes": "Stories sometimes treat the Rules as serious doctrine, sometimes as cultural satire exposing hypocrisy."
+        },
+        {
+          "Topic": "Reform trajectory",
+          "Notes": "Late-2370s reforms complicate earlier depictions of rigid restrictions, especially around gender and social welfare."
+        }
+      ],
+      "RelatedEntries": {
+        "People": [
+          "Quark",
+          "Rom",
+          "Nog",
+          "Ishka",
+          "Zek"
+        ],
+        "Organizations": [
+          "Ferengi Alliance",
+          "FCA"
+        ],
+        "Planets": [
+          "Ferenginar"
+        ],
+        "Species": [
+          "Ferengi"
+        ],
+        "Artifacts": [
+          "Rules of Acquisition"
+        ]
+      },
+      "Sources": [
+        {
+          "Type": "OnScreen",
+          "Citations": [
+            "DS9: The Nagus",
+            "DS9: Bar Association",
+            "DS9: Profit and Lace"
+          ]
+        },
+        {
+          "Type": "Reference",
+          "Citations": [
+            "Memory Alpha: Ferengi Alliance",
+            "Memory Alpha: Grand Nagus",
+            "Memory Alpha: Rules of Acquisition",
+            "Memory Alpha: Ferengi Bill of Opportunities",
+            "Memory Alpha: Ishka"
+          ]
+        }
+      ],
+      "Meta": {
+        "ImageURL": "",
+        "Tags": [
+          "Profit",
+          "Rules of Acquisition",
+          "Commerce",
+          "Reform"
+        ],
+        "SearchTerms": [
+          "Grand Nagus",
+          "FCA",
+          "Ferengi Alliance",
+          "Bill of Opportunities",
+          "Rules of Acquisition"
+        ],
+        "LastUpdated": "2025-12-22"
+      }
+    },
+    {
+      "ID": "cul-cardassian",
+      "Name": "Cardassian",
+      "SpeciesOrPeople": "Cardassian",
+      "Affiliation": [
+        "Cardassian Union"
+      ],
+      "PrimaryHomeworlds": [
+        "Cardassia Prime"
+      ],
+      "Regions": [
+        "Alpha Quadrant"
+      ],
+      "EraNotes": "Cardassian society is depicted as state-centric and duty-bound, with family loyalty and cultural pride coexisting alongside surveillance and authoritarian institutions.",
+      "Aliases": [
+        "Cardassian Culture",
+        "Cardassian Society"
+      ],
+      "Overview": {
+        "OneLiner": "A family-and-duty culture where the state is glorified, order is prioritized, and public spectacle reinforces obedience.",
+        "Summary": [
+          "Cardassian identity often merges personal obligation with civic ideology: family bonds are intense, but the state claims moral primacy and expects conformity.",
+          "Arts—especially literature and visual work—carry cultural prestige and frequently reflect themes of duty, sacrifice, and the righteousness of order.",
+          "Institutions like Central Command and the Obsidian Order exemplify an environment of surveillance and control, shaping how citizens speak, trust, and dissent."
+        ]
+      },
+      "CoreValues": [
+        {
+          "Value": "Duty",
+          "WhatItMeans": "Obligation to family and state, expressed as service and endurance.",
+          "HowItShowsUp": [
+            "Militarized social norms",
+            "Sacrifice rhetoric",
+            "Obedience framed as virtue"
+          ]
+        },
+        {
+          "Value": "Family Loyalty",
+          "WhatItMeans": "Strong devotion to kin and lineage, often treated as sacred.",
+          "HowItShowsUp": [
+            "Protecting family honor",
+            "Raising children for service",
+            "Household hierarchy"
+          ]
+        },
+        {
+          "Value": "Order",
+          "WhatItMeans": "Stability prioritized over individual liberty; dissent framed as threat.",
+          "HowItShowsUp": [
+            "Security institutions",
+            "Ritualized justice",
+            "Public messaging and spectacle"
+          ]
+        }
+      ],
+      "SocialStructure": {
+        "GovernmentAndPower": "Civil and military authority intertwine; Central Command and intelligence services exert strong influence.",
+        "Institutions": [
+          "Central Command",
+          "Obsidian Order",
+          "Civil councils (varies by era/depiction)"
+        ],
+        "StatusMarkers": [
+          "Service record",
+          "Political connections",
+          "Cultural achievement in arts"
+        ],
+        "NotableTensions": [
+          "State ideology vs. private morality",
+          "Family love vs. political risk",
+          "Reform vs. entrenched security power"
+        ]
+      },
+      "CustomsAndEtiquette": {
+        "Communication": [
+          {
+            "Rule": "Speech is often guarded; subtext matters in an environment of surveillance.",
+            "Example": "Careful phrasing around political topics in mixed company."
+          }
+        ],
+        "HonorAndShame": [
+          {
+            "Rule": "Family standing is socially consequential.",
+            "Example": "Actions that endanger family reputation can trigger ostracism."
+          }
+        ]
+      },
+      "RitesAndRituals": [
+        {
+          "Name": "Public Trial Theater",
+          "Type": "Legal/Political",
+          "Purpose": "To demonstrate state power and the ‘futility’ of opposition through spectacle.",
+          "Steps": [
+            "Preframed narrative of guilt",
+            "Public presentation of evidence as performance",
+            "Counsel pressures confession and acceptance"
+          ],
+          "Variations": "Severity and staging vary with political need."
+        }
+      ],
+      "ReligionAndPhilosophy": {
+        "CoreBeliefs": [
+          "State legitimacy as moral foundation (civic ideology)"
+        ],
+        "Practices": [
+          "Ceremony around duty and service",
+          "Public narratives of sacrifice"
+        ],
+        "Notes": "Cardassian ‘philosophy’ is often expressed through civic doctrine rather than explicit religious structure."
+      },
+      "ArtAndMedia": {
+        "Music": [
+          "Less emphasized; literature and visual arts are foregrounded."
+        ],
+        "Literature": [
+          "Prestige literature reflecting family, duty, and state ideology"
+        ],
+        "VisualAesthetics": [
+          "Stark monumental architecture",
+          "Military iconography",
+          "Cultural pride in craftsmanship"
+        ]
+      },
+      "FoodAndDrink": {
+        "Staples": [],
+        "NotableItems": [],
+        "MealEtiquette": [
+          "Meals can be familial anchors; conversations may avoid politically dangerous topics."
+        ]
+      },
+      "DailyLife": {
+        "FamilyLife": [
+          "Families are close-knit and status-conscious; children may be raised with expectations of service."
+        ],
+        "WorkAndService": [
+          "Military and state service are culturally reinforced; bureaucracy and surveillance shape civic life."
+        ],
+        "Education": [
+          "Rote learning and discipline are commonly implied; loyalty and conformity are rewarded."
+        ]
+      },
+      "LawAndJustice": {
+        "JusticeModel": "Trials function as spectacle: the goal is reinforcing state order rather than discovering innocence or guilt.",
+        "CommonDisputes": [
+          "Political dissent",
+          "Security accusations",
+          "Crimes framed as threats to order"
+        ],
+        "ResolutionMechanisms": [
+          "Public trial proceedings",
+          "State penalties",
+          "Coercion into confession and compliance"
+        ]
+      },
+      "TechnologyAndMaterialCulture": {
+        "SignatureItems": [
+          "State security infrastructure",
+          "Military material culture"
+        ],
+        "Notes": "Technology is frequently depicted in service of control: surveillance, intelligence, and occupation logistics."
+      },
+      "StarfleetInteractions": {
+        "FirstContactTone": "Geopolitical rivalry; diplomacy often entangled with intelligence maneuvering.",
+        "CommonMisunderstandings": [
+          "Federation legal norms vs. Cardassian spectacle trials",
+          "Human transparency vs. Cardassian guardedness"
+        ],
+        "BridgeConcepts": [
+          "Clear due-process expectations",
+          "Understanding family pressure as leverage point in negotiations"
+        ]
+      },
+      "NotableExamples": [
+        {
+          "OnScreenExample": "A Cardassian trial is staged with the verdict assumed, and counsel focuses on persuading the accused to accept state ‘wisdom.’",
+          "WhyItMatters": "Clarifies how law is used as propaganda and social control."
+        }
+      ],
+      "KeyEpisodesAndFilms": [
+        {
+          "Title": "Tribunal",
+          "Series": "DS9",
+          "Season": 2,
+          "Episode": 25,
+          "Relevance": "Cardassian justice as predetermined spectacle."
+        },
+        {
+          "Title": "Duet",
+          "Series": "DS9",
+          "Season": 1,
+          "Episode": 19,
+          "Relevance": "Occupation guilt, personal conscience vs. collective identity."
+        },
+        {
+          "Title": "Cardassians",
+          "Series": "DS9",
+          "Season": 2,
+          "Episode": 5,
+          "Relevance": "Family status norms and the social consequences of orphanhood."
+        }
+      ],
+      "ContinuityAndVariations": [
+        {
+          "Topic": "Family warmth vs. authoritarian state",
+          "Notes": "Stories often highlight genuine familial devotion alongside systemic cruelty and surveillance."
+        },
+        {
+          "Topic": "Institutional power balance",
+          "Notes": "The relative dominance of civilian councils, Central Command, and intelligence services shifts across political eras."
+        }
+      ],
+      "RelatedEntries": {
+        "People": [
+          "Elim Garak",
+          "Gul Dukat",
+          "Enabran Tain"
+        ],
+        "Organizations": [
+          "Cardassian Union",
+          "Central Command",
+          "Obsidian Order"
+        ],
+        "Planets": [
+          "Cardassia Prime"
+        ],
+        "Species": [
+          "Cardassian"
+        ],
+        "Artifacts": []
+      },
+      "Sources": [
+        {
+          "Type": "OnScreen",
+          "Citations": [
+            "DS9: Tribunal",
+            "DS9: Duet",
+            "DS9: Cardassians"
+          ]
+        },
+        {
+          "Type": "Reference",
+          "Citations": [
+            "Memory Alpha: Cardassian",
+            "Memory Alpha: Cardassian law",
+            "Memory Alpha: Central Command",
+            "Memory Alpha: Obsidian Order"
+          ]
+        }
+      ],
+      "Meta": {
+        "ImageURL": "",
+        "Tags": [
+          "Duty",
+          "Family",
+          "State Control",
+          "Surveillance"
+        ],
+        "SearchTerms": [
+          "Central Command",
+          "Obsidian Order",
+          "Cardassian law",
+          "trial spectacle",
+          "occupation"
+        ],
+        "LastUpdated": "2025-12-22"
+      }
+    },
+    {
+      "ID": "cul-romulan",
+      "Name": "Romulan",
+      "SpeciesOrPeople": "Romulan",
+      "Affiliation": [
+        "Romulan Star Empire (historical)"
+      ],
+      "PrimaryHomeworlds": [
+        "Romulus"
+      ],
+      "Regions": [
+        "Beta Quadrant"
+      ],
+      "EraNotes": "Romulan identity emphasizes loyalty to state, secrecy, and strategic patience, shaped by origins as Vulcan emigrants rejecting Surak’s reforms.",
+      "Aliases": [
+        "Romulan Culture",
+        "Romulan Society"
+      ],
+      "Overview": {
+        "OneLiner": "A strategic, secrecy-minded society where loyalty to the state, controlled honor, and intelligence politics define public life.",
+        "Summary": [
+          "Romulan culture is often portrayed through the lens of statecraft: information control, layered deception, and long-term strategy are treated as virtues rather than moral compromises.",
+          "While biologically related to Vulcans, Romulans rejected Surak’s reforms, and their political identity forms around unity through strength and loyalty to the nation.",
+          "Institutions like the Tal Shiar reflect a worldview where stability requires vigilance, and personal relationships can become instruments of policy."
+        ]
+      },
+      "CoreValues": [
+        {
+          "Value": "Loyalty to State",
+          "WhatItMeans": "Duty to the nation above individual preference.",
+          "HowItShowsUp": [
+            "Military discipline",
+            "Civil conformity under pressure",
+            "Hero narratives of sacrifice"
+          ]
+        },
+        {
+          "Value": "Secrecy and Control",
+          "WhatItMeans": "Information as the decisive strategic resource.",
+          "HowItShowsUp": [
+            "Compartmentalization",
+            "Operational deception",
+            "Guarded diplomacy"
+          ]
+        },
+        {
+          "Value": "Honor Through Service",
+          "WhatItMeans": "Glory is tied to serving the empire, even at great personal cost.",
+          "HowItShowsUp": [
+            "Martyr narratives",
+            "Military pride",
+            "Nationalistic rhetoric"
+          ]
+        }
+      ],
+      "SocialStructure": {
+        "GovernmentAndPower": "Public governance is opaque in many depictions; military and intelligence institutions exert strong influence.",
+        "Institutions": [
+          "Tal Shiar",
+          "Military command structures (varies by era)"
+        ],
+        "StatusMarkers": [
+          "Service reputation",
+          "Political trustworthiness",
+          "Strategic competence"
+        ],
+        "NotableTensions": [
+          "Paranoia vs. trust",
+          "National unity vs. internal purges",
+          "Honor vs. expedient deception"
+        ]
+      },
+      "CustomsAndEtiquette": {
+        "Communication": [
+          {
+            "Rule": "Indirectness can be strategic rather than evasive.",
+            "Example": "Testing interlocutors with partial truths and observing reactions."
+          }
+        ],
+        "Hospitality": [
+          {
+            "Rule": "Hospitality may be performative and information-seeking.",
+            "Example": "Social invitations used to measure loyalties."
+          }
+        ],
+        "Taboos": [
+          {
+            "Rule": "Disloyalty is treated as existential threat.",
+            "Example": "Association with enemies or dissent can provoke severe consequences."
+          }
+        ]
+      },
+      "RitesAndRituals": [
+        {
+          "Name": "Oath of Service (state-centered)",
+          "Type": "Civic/Military",
+          "Purpose": "To bind identity to the empire and formalize duty.",
+          "Steps": [
+            "Oath",
+            "Witnessing authority",
+            "Assignment to service"
+          ],
+          "Variations": "Ceremony differs by branch and era."
+        }
+      ],
+      "ReligionAndPhilosophy": {
+        "CoreBeliefs": [
+          "National duty as moral foundation",
+          "Glory through service and sacrifice"
+        ],
+        "Practices": [
+          "Commemorations of service",
+          "Institutional loyalty rituals"
+        ],
+        "Notes": "Romulan ‘philosophy’ is often portrayed as civic ideology bound to empire and survival."
+      },
+      "ArtAndMedia": {
+        "Music": [
+          "Less emphasized on screen; rhetoric, ceremony, and symbols are prominent."
+        ],
+        "Literature": [
+          "State histories and political doctrine (implied)"
+        ],
+        "VisualAesthetics": [
+          "Imperial symbols",
+          "Military formality",
+          "Architecture and design favoring imposing presence"
+        ]
+      },
+      "FoodAndDrink": {
+        "Staples": [],
+        "NotableItems": [],
+        "MealEtiquette": [
+          "Meals can serve as controlled social theater; discussion may be carefully managed."
+        ]
+      },
+      "DailyLife": {
+        "FamilyLife": [
+          "Family bonds exist but can be constrained by state demands and security culture."
+        ],
+        "WorkAndService": [
+          "Service is culturally valorized; secrecy shapes workplace norms."
+        ],
+        "Education": [
+          "Strategic thinking and discipline are prized; socialization encourages caution and loyalty."
+        ]
+      },
+      "LawAndJustice": {
+        "JusticeModel": "Security-first; law often serves state stability and loyalty enforcement.",
+        "CommonDisputes": [
+          "Treason accusations",
+          "Security violations",
+          "Factional power struggles"
+        ],
+        "ResolutionMechanisms": [
+          "Intelligence enforcement",
+          "State tribunals (varies)",
+          "Political containment"
+        ]
+      },
+      "TechnologyAndMaterialCulture": {
+        "SignatureItems": [
+          "Intelligence infrastructure",
+          "State and military insignia"
+        ],
+        "Notes": "Technology is frequently depicted as serving strategic advantage—cloaking, intelligence, and controlled force."
+      },
+      "StarfleetInteractions": {
+        "FirstContactTone": "Adversarial strategic rivalry; diplomacy frequently doubles as intelligence contest.",
+        "CommonMisunderstandings": [
+          "Federation openness reads as exploitable",
+          "Romulan secrecy reads as inherent hostility"
+        ],
+        "BridgeConcepts": [
+          "Credible deterrence",
+          "Clear red lines",
+          "Understanding that saving face and preserving dignity can enable de-escalation"
+        ]
+      },
+      "NotableExamples": [
+        {
+          "OnScreenExample": "A defector narrative exposes the internal costs of loyalty and the fear of the secret police.",
+          "WhyItMatters": "Shows how secrecy-based governance shapes personal life and moral choice."
+        }
+      ],
+      "KeyEpisodesAndFilms": [
+        {
+          "Title": "Balance of Terror",
+          "Series": "TOS",
+          "Season": 1,
+          "Episode": 14,
+          "Relevance": "Early portrayal of Romulan statecraft, honor, and the war-by-proxy nature of confrontation."
+        },
+        {
+          "Title": "The Enemy",
+          "Series": "TNG",
+          "Season": 3,
+          "Episode": 7,
+          "Relevance": "Romulan ‘path to glory’ framing of honor through service."
+        },
+        {
+          "Title": "The Defector",
+          "Series": "TNG",
+          "Season": 3,
+          "Episode": 10,
+          "Relevance": "Defection, deception, and the cost of loyalty."
+        }
+      ],
+      "ContinuityAndVariations": [
+        {
+          "Topic": "Honor vs. deception",
+          "Notes": "Romulans are often portrayed as deceptive, yet they also articulate honor as loyalty and sacrifice for the state."
+        },
+        {
+          "Topic": "Institutional visibility",
+          "Notes": "Some eras portray secrecy as near-total; others show more overt, formal diplomacy—both framed as strategic choice."
+        }
+      ],
+      "RelatedEntries": {
+        "People": [],
+        "Organizations": [
+          "Tal Shiar",
+          "Romulan Star Empire"
+        ],
+        "Planets": [
+          "Romulus"
+        ],
+        "Species": [
+          "Romulan"
+        ],
+        "Artifacts": []
+      },
+      "Sources": [
+        {
+          "Type": "OnScreen",
+          "Citations": [
+            "TOS: Balance of Terror",
+            "TNG: The Enemy",
+            "TNG: The Defector"
+          ]
+        },
+        {
+          "Type": "Reference",
+          "Citations": [
+            "Memory Alpha: Romulan",
+            "Memory Alpha: Romulan history",
+            "Memory Alpha: Romulan philosophy",
+            "Memory Alpha: Tal Shiar"
+          ]
+        }
+      ],
+      "Meta": {
+        "ImageURL": "",
+        "Tags": [
+          "Secrecy",
+          "State Loyalty",
+          "Strategy",
+          "Intelligence"
+        ],
+        "SearchTerms": [
+          "Tal Shiar",
+          "Romulan philosophy",
+          "path to glory",
+          "Romulan history"
+        ],
+        "LastUpdated": "2025-12-22"
+      }
+    },
+    {
+      "ID": "cul-andorian",
+      "Name": "Andorian",
+      "SpeciesOrPeople": "Andorian",
+      "Affiliation": [
+        "Andoria (pre-Federation)",
+        "United Federation of Planets (founding member)"
+      ],
+      "PrimaryHomeworlds": [
+        "Andoria"
+      ],
+      "Regions": [
+        "Alpha Quadrant"
+      ],
+      "EraNotes": "Andorian culture is strongly clan-identified and tradition-bound, with formal honor codes like the Ushaan shaping dispute resolution.",
+      "Aliases": [
+        "Andorian Culture",
+        "Among the Clans (popular framing)"
+      ],
+      "Overview": {
+        "OneLiner": "A clan-centered society where identity, family continuation, and formal honor codes shape politics and personal conduct.",
+        "Summary": [
+          "Andorian culture places strong emphasis on clan identity and continuity—marriage, children, and lineage often appear as civic and personal anchors.",
+          "Honor disputes can be formalized through the Ushaan, a rule-heavy duel tradition whose complexity allows both escalation and postponement under specific conditions.",
+          "Pre-Federation portrayals highlight suspicion toward outsiders and fierce pride, while later eras emphasize their role as an assertive Federation partner."
+        ]
+      },
+      "CoreValues": [
+        {
+          "Value": "Clan Continuity",
+          "WhatItMeans": "Responsibility to preserve and represent one’s clan line.",
+          "HowItShowsUp": [
+            "Marriage and children as duty",
+            "Clan-based alliances",
+            "Reputation tied to lineage"
+          ]
+        },
+        {
+          "Value": "Honor Codes",
+          "WhatItMeans": "Structured traditions for settling grievances and proving legitimacy.",
+          "HowItShowsUp": [
+            "Ushaan challenges",
+            "Rule-bound dueling protocol",
+            "Formal reconciliation conditions"
+          ]
+        },
+        {
+          "Value": "Pride and Candor",
+          "WhatItMeans": "Blunt self-assertion and directness as cultural norm.",
+          "HowItShowsUp": [
+            "Straight talk",
+            "Public confrontation",
+            "Strong boundary-setting with outsiders"
+          ]
+        }
+      ],
+      "SocialStructure": {
+        "Clans": "Clans serve as key social units and identity markers; clan obligations can drive personal decisions.",
+        "Institutions": [
+          "Andorian government structures (varies by era depiction)",
+          "Military service traditions (implied)"
+        ],
+        "StatusMarkers": [
+          "Clan standing",
+          "Service reputation",
+          "Honor-code credibility"
+        ],
+        "NotableTensions": [
+          "Tradition vs. political necessity",
+          "Honor escalation vs. community stability"
+        ]
+      },
+      "CustomsAndEtiquette": {
+        "Communication": [
+          {
+            "Rule": "Directness is common; euphemism can be read as evasive.",
+            "Example": "Addressing conflict openly rather than indirectly."
+          }
+        ],
+        "Conflict": [
+          {
+            "Rule": "Formal dispute pathways exist and carry legitimacy.",
+            "Example": "Invoking the Ushaan rather than informal retaliation."
+          }
+        ]
+      },
+      "RitesAndRituals": [
+        {
+          "Name": "Ushaan Duel",
+          "Type": "Honor/Legal",
+          "Purpose": "To resolve disputes through a codified, tradition-bound duel system.",
+          "Steps": [
+            "Challenge",
+            "Agreement to terms",
+            "Tethered combat with ushaan-tor",
+            "Conclusion via defeat/death/authorized stoppage"
+          ],
+          "Variations": "The Code of the Ushaan contains extensive amendments; some allow postponement under defined conditions."
+        }
+      ],
+      "ReligionAndPhilosophy": {
+        "CoreBeliefs": [],
+        "Practices": [],
+        "Notes": "On-screen material emphasizes tradition, clan, and honor codes more than formal religion."
+      },
+      "ArtAndMedia": {
+        "Music": [],
+        "Literature": [],
+        "VisualAesthetics": [
+          "Ice-world identity markers",
+          "Clan symbolism (implied)",
+          "Ceremonial weapons/tools in honor contexts"
+        ]
+      },
+      "FoodAndDrink": {
+        "Staples": [],
+        "NotableItems": [],
+        "MealEtiquette": [
+          "Meals and gatherings can reinforce clan bonds and obligations."
+        ]
+      },
+      "DailyLife": {
+        "FamilyLife": [
+          "Clan affiliation and family continuation can have explicit social and legal importance."
+        ],
+        "WorkAndService": [
+          "Service roles are culturally valorized; pride and duty are common themes."
+        ],
+        "Education": [
+          "Tradition literacy (honor codes) and clan history are socially relevant."
+        ]
+      },
+      "LawAndJustice": {
+        "JusticeModel": "Tradition-weighted dispute resolution with formal honor-code mechanisms.",
+        "CommonDisputes": [
+          "Clan grievances",
+          "Honor accusations",
+          "Substitution and postponement disputes under the code"
+        ],
+        "ResolutionMechanisms": [
+          "Ushaan invocation",
+          "Negotiated settlement under rules",
+          "Institutional adjudication (varies)"
+        ]
+      },
+      "TechnologyAndMaterialCulture": {
+        "SignatureItems": [
+          "Ushaan-tor (ice miner’s tool used in duels)",
+          "Tethered duel apparatus"
+        ],
+        "Notes": "Key cultural items often originate as practical tools elevated into ceremonial roles."
+      },
+      "StarfleetInteractions": {
+        "FirstContactTone": "Pre-Federation suspicion and strategic pride; later confident Federation partnership.",
+        "CommonMisunderstandings": [
+          "Honor-code seriousness",
+          "Directness perceived as hostility"
+        ],
+        "BridgeConcepts": [
+          "Respect clan obligations",
+          "Use formal resolution pathways when disputes escalate"
+        ]
+      },
+      "NotableExamples": [
+        {
+          "OnScreenExample": "A duel code’s many amendments allow postponement tied to clan continuation concerns.",
+          "WhyItMatters": "Shows how tradition balances honor with social continuity."
+        }
+      ],
+      "KeyEpisodesAndFilms": [
+        {
+          "Title": "United",
+          "Series": "ENT",
+          "Season": 4,
+          "Episode": 13,
+          "Relevance": "References rules around postponing Ushaan tied to marriage/children and clan continuation."
+        }
+      ],
+      "ContinuityAndVariations": [
+        {
+          "Topic": "Sourcebook influence",
+          "Notes": "Some detailed Andorian worldbuilding was adopted from licensed RPG material and then echoed in on-screen depiction."
+        }
+      ],
+      "RelatedEntries": {
+        "People": [
+          "Shran"
+        ],
+        "Organizations": [],
+        "Planets": [
+          "Andoria"
+        ],
+        "Species": [
+          "Andorian"
+        ],
+        "Artifacts": [
+          "Ushaan-tor"
+        ]
+      },
+      "Sources": [
+        {
+          "Type": "OnScreen",
+          "Citations": [
+            "ENT: United"
+          ]
+        },
+        {
+          "Type": "Reference",
+          "Citations": [
+            "Memory Alpha: Ushaan",
+            "Memory Alpha: Code of the Ushaan",
+            "Memory Alpha: Andorian",
+            "Memory Alpha: Clan"
+          ]
+        }
+      ],
+      "Meta": {
+        "ImageURL": "",
+        "Tags": [
+          "Clans",
+          "Honor Code",
+          "Ushaan",
+          "Tradition"
+        ],
+        "SearchTerms": [
+          "Ushaan",
+          "Code of the Ushaan",
+          "clan",
+          "ushaan-tor"
+        ],
+        "LastUpdated": "2025-12-22"
+      }
     }
-  }
-]
+  ]
+}
