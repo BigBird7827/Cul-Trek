@@ -13,9 +13,9 @@
       "Beta Quadrant"
     ],
     "Overview": [
-      "Klingon culture is built around an honor-centered warrior ethos: personal courage, reputation, and the willingness to meet challenge directly are treated as core measures of worth. While the Empire spans many worlds and roles, public life is steeped in martial language and ceremony, from formal challenges to traditions that frame life events as tests of character and resolve.",
-      "Politics and status are tightly intertwined with lineage. Power is commonly expressed through Great Houses and their alliances, and disputes over standing can become matters of law and ritual rather than private grievance. Klingons also preserve long cultural memory through story, song, and performance—drinking songs and operatic tradition sit comfortably beside battlefield legend as ways to keep deeds alive.",
-      "Religion and tradition are not just private belief but social glue. Klingons revere Kahless the Unforgettable as a foundational figure in their history and identity, and many rites emphasize shared risk and shared consequence. Even when Klingons live or serve among non-Klingons, the expectation is often the same: respect is earned through action, and tradition is honored by practicing it."
+      "Klingon culture is built around an honor-centered warrior ethos: courage, reputation, and the willingness to face challenge directly are treated as core measures of worth. Public life is steeped in martial language and ceremony, with formal challenges and ritual often used to resolve disputes or to mark major transitions in status.",
+      "Politics and social standing are closely tied to House identity and the institutions of the Empire, including the Klingon High Council and its Chancellor. Honor is not only personal but social and legal; penalties such as discommendation can publicly strip a person or a House of standing and stain a family name for generations.",
+      "Tradition and belief are also central. Klingons revere Kahless the Unforgettable as a foundational figure in their history and identity, and many rites emphasize shared risk and shared consequence. Even when Klingons live or serve among non-Klingons, they commonly frame respect as something earned through action, and they honor tradition by practicing it."
     ],
     "CoreTraits": [
       {
@@ -34,34 +34,34 @@
     "Customs": [
       {
         "Name": "Discommendation",
-        "WhatItIs": "A formal legal penalty in which an individual or an entire House is ceremonially shunned and stripped of honor, with the stigma extending to family and descendants.",
-        "WhyItMatters": "It shows how seriously Klingons treat public honor and House standing—social identity can be removed in a single sanctioned ritual."
+        "WhatItIs": "A legal penalty in which an individual or an entire Great House is ceremonially shunned and stripped of honor and social standing.",
+        "WhyItMatters": "It demonstrates that Klingon honor is public and enforceable; reputation can be removed by formal judgment, affecting family and descendants."
       },
       {
         "Name": "Klingon tea ceremony",
         "WhatItIs": "A test of courage in which participants share tea brewed from a poisonous plant while reciting poetry to one another.",
-        "WhyItMatters": "It reframes intimacy and trust as shared danger—Klingon tradition treats “facing death together” as a bond."
+        "WhyItMatters": "It frames trust and intimacy as shared danger, expressing the idea that difficult experiences (even death) are best faced together."
       },
       {
-        "Name": "Rite of Ascension (Age of Inclusion)",
-        "WhatItIs": "A coming-of-age rite where a child symbolically becomes a warrior; lighting kor'tova candles represents igniting the warrior’s fire within.",
-        "WhyItMatters": "It marks identity as something earned and affirmed through ritual, not simply reached by age."
+        "Name": "Rite of Ascension",
+        "WhatItIs": "A coming-of-age rite performed when a Klingon child reaches the Age of Inclusion, symbolically becoming a warrior by lighting kor'tova candles.",
+        "WhyItMatters": "It shows that identity is treated as something earned and affirmed through ritual, not simply reached by age."
       },
       {
-        "Name": "Klingon wedding (formal ceremony)",
-        "WhatItIs": "A traditional wedding is a highly ritualized, family-centered event where House approval and adherence to custom matter as much as the couple’s vows.",
-        "WhyItMatters": "Marriage is treated as a union of families and Houses, reinforcing lineage, duty, and communal obligation."
+        "Name": "Klingon wedding",
+        "WhatItIs": "A highly ritualized wedding ceremony in which traditional story and performance accompany the union, often with prominent House involvement.",
+        "WhyItMatters": "Marriage is treated as a union that reinforces lineage and duty, not just a private commitment between two individuals."
       }
     ],
     "EverydayLife": {
-      "FamilyAndSociety": "Klingon society places heavy weight on family reputation, ancestry, and duty to one’s House. Children are expected to learn discipline, courage, and the language of honor early, with many rites and traditions reinforcing the idea that identity is proven through action. Even away from home, Klingons often carry their customs with them—through ritual, poetry, and a readiness to test themselves and others—to ensure their conduct reflects well on their family name.",
-      "FoodAndDrink": "Klingon cuisine is famously intense, often emphasizing strong flavors and, in some dishes, living or freshly prepared ingredients. Well-known foods include gagh (serpent worms, sometimes served live), heart of targ, and other dishes sampled by outsiders trying to acclimate to Klingon life. Among beverages, bloodwine is a widely known staple typically served warm, and warnog is a traditional clear Klingon beer. Blood pie is also part of Klingon cuisine (including rokeg blood pie), and targ itself is an important food animal—its meat and heart are eaten in Klingon dishes."
+      "FamilyAndSociety": "Klingon society places heavy weight on family reputation, ancestry, and duty to one's House. Status is closely connected to public honor, and social disputes can become formal matters of ritual and law. Klingon households preserve tradition through ceremony, story, and song, and family ties often carry political meaning in the Empire's institutions.",
+      "FoodAndDrink": "Klingon cuisine is known for strong flavors and for dishes that can be challenging to outsiders. Well-known foods include gagh (a delicacy made from serpent worms), racht, heart of targ, and dishes such as rokeg blood pie. Among beverages, bloodwine is widely associated with Klingon celebration and is commonly served warm, and warnog is a traditional Klingon beer."
     },
     "Relations": {
-      "WithStarfleet": "Klingon–Federation relations evolved from open hostility to uneasy coexistence and, eventually, formal alliance. Key turning points include peace and reconciliation efforts culminating in treaties such as the Khitomer Accords and the later Treaty of Alliance. Even in the alliance era, political shifts inside the Empire could strain relations—as during the 2372–73 conflict—before shared threats pushed the powers back into cooperation.",
+      "WithStarfleet": "Klingon-Federation relations shift across eras, from hostility to alliance and back to tension during political upheaval. The Khitomer Accords formalized peace and cooperation, later strained and even suspended during the 2372-73 conflict, before the powers returned to cooperation in the face of the Dominion and renewed alliance arrangements.",
       "CommonMisreads": [
-        "All Klingons are the same kind of warrior",
-        "Honor is just aggression",
+        "All Klingons are identical warriors",
+        "Honor is the same as aggression",
         "Tradition makes Klingons irrational",
         "Klingon culture is only about fighting and drinking"
       ]
@@ -72,49 +72,49 @@
         "Series": "TNG",
         "Season": 2,
         "Episode": 8,
-        "WhyRelevant": "Riker’s officer-exchange assignment highlights Klingon shipboard life, command culture, and food customs from an outsider’s perspective."
+        "WhyRelevant": "Riker's officer-exchange assignment highlights shipboard life, conduct, and food customs from an outsider's perspective."
       },
       {
         "Title": "Up the Long Ladder",
         "Series": "TNG",
         "Season": 2,
         "Episode": 18,
-        "WhyRelevant": "The Klingon tea ceremony scene shows tradition as a deliberate test of courage and shared risk."
+        "WhyRelevant": "Shows the Klingon tea ceremony and its framing as a test of courage and shared risk."
       },
       {
         "Title": "Sins of the Father",
         "Series": "TNG",
         "Season": 3,
         "Episode": 17,
-        "WhyRelevant": "A deep look at Great House politics, public honor, and discommendation as a formal social punishment."
+        "WhyRelevant": "A major depiction of Great House politics, public honor, and discommendation."
       },
       {
         "Title": "Rightful Heir",
         "Series": "TNG",
         "Season": 6,
         "Episode": 23,
-        "WhyRelevant": "Explores Klingon faith and legend (Kahless) and uses warnog as a cultural touchstone."
+        "WhyRelevant": "Explores Klingon belief and Kahless; includes warnog as a cultural touchstone."
       },
       {
         "Title": "Firstborn",
         "Series": "TNG",
         "Season": 7,
         "Episode": 21,
-        "WhyRelevant": "Depicts the Rite of Ascension and the cultural pressure placed on Klingon youth to embrace warrior identity."
+        "WhyRelevant": "Depicts the Rite of Ascension and cultural expectations placed on Klingon youth."
       },
       {
         "Title": "The Way of the Warrior",
         "Series": "DS9",
         "Season": 4,
         "Episode": 1,
-        "WhyRelevant": "Shows Klingon political-military posture and how internal fears and politics can destabilize external alliances."
+        "WhyRelevant": "Illustrates Klingon political-military posture and its impact on the Federation relationship."
       },
       {
         "Title": "You Are Cordially Invited",
         "Series": "DS9",
         "Season": 6,
         "Episode": 7,
-        "WhyRelevant": "A detailed, family-driven depiction of a Klingon wedding and the importance of House approval and custom."
+        "WhyRelevant": "A detailed depiction of a Klingon wedding and the importance of House approval and custom."
       }
     ],
     "RelatedEntries": {
