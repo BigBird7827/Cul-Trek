@@ -451,7 +451,7 @@
     <div class="topbar">
         <div class="titlebox">
     <div class="brand">
-        <div class="title">Cultures Console</div>
+        <div class="title">Cultures Console</div><div class="tag" style="margin-left:10px; opacity:.85;">Ali-Build-4</div>
         <div class="sub">Star Trek cultures & societies (canon)</div>
       </div>
 
@@ -496,10 +496,77 @@
   'use strict';
 
   var DATA_URL = 'https://raw.githubusercontent.com/BigBird7827/Cul-Trek/main/Cultures.json';
+  var FALLBACK = [
+  {
+    "ID": "cul-klingon",
+    "Name": "Klingon",
+    "SpeciesOrPeople": "Klingon",
+    "Affiliation": ["Klingon Empire"],
+    "PrimaryHomeworlds": ["Qo'noS"],
+    "Regions": ["Beta Quadrant"],
+    "Overview": [
+      "Klingon culture centers on honor as a public measure of worth: courage under pressure, directness in conflict, and a life judged by deeds rather than intentions. Reputation matters because it is shared, and respect is often earned through competence, candor, and the willingness to face risk.",
+      "Social and political life is shaped by the Great Houses and the institutions of the Empire, including the Klingon High Council and its Chancellor. Tradition is treated as binding, and honor has legal weight: standing can be elevated by service and loyalty, or damaged through disgrace that affects families across generations.",
+      "Klingons also preserve identity through ceremony, poetry, and performance as much as through warfare. Legendary figures such as Kahless the Unforgettable are invoked to frame values and legitimacy, while rituals around adulthood and marriage reinforce the idea that commitment is proven through endurance and shared hardship."
+    ],
+    "CoreTraits": [
+      {"Trait": "Honor measured by deeds"},
+      {"Trait": "House loyalty and lineage"},
+      {"Trait": "Ritualized courage and endurance"},
+      {"Trait": "Pride, candor, and direct challenge"}
+    ],
+    "Customs": [
+      {
+        "Name": "Klingon tea ceremony",
+        "WhatItIs": "A test of courage in which two participants drink tea brewed from a poisonous plant and recite poetry to one another.",
+        "WhyItMatters": "It treats shared danger as a form of intimacy and respect."
+      },
+      {
+        "Name": "Rite of Ascension (Age of Inclusion)",
+        "WhatItIs": "A coming-of-age ritual in which a child symbolically becomes a warrior by lighting a kor'tova candle.",
+        "WhyItMatters": "It marks identity as something affirmed through ritual responsibility."
+      },
+      {
+        "Name": "Klingon wedding",
+        "WhatItIs": "A highly ritualized ceremony with House involvement and traditional story recitation as part of the rite.",
+        "WhyItMatters": "Marriage is framed as a binding union of duty and lineage."
+      }
+    ],
+    "EverydayLife": {
+      "FamilyAndSociety": "Klingon society places heavy weight on family reputation, ancestry, and duty to one's House. Status is openly negotiated through displays of competence and courage, and insults or slights can become formal matters rather than private disagreements. The Great Houses provide identity and political leverage, and their rivalries can shape alliances and legal outcomes. Institutions such as the High Council link personal honor to public standing. Disgrace can be socially and legally consequential, staining a family name across generations.",
+      "FoodAndDrink": "Klingon cuisine is known for intense flavors and for dishes that can be challenging to outsiders. Canon examples include gagh, racht, heart of targ, and rokeg blood pie. Among beverages, bloodwine is widely associated with Klingon celebration and is typically served warm, and warnog is a traditional Klingon beer."
+    },
+    "Relations": {
+      "WithStarfleet": "Klingon-Federation relations shift across eras from hostility to peace and cooperation. Even in alliance periods, internal Klingon politics and differing concepts of honor can strain cooperation, while shared external threats tend to push the relationship back toward partnership.",
+      "CommonMisreads": [
+        "Honor is the same as aggression",
+        "All Klingons share one outlook",
+        "Tradition means they cannot change"
+      ]
+    },
+    "KeyAppearances": [
+      {"Title":"Sins of the Father","Series":"TNG","Season":3,"Episode":17,"WhyRelevant":"Great House politics and the mechanics of honor and disgrace are central."},
+      {"Title":"A Matter of Honor","Series":"TNG","Season":2,"Episode":8,"WhyRelevant":"Riker's exchange tour spotlights Klingon command culture and norms."},
+      {"Title":"Rightful Heir","Series":"TNG","Season":6,"Episode":23,"WhyRelevant":"Explores Klingon belief and Kahless as a cultural touchstone."},
+      {"Title":"Firstborn","Series":"TNG","Season":7,"Episode":21,"WhyRelevant":"Depicts the Rite of Ascension and youth expectations."},
+      {"Title":"You Are Cordially Invited","Series":"DS9","Season":6,"Episode":7,"WhyRelevant":"Shows a Klingon wedding and the role of ritual and family."}
+    ],
+    "RelatedEntries": {
+      "People": ["Worf","Kahless","Gowron","Martok","K'mpec","Duras"],
+      "Organizations": ["Klingon High Council","Great Houses"],
+      "Planets": ["Qo'noS","Khitomer"],
+      "Artifacts": ["bat'leth","d'k tahg"]
+    }
+  }
+];
+
   var cultures = [];
   var state = {
     query: '',
-    selectedId: null
+    selectedId: null,
+    usingFallback: false,
+    lastError: '',
+    lastBytes: 0
   };
 
   var elList = document.getElementById('list');
@@ -796,7 +863,8 @@
     items.forEach(function(c) {
       elList.appendChild(makeCard(c));
     });
-    elCount.textContent = items.length ? (items.length + ' culture' + (items.length === 1 ? '' : 's')) : '0 cultures';
+    var label = items.length ? (items.length + ' culture' + (items.length === 1 ? '' : 's')) : '0 cultures';
+    elCount.textContent = state.usingFallback ? (label + ' (fallback)') : label;
   }
 
   function renderDetail() {
@@ -925,6 +993,20 @@
 
     relatedWrap.appendChild(relGrid);
     elDetail.appendChild(relatedWrap);
+
+    if (state.lastError) {
+      var diag = document.createElement('div');
+      diag.className = 'section';
+      var dh = document.createElement('h3');
+      dh.textContent = 'Load status';
+      diag.appendChild(dh);
+
+      var dp = document.createElement('p');
+      dp.textContent = state.lastError;
+      diag.appendChild(dp);
+
+      elDetail.appendChild(diag);
+    }
   }
 
   function render() {
@@ -938,7 +1020,21 @@
     e.className = 'empty';
     e.textContent = msg;
     elList.appendChild(e);
-    elCount.textContent = '';
+    elCount.textContent = msg;
+  }
+
+  function applyRaw(raw, usingFallback, note) {
+    var arr = Array.isArray(raw) ? raw : (raw && Array.isArray(raw.Cultures) ? raw.Cultures : []);
+    cultures = arr.map(normalizeCulture).filter(function(x) { return x.id || x.name; });
+    state.usingFallback = !!usingFallback;
+    state.lastError = note || '';
+    if (!cultures.length) {
+      setEmpty('No culture data found.');
+      elDetail.innerHTML = '<div class="empty">No culture selected.</div>';
+      return;
+    }
+    if (!state.selectedId) state.selectedId = cultures[0].id;
+    render();
   }
 
   function load() {
@@ -948,22 +1044,13 @@
         return res.text();
       })
       .then(function(txt) {
+        state.lastBytes = txt.length;
         var raw = JSON.parse(txt);
-        var arr = Array.isArray(raw) ? raw : (raw && Array.isArray(raw.Cultures) ? raw.Cultures : []);
-        cultures = arr.map(normalizeCulture).filter(function(x) { return x.id || x.name; });
-
-        if (!cultures.length) {
-          setEmpty('No culture data found.');
-          elDetail.innerHTML = '<div class="empty">No culture selected.</div>';
-          return;
-        }
-
-        if (!state.selectedId) state.selectedId = cultures[0].id;
-        render();
+        applyRaw(raw, false, '');
       })
       .catch(function(err) {
-        setEmpty('Failed to load data. Check the JSON URL and that the file is valid JSON.');
-        elDetail.innerHTML = '<div class="empty">' + (err && err.message ? err.message : 'Error') + '</div>';
+        var msg = 'Using fallback. Fetch failed or JSON invalid. ' + (err && err.message ? err.message : 'Error');
+        applyRaw(FALLBACK, true, msg);
       });
   }
 
