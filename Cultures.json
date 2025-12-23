@@ -381,5 +381,166 @@
       "Dont": "Don’t open by moralizing about profit as if it’s self-evidently shameful, and don’t rely on vague promises when specific terms are expected. Avoid being casually generous in ways that create obligations you don’t intend to pay."
     },
     "Trivia": "By the 22nd century canon references 173 Rules of Acquisition, while 24th-century Ferengi commonly cite 285—suggesting the “sacred” rulebook is continuously expanded over time."
+  },
+  {
+    "ID": "cul-romulan",
+    "Name": "Romulan",
+    "Identity": {
+      "SpeciesOrPeople": "Romulans (Romulan Star Empire)",
+      "Affiliation": [
+        "Romulan Star Empire"
+      ],
+      "PrimaryHomeworlds": [
+        "Romulus"
+      ],
+      "Regions": [
+        "Beta Quadrant",
+        "Romulan space",
+        "Romulan Neutral Zone (border region)"
+      ]
+    },
+    "Profile": [
+      "Romulan society is shaped by the idea that survival depends on control—of information, of appearances, and of the timing of action. In canon, the Romulan state is repeatedly described as secretive and suspicious of outsiders, with political life built around guarded speech, careful displays of strength, and the assumption that rivals are always probing for weakness.",
+      "That public culture is reinforced by institutions designed to police loyalty. The Tal Shiar functions as an intelligence and internal security apparatus—often described as a secret police—making “state interests” feel personal and ever-present. Even when individual Romulans show warmth or honor, they do so inside a system that rewards discretion and punishes defiance.",
+      "Romulans are also defined by what they share with Vulcans. Canon establishes them as biological cousins descended from those who rejected Surak’s reforms, which creates a distinctive tension: strong emotions and pride held alongside discipline, strategy, and ideological certainty. The result is a culture that prizes patience and long games, and that often treats diplomacy as another battlefield."
+    ],
+    "Practices": [
+      {
+        "Name": "Strategic secrecy",
+        "Description": "Romulan interactions frequently prioritize controlled disclosure, deniability, and the careful management of appearances, treating information as leverage rather than a shared public good."
+      },
+      {
+        "Name": "Internal loyalty enforcement",
+        "Description": "The Tal Shiar’s presence reflects a cultural expectation that loyalty is monitored and that dissent can be framed as betrayal of the state."
+      },
+      {
+        "Name": "Political theater and testing",
+        "Description": "Romulan negotiations often include “tests” of resolve—probing questions, ritualized posturing, and offers designed to reveal the other party’s limits."
+      },
+      {
+        "Name": "Preference for the indirect approach",
+        "Description": "Canon frequently associates Romulan strategy with misdirection, covert preparation, and a willingness to let opponents overextend before committing."
+      }
+    ],
+    "FoodAndDrink": [
+      "Romulan ale is a famously potent, blue Romulan beverage that shows up as prized contraband and an unmistakable cultural signature in Federation contexts.",
+      "Kali-fal is a Romulan drink known for its sharp aroma, described as opening one’s sinuses before the first sip; it appears in DS9-era diplomacy as a small but telling cultural detail.",
+      "Delvan pudding is explicitly named as a favorite of a Romulan praetor, offering one of the few direct canon examples of Romulan personal taste in food."
+    ],
+    "CanonAnchors": [
+      "TOS — \"Balance of Terror\": First major Romulan storyline and the Neutral Zone dynamic.",
+      "TNG — \"The Defector\": Romulan loyalties, state pressure, and the cost of defiance.",
+      "TNG — \"Face of the Enemy\": Tal Shiar power and internal coercion.",
+      "DS9 — \"The Die is Cast\": Tal Shiar operations and Romulan intelligence culture.",
+      "DS9 — \"In the Pale Moonlight\": Romulan diplomacy, trust, and Romulan beverages as texture."
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Commander Tomalak",
+        "Sela",
+        "Senator Vreenak",
+        "Spock"
+      ],
+      "Organizations": [
+        "Romulan Star Empire",
+        "Tal Shiar",
+        "Romulan Senate"
+      ],
+      "Planets": [
+        "Romulus"
+      ],
+      "Artifacts": [
+        "Cloaking device",
+        "Romulan ale"
+      ]
+    },
+    "Misconceptions": "Romulans are often reduced to a stereotype of constant deception, as if every individual lies by nature. Canon supports something more specific: secrecy and subterfuge are heavily incentivized by Romulan statecraft and internal security, so even honest Romulans learn to speak and act cautiously inside a system that treats openness as a vulnerability.",
+    "DoAndDont": {
+      "Do": "Be precise, patient, and consistent, and treat information as a form of currency. Clear boundaries and calm follow-through earn more respect than emotional appeals, and careful listening matters as much as what you say.",
+      "Dont": "Don’t assume friendliness equals trust or that a quick concession will buy goodwill. Avoid pressing for personal vulnerability or “straight answers” as a first move, because it can read as either naiveté or a trap."
+    },
+    "Trivia": "A replicated kali-fal failed to meet a Romulan senator’s expectations in DS9, and the shortfall was blamed on replicators being poor at reproducing Romulan beverages rather than on the recipe itself."
+  },
+  {
+    "ID": "cul-cardassian",
+    "Name": "Cardassian",
+    "Identity": {
+      "SpeciesOrPeople": "Cardassians (Cardassian Union)",
+      "Affiliation": [
+        "Cardassian Union"
+      ],
+      "PrimaryHomeworlds": [
+        "Cardassia Prime"
+      ],
+      "Regions": [
+        "Alpha Quadrant",
+        "Cardassian space",
+        "Bajor sector (historic occupation zone)"
+      ]
+    },
+    "Profile": [
+      "Cardassian culture is frequently presented through the lens of a powerful, security-focused state that expects discipline, service, and loyalty to the Union. Canon repeatedly frames Cardassian public life as shaped by military and intelligence institutions, where authority is normalized and dissent carries real risk.",
+      "Two structures in particular define the modern Cardassian reputation. Central Command functions as the military authority, while the Obsidian Order is depicted as a feared intelligence service whose surveillance and eliminations make “the state” feel omnipresent. Even when civilian government exists on paper, canon emphasizes how those organs of power have historically dominated daily life.",
+      "At the same time, Cardassians are not portrayed as simple villains. Their stories often hinge on duty, family obligation, and personal pride colliding with propaganda, occupation-era crimes, and the moral cost of authoritarian rule. DS9 especially explores how individuals can rationalize harm as patriotism—and how that same love of home and identity can also fuel remorse, resistance, and reform."
+    ],
+    "Practices": [
+      {
+        "Name": "State-first duty culture",
+        "Description": "Service to the Union is treated as a civic virtue; obedience and competence are praised, and personal ambition is often routed through official institutions."
+      },
+      {
+        "Name": "Security as normal life",
+        "Description": "The prominence of Central Command and the Obsidian Order reflects a culture where surveillance and internal policing are expected realities rather than extraordinary measures."
+      },
+      {
+        "Name": "Controlled narratives",
+        "Description": "Cardassian authority frequently relies on official stories, public justifications, and managed “truth,” encouraging citizens to align personal identity with the state’s version of events."
+      },
+      {
+        "Name": "Pride and honor language",
+        "Description": "Cardassians often frame choices in terms of duty, reputation, and what the Union ‘deserves,’ even when those ideas are used to excuse coercion or aggression."
+      }
+    ],
+    "FoodAndDrink": [
+      "Kanar is a Cardassian liquor with a thick consistency and a reputation for being an acquired taste, appearing repeatedly as a small but memorable marker of Cardassian social space.",
+      "Yamok sauce is a widely used Cardassian condiment, and canon calls out specific dishes such as tojal in yamok sauce as a Cardassian delicacy.",
+      "Regova eggs are referenced as part of traditional Cardassian fare served in a DS9 context, reinforcing that Cardassian cuisine is treated as distinct rather than merely “alien food.”"
+    ],
+    "CanonAnchors": [
+      "TNG — \"The Wounded\": First major Cardassian storyline and the Federation–Cardassian tension.",
+      "TNG — \"Chain of Command\": Cardassian interrogation, state power, and propaganda pressure.",
+      "DS9 — \"Duet\": Occupation guilt, identity, and the human cost of the Union’s past.",
+      "DS9 — \"The Wire\": Cardassian intelligence culture through Garak’s history.",
+      "DS9 — \"The Die is Cast\": Obsidian Order power and the costs of secrecy."
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Gul Dukat",
+        "Damar",
+        "Elim Garak",
+        "Enabran Tain",
+        "Legate Ghemor"
+      ],
+      "Organizations": [
+        "Cardassian Union",
+        "Cardassian Central Command",
+        "Obsidian Order",
+        "Detapa Council"
+      ],
+      "Planets": [
+        "Cardassia Prime",
+        "Bajor"
+      ],
+      "Artifacts": [
+        "Kanar",
+        "Yamok sauce"
+      ]
+    },
+    "Misconceptions": "Cardassians are often treated as uniformly cruel, as if every Cardassian personally endorses occupation and oppression. Canon instead shows a society heavily shaped by institutions and incentives, where fear, pride, and propaganda can push ordinary people into complicity, and where individuals can still display loyalty, tenderness, shame, and genuine moral conflict inside an authoritarian system.",
+    "DoAndDont": {
+      "Do": "Be formal, prepared, and respectful of rank and procedure, and take public statements seriously as signals of what the state wants seen. If you negotiate, keep records, terms, and outcomes clear, because ambiguity can be used against you.",
+      "Dont": "Don’t insult the Union or its leaders casually, and don’t assume privacy where security services are active. Avoid treating Cardassian pride as a joke, because that can escalate a conversation from disagreement into perceived disrespect."
+    },
+    "Trivia": "Kanar is repeatedly shown in different colors and consistencies on screen, suggesting either distinct varieties or batches rather than a single standardized beverage."
   }
 ]
