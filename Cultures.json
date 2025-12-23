@@ -136,5 +136,76 @@
         "Kir'Shara"
       ]
     }
+  },
+  {
+    "ID": "cul-human",
+    "Name": "Human",
+    "Identity": {
+      "SpeciesOrPeople": "Humans (Terrans)",
+      "Affiliation": [
+        "United Earth",
+        "United Federation of Planets",
+        "Starfleet"
+      ],
+      "PrimaryHomeworlds": [
+        "Earth (Sol system)"
+      ],
+      "Regions": [
+        "Alpha Quadrant"
+      ]
+    },
+    "Profile": [
+      "Human culture in Star Trek is defined less by a single inherited tradition and more by rapid change: a species that survives internal catastrophe, then reorganizes around exploration, scientific curiosity, and cooperative institutions. Following First Contact with the Vulcans in 2063 and the political unification that becomes United Earth, Humans enter the interstellar era with an unusually strong drive to travel, build alliances, and treat “the unknown” as a shared project rather than a threat.",
+      "In the 22nd–24th centuries, Humans are repeatedly depicted as adaptable generalists. They are rarely described as physically or technologically exceptional compared to their neighbors, but they tend to integrate ideas quickly, improvise under pressure, and translate disparate perspectives into workable compromises. That flexibility becomes a cultural asset in diplomacy, where Humans often act as mediators between species with rigid traditions or long-standing grudges.",
+      "Human society is shown as post-scarcity in everyday life across much of the Federation era: material need is minimized, education and personal growth are emphasized, and careers are often framed as service, curiosity, and self-actualization. Identity is still diverse—regional histories and languages remain visible—yet “Humanity” is treated as a single political community through United Earth and as a leading constituency inside the Federation.",
+      "Political influence is tied to Earth’s institutional density: Starfleet Headquarters and Starfleet Academy are located in San Francisco, and Federation-level leadership is associated with Paris. Humans are present throughout Federation governance and Starfleet command structures, which also makes them a frequent point of contact for other species—admired by some for openness and criticized by others for impatience, optimism, or a tendency to assume cooperation is the default state.",
+      "Despite the hopeful tone, Human culture retains recognizable tensions. Humans can be stubborn, emotionally expressive, and prone to moral certainty, and Starfleet’s exploratory ideal is repeatedly tested by security crises, wartime choices, and the limits of principle. Canon often treats those tests as the point: the “Human” identity is not purity of logic or ritual honor, but the willingness to argue, learn, and keep choosing a better version of itself."
+    ],
+    "Practices": [
+      {
+        "Name": "Starfleet service as civic identity",
+        "Description": "For many Humans, Starfleet becomes a defining public pathway—part exploration program, part scientific institution, part defense service. Canon repeatedly frames it as a prestigious arena for personal development and public duty, and as a cultural export: the uniform and the ship are often how other worlds first encounter Humans."
+      },
+      {
+        "Name": "Diplomacy by coalition-building",
+        "Description": "Humans are frequently portrayed as bridge-builders who form working coalitions across cultural boundaries—especially in the era leading to the Federation. The habit is practical: listen, bargain, compromise, and keep the conversation alive long enough for a shared interest to emerge."
+      },
+      {
+        "Name": "Scientific curiosity and debate culture",
+        "Description": "Human institutions prize inquiry: arguing hypotheses, testing evidence, and changing one’s mind when the facts demand it. Star Trek often depicts Humans as comfortable with disagreement in professional settings, treating debate as normal rather than as a personal affront."
+      },
+      {
+        "Name": "Earth heritage and continuity",
+        "Description": "Even in a unified world, Humans keep strong attachments to local history—cities, languages, literature, music, and foodways. This shows up in travel choices, personal rituals, and the way Humans use old Earth references as identity markers in multicultural crews."
+      }
+    ],
+    "FoodAndDrink": [
+      "Human food culture is highly pluralistic and travels with them. On-screen, Humans eat everything from simple shipboard meals to regional cuisines and restaurant-style dining, and the replicator era turns “variety on demand” into a daily norm. When Humans share food with outsiders, it often functions as diplomacy-by-hospitality: inviting someone to taste Earth is an invitation to belong, at least for a moment.",
+      "Commonly referenced Human beverages and staples in Federation settings include tea and coffee traditions, along with items such as root beer and other familiar soft drinks; alcohol appears in social contexts, alongside non-alcoholic substitutes like synthehol. In canon, these familiar choices often serve as cultural contrast: a plain cup of tea can sit beside alien delicacies, quietly signaling that Humans are most themselves when they can keep one foot in the everyday while reaching for the stars."
+    ],
+    "CanonAnchors": [
+      "ENT: United Earth and the alliances that lead toward the Federation (First Contact legacy; early coalition-building).",
+      "ENT: \"United\": Humans appear alongside Vulcans, Andorians, and Tellarites in the path to Federation founding.",
+      "Star Trek VI: \"The Undiscovered Country\": Federation leadership is associated with Paris on Earth.",
+      "DS9: \"Homefront\" / \"Paradise Lost\": Earth as political center and the strain of security crises on Federation ideals.",
+      "TNG / DS9 / VOY (general): Replicator-era daily life and mixed crews highlight Human cultural plurality."
+    ],
+    "RelatedEntries": {
+      "People": [],
+      "Organizations": [
+        "United Earth",
+        "United Federation of Planets",
+        "Starfleet",
+        "Starfleet Academy",
+        "Starfleet Command"
+      ],
+      "Planets": [
+        "Earth"
+      ],
+      "Artifacts": [
+        "Replicator",
+        "Universal translator"
+      ]
+    }
   }
 ]
