@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cultures Console</title>
-  <style>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Cultures Console</title><style>
     :root {
       --bg0: #070a12;
       --bg1: #0b1630;
@@ -105,7 +99,6 @@
       white-space: nowrap;
     }
 
-    
     #mainConsoleLink {
       width: fit-content;
       display: inline-flex;
@@ -431,7 +424,7 @@
       .hero { width: 100%; height: 220px; }
       .kv { grid-template-columns: 1fr; }
     }
-  
+
     .titlebox {
       width: calc(100% - 50px);
       margin: 0 25px 14px 25px;
@@ -444,54 +437,21 @@
       box-shadow: var(--shadow);
     }
 
-</style>
-</head>
-<body>
-<div class="wrap">
-    <div class="topbar">
-        <div class="titlebox">
-    <div class="brand">
-        <div class="title">Cultures Console</div><div class="tag" style="margin-left:10px; opacity:.85;">Ali-Build-4</div>
-        <div class="sub">Star Trek cultures & societies (canon)</div>
-      </div>
+.lede { line-height: 1.6; }
+.section p { margin: 0 0 14px; line-height: 1.6; }
+.section p:last-child { margin-bottom: 0; }
 
-    <a id="mainConsoleLink" class="btn" href="https://bigbird7827.github.io/Main-Console/">MAIN CONSOLE</a>
-  </div>
+.h1, .section h3 { color: #d8b55a; }
+.title { color: #d8b55a; }
 
-      <div class="search">
-        <span class="pill">SEARCH</span>
-        <input id="searchInput" type="text" placeholder="Type to search cultures (e.g., Klingon, Bajoran, Vulcan)..." autocomplete="off" />
-      </div>
 
-      <div class="actions">
-        <button class="btn" id="clearBtn">Clear</button>
-</div>
-    </div>
+.topbar { justify-content: flex-start !important; text-align: left !important; }
+.topbar .title, .topbar .subtitle { text-align: left !important; }
 
-    <div class="grid">
-      <div class="panel">
-        <div class="panelhead">
-          <div class="label">Culture List</div>
-          <div class="label" id="countLabel" style="opacity:.85;font-weight:800;font-size:13px;"></div>
-        </div>
-        <div class="panelbody">
-          <div class="list" id="list"></div>
-        </div>
-      </div>
 
-      <div class="panel">
-        <div class="panelhead">
-          <div class="label">Detail View</div>
-          <div class="label" id="detailTag" style="opacity:.85;font-weight:800;font-size:13px;"></div>
-        </div>
-        <div class="panelbody" id="detail"></div>
-      </div>
-    </div>
+.titlebox { width: 100% !important; margin: 0 !important; }
 
-    <div class="foot">External JSON build. Next step: expand the roster and fill in entries.</div>
-  </div>
-
-  <script>
+</style></head><body><div class="wrap"><div class="topbar"><div class="titlebox"><div class="brand"><div class="title">Cultures Console</div><div class="sub">Star Trek cultures & societies</div></div><a id="mainConsoleLink" class="btn" href="https://bigbird7827.github.io/Main-Console/">MAIN CONSOLE</a></div><div class="search"><span class="pill">SEARCH</span><input id="searchInput" type="text" placeholder="Type to search cultures (e.g., Klingon, Bajoran, Vulcan)..." autocomplete="off" /></div><div class="actions"><button class="btn" id="clearBtn">Clear</button></div></div><div class="grid"><div class="panel"><div class="panelhead"><div class="label">Culture List</div><div class="label" id="countLabel" style="opacity:.85;font-weight:800;font-size:13px;"></div></div><div class="panelbody"><div class="list" id="list"></div></div></div><div class="panel"><div class="panelhead"><div class="label">Detail View</div><div class="label" id="detailTag" style="opacity:.85;font-weight:800;font-size:13px;"></div></div><div class="panelbody" id="detail"></div></div></div><div class="foot"></div></div><script>
 (function() {
   'use strict';
 
@@ -922,7 +882,11 @@
     kv.appendChild(tile('Affiliation', (c.affiliations || []).join(', ')));
     elDetail.appendChild(kv);
 
-    elDetail.appendChild(sectionParagraphs('Overview', c.overview || []));
+    var overviewAll = c.overview || [];
+    var overviewRest = overviewAll.length > 1 ? overviewAll.slice(1) : [];
+    if (overviewRest.length) {
+      elDetail.appendChild(sectionParagraphs('Overview', overviewRest));
+    }
 
     var traits = document.createElement('div');
     traits.className = 'section';
@@ -1073,6 +1037,4 @@
 
   load();
 })();
-</script>
-</body>
-</html>
+</script></body></html>
