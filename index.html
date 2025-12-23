@@ -516,7 +516,10 @@
     organizations: relatedOrgs,
     planets: relatedPlanets,
     artifacts: relatedArtifacts
-    }
+    },
+      misconceptions: (c.Misconceptions || c.misconceptions || ''),
+      doAndDont: (c.DoAndDont || c.doAndDont || null),
+      trivia: (c.Trivia || c.trivia || '')
     };
     }
     function getFiltered() {
@@ -738,17 +741,7 @@
     elDetail.appendChild(sectionPractices('Practices', c.practices || []));
     elDetail.appendChild(sectionParagraphs('Food & drink', c.foodAndDrink || []));
     elDetail.appendChild(sectionList('Canon anchors', c.canonAnchors || []));
-
-    elDetail.appendChild(sectionParagraphs('Misconceptions', [c.misconceptions]));
-
-    var dd = c.doAndDont || null;
-    var doTxt = dd && (dd.Do || dd.do) ? (dd.Do || dd.do) : '';
-    var dontTxt = dd && (dd.Dont || dd.dont) ? (dd.Dont || dd.dont) : '';
-    if (doTxt) elDetail.appendChild(sectionParagraphs('Do', [doTxt]));
-    if (dontTxt) elDetail.appendChild(sectionParagraphs("Don't", [dontTxt]));
-
-    elDetail.appendChild(sectionParagraphs('Trivia', [c.trivia]));
-    var relatedWrap = document.createElement('div');
+var relatedWrap = document.createElement('div');
     relatedWrap.className = 'section';
     var rh = document.createElement('h3');
     rh.textContent = 'Related entries';
@@ -775,6 +768,16 @@
     relGrid.appendChild(relTile('Artifacts', (c.related && c.related.artifacts) ? c.related.artifacts : []));
     relatedWrap.appendChild(relGrid);
     elDetail.appendChild(relatedWrap);
+    var mis = (c.misconceptions || '').trim();
+    if (mis) elDetail.appendChild(sectionParagraphs('Misconceptions', [mis]));
+    var dd = c.doAndDont || null;
+    var doTxt = dd && (dd.Do || dd.do) ? String(dd.Do || dd.do).trim() : '';
+    var dontTxt = dd && (dd.Dont || dd.dont) ? String(dd.Dont || dd.dont).trim() : '';
+    if (doTxt) elDetail.appendChild(sectionParagraphs('Do', [doTxt]));
+    if (dontTxt) elDetail.appendChild(sectionParagraphs("Don't", [dontTxt]));
+    var triv = (c.trivia || '').trim();
+    if (triv) elDetail.appendChild(sectionParagraphs('Trivia', [triv]));
+
     if (state.lastError) {
     var diag = document.createElement('div');
     diag.className = 'section';
