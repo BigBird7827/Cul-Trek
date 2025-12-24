@@ -152,6 +152,7 @@
     margin-top: 14px;
     flex: 1;
     min-height: 0;
+    height: 100%;
     }
     .panel {
     border-radius: var(--radius);
@@ -162,6 +163,7 @@
     display: flex;
     flex-direction: column;
     min-height: 0;
+    height: 100%;
     }
     .panelhead {
     padding: 12px 14px;
@@ -184,6 +186,8 @@
     min-height: 0;
     overflow-y: auto;
     overscroll-behavior: contain;
+    overflow: auto;
+    overflow-x: hidden;
     }
     .list {
     display: grid;
@@ -688,6 +692,8 @@
     state.selectedId = c.id;
     render();
     elDetail.scrollTop = 0;
+    if (elDetail && elDetail.scrollTo) elDetail.scrollTo(0, 0);
+    requestAnimationFrame(function() { elDetail.scrollTop = 0; });
     }
     card.addEventListener('click', select);
     card.addEventListener('keydown', function(e) {
@@ -853,7 +859,11 @@ var relatedWrap = document.createElement('div');
     state.selectedId = items[0].id;
     }
     render();
-    if (state.selectedId !== prev) elDetail.scrollTop = 0;
+    if (state.selectedId !== prev) {
+    elDetail.scrollTop = 0;
+    if (elDetail && elDetail.scrollTo) elDetail.scrollTo(0, 0);
+    requestAnimationFrame(function() { elDetail.scrollTop = 0; });
+    }
     });
     elClear.addEventListener('click', function() {
     var prev = state.selectedId;
@@ -861,7 +871,11 @@ var relatedWrap = document.createElement('div');
     elSearch.value = '';
     if (cultures.length) state.selectedId = cultures[0].id;
     render();
-    if (state.selectedId !== prev) elDetail.scrollTop = 0;
+    if (state.selectedId !== prev) {
+    elDetail.scrollTop = 0;
+    if (elDetail && elDetail.scrollTo) elDetail.scrollTo(0, 0);
+    requestAnimationFrame(function() { elDetail.scrollTop = 0; });
+    }
     elSearch.focus();
     });
     load();
