@@ -992,5 +992,176 @@
       "Dont": "Don’t replicate the Caretaker’s paternalism by making decisions for them ‘for their own good,’ and don’t assume telepathy means consent or emotional transparency—mental boundaries still matter."
     },
     "Trivia": ", the Ocampa are primarily introduced through Kes and the Voyager pilot’s ethical choice: destroy the array to keep it from the Kazon, even though it strands Voyager far from home."
+  },
+  {
+    "ID": "cul-andorian",
+    "Name": "Andorians",
+    "ImageURL": "",
+    "Identity": {
+      "SpeciesOrPeople": "Andorian (from Andoria)",
+      "Affiliation": [
+        "Andorian Empire",
+        "United Federation of Planets (founding member)"
+      ],
+      "PrimaryHomeworlds": [
+        "Andoria (moon)"
+      ],
+      "Regions": [
+        "Alpha Quadrant",
+        "Andorian space",
+        "Federation core space"
+      ]
+    },
+    "Profile": [
+      "Andorians carry themselves like a people who learned, early, that survival is a team sport. They’re blunt, proud, and quick to bristle at disrespect, but that edge sits on top of a strong loyalty ethic: you stand by your own, you earn trust through action, and you don’t ask others to do work you won’t do yourself.",
+      "Their public identity has long been tied to service and defense. The Andorian Imperial Guard is their primary military force, with both starships and ground units, and it shows up in their culture as a marker of credibility and social weight. Even when Andorians work alongside broader Federation institutions, the Guard tradition still colors how they read duty, readiness, and honor.",
+      "Honor isn’t only a vibe; it’s codified. The Ushaan is a formal dueling code with extensive rules, treated as a serious social mechanism rather than casual violence. When it appears on-screen, it’s less about romance and more about boundaries: there are lines you don’t cross, and if you do, there’s a ritual way to settle it—sometimes with consequences that can’t be taken back.",
+      "Andorian history also includes a long arc from rivalry to alliance. They’re one of the founding members of the United Federation of Planets, and part of that story is learning to work with old adversaries without losing themselves. The result is a culture that can be intensely suspicious—and still capable of choosing partnership when the alternative is stagnation or mutual destruction.",
+      "Family and kin networks matter, but Andorian social life is often shown through relationships of service: comrades, captains, squads, and the people you’d trust with your life on the wrong side of a border. In that space, affection is often expressed through teasing, challenges, and tests—less ‘soft talk’ and more ‘prove you’re solid, then you’re in.’",
+      "Under all of it is a practical, icy-world mindset: plan for hard conditions, keep your gear ready, and don’t waste time pretending problems aren’t real. Andorians can be warm, even tender, but they tend to save it for the inner circle—and once you’re in that circle, the loyalty can be fierce."
+    ],
+    "Practices": [
+      {
+        "Name": "Service in the Andorian Imperial Guard",
+        "Description": "The Guard is a central institution in Andorian life, operating starships and infantry units and carrying strong social prestige. It’s often treated as proof of character, competence, and commitment."
+      },
+      {
+        "Name": "Ushaan (honor duel code)",
+        "Description": "A formal Andorian tradition that can require a duel to the death using an ushaan-tor while combatants are tethered. It’s heavily regulated, with a massive body of rules, and functions as a cultural pressure valve for disputes that are considered beyond ordinary mediation."
+      },
+      {
+        "Name": "Hard-edged honesty",
+        "Description": "Andorians tend to value directness over social smoothing. Compliments can sound like challenges, and challenges can be a kind of respect—especially among peers."
+      },
+      {
+        "Name": "Comrade obligation",
+        "Description": "In Andorian social thinking, loyalty is practical: you protect your people, you don’t abandon comrades, and you repay what you owe. Reputation follows you, and it’s earned more by choices under stress than by speeches."
+      },
+      {
+        "Name": "Remembrance of fallen Guard",
+        "Description": "When an Imperial Guard member dies offworld, it can be customary for companions to take their blood back to Andoria for remembrance at the Wall of Heroes—an example of how service and memory are tightly linked."
+      }
+    ],
+    "FoodAndDrink": [
+      "Andorian cuisine is only lightly detailed on-screen; when it is referenced, it tends to fit their cold-world practicality—hearty food, strong drink, and shared meals used to cement bonds."
+    ],
+    "CanonAnchors": [
+      "ENT S1E7 — The Andorian Incident: Andorian–Vulcan tension, P'Jem, and Shran-era Guard presence.",
+      "ENT S2E15 — Cease Fire: Diplomatic crisis that highlights Andorian pride and political stakes.",
+      "ENT S4E14 — The Aenar: Introduces the Aenar and deepens Andorian society beyond the military surface.",
+      "ENT S4E21 — The Breach: Andorian politics and duty pressures within a broader coalition context.",
+      "ENT S4E22 — United: Ushaan duel stakes and Wall of Heroes reference."
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Thy'lek Shran",
+        "Jennifer Sh'reyan",
+        "Talas",
+        "T'Pol",
+        "Jonathan Archer"
+      ],
+      "Organizations": [
+        "Andorian Imperial Guard",
+        "United Federation of Planets",
+        "Starfleet",
+        "Vulcan High Command"
+      ],
+      "Planets": [
+        "Andoria"
+      ],
+      "Artifacts": [
+        "ushaan-tor",
+        "Wall of Heroes"
+      ]
+    },
+    "Misconceptions": "Andorians are often reduced to “the aggressive blue ones.” They can be aggressive, sure—but the deeper pattern is a culture built around reliability. The sharpness is usually about boundaries and honesty, not mindless hostility, and the loyalty they offer (once earned) is one of their defining traits.",
+    "DoAndDont": {
+      "Do": "Be direct, keep your promises, and show competence rather than trying to charm your way through. If you disagree, say it plainly and back it up.",
+      "Dont": "Don’t condescend, don’t hide behind vague politeness, and don’t confuse blunt speech with lack of feeling. Also don’t joke about honor rituals unless you’re very sure you understand the context."
+    },
+    "Trivia": "Much of what fans think of as “modern Andorian culture” is shaped by Enterprise-era stories that treat them as both proud rivals and essential coalition builders—setting up their place as a Federation founding member."
+  },
+  {
+    "ID": "cul-betazoid",
+    "Name": "Betazoids",
+    "ImageURL": "",
+    "Identity": {
+      "SpeciesOrPeople": "Betazoid (from Betazed)",
+      "Affiliation": [
+        "United Federation of Planets"
+      ],
+      "PrimaryHomeworlds": [
+        "Betazed"
+      ],
+      "Regions": [
+        "Alpha Quadrant",
+        "Federation space"
+      ]
+    },
+    "Profile": [
+      "Betazoid culture is shaped by a simple social fact with huge consequences: many Betazoids can read minds. In a room full of telepaths, privacy isn’t assumed, honesty isn’t optional, and emotional undercurrents don’t stay hidden for long. That doesn’t mean Betazoids can’t be subtle—it means their idea of “normal manners” starts from a very different baseline than most species.",
+      "Because feelings are legible, Betazoid social life often leans toward openness. There’s less patience for performative politeness and more expectation that people say what they mean. Outsiders sometimes experience this as rudeness, but for Betazoids it can be closer to cleanliness: don’t leave toxic thoughts hanging in the air, don’t pretend, and don’t punish someone for noticing what’s already there.",
+      "Betazed also has visible status markers that look flamboyant to outsiders. Noble house titles and ceremonial honors exist, and public figures like Lwaxana Troi treat them as part tradition, part theater, part real social currency. The point isn’t just vanity; it’s identity—family lineage, duties, and a very Betazoid comfort with making personal life public.",
+      "Courtship and marriage traditions can be startling if you expect Human norms. A Betazoid custom includes children being genetically bonded to a future spouse, and weddings are described as celebrations of love where participants may be traditionally nude. To Betazoids, that’s not scandal; it’s an honest, unarmored way of showing up for a major life moment.",
+      "Telepathy also creates compassion pressure. If you can feel what people are feeling, cruelty is harder to excuse—at least in theory. In practice, Betazoid life still includes conflict and hypocrisy, but their cultural tools for dealing with it tend to involve emotional acknowledgment first and argument second.",
+      "Finally, Betazoid biology influences culture in ways that show up in stories: most are fully telepathic, but mixed heritage can change how abilities manifest, and certain mid-life physiological phases can affect sexuality and behavior. Those facts become social realities—topics people plan around, joke about, and occasionally weaponize in politics or relationships."
+    ],
+    "Practices": [
+      {
+        "Name": "Telepathic etiquette",
+        "Description": "In telepathic spaces, “good manners” includes mental discipline: not pushing, not prying for sport, and being mindful of what you project. Emotional honesty is valued, but consent and boundaries still matter."
+      },
+      {
+        "Name": "Blunt honesty as social hygiene",
+        "Description": "Betazoid norms tend to prefer direct truth over soothing fiction. This can read as blunt or intrusive to outsiders, but within the culture it often functions as a way to prevent resentment from festering."
+      },
+      {
+        "Name": "House titles and ceremonial honors",
+        "Description": "Betazoid nobility and honorifics show up as both tradition and social signaling. The titles can be extravagant, but they’re tied to lineage, duty, and reputation."
+      },
+      {
+        "Name": "Marriage bonding and unguarded celebration",
+        "Description": "Some traditions bond future spouses early in life, and weddings are described as joyful celebrations where nudity is normal rather than provocative. The underlying value is openness: no armor, no shame, no hiding."
+      },
+      {
+        "Name": "The Phase (mid-life physiological shift)",
+        "Description": "A mid-life physiological phase (noted for Betazoid and half-Betazoid females) can amplify libido and behavior, becoming a known life-stage event people recognize and plan around."
+      }
+    ],
+    "FoodAndDrink": [
+      "Betazoid cuisine is not heavily emphasized on-screen; Betazoid cultural moments are more often about telepathy, etiquette, and ceremony than signature dishes."
+    ],
+    "CanonAnchors": [
+      "TNG S1E11 — Haven: Betazoid marriage customs, genetic bonding tradition, and wedding expectations.",
+      "TNG S2E19 — Manhunt: The Betazoid mid-life 'Phase' as a cultural/biological life-stage event.",
+      "TNG S4E22 — Half a Life: Betazoid fashion tradition is referenced in the context of Lwaxana Troi.",
+      "TNG S5E20 — Cost of Living: Betazoid family culture through Lwaxana, ceremony, and social tone.",
+      "TNG S7E7 — Dark Page: Deeper look at Betazoid family trauma and emotional processing.",
+      "Star Trek: Nemesis: Betazoid wedding nudity tradition is referenced in dialogue/context."
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Lwaxana Troi",
+        "Deanna Troi",
+        "Wyatt Miller",
+        "Tam Elbrun"
+      ],
+      "Organizations": [
+        "United Federation of Planets",
+        "Federation Diplomatic Corps"
+      ],
+      "Planets": [
+        "Betazed"
+      ],
+      "Artifacts": [
+        "House titles (Sacred Chalice of Rixx; Holy Rings of Betazed)"
+      ]
+    },
+    "Misconceptions": "Betazoids are sometimes treated as mind-readers who must be serene saints. In reality, telepathy doesn’t remove ego or desire—it just makes them harder to hide. Their culture leans into that: honesty, intimacy, and emotional visibility are normal, while secrecy and polite fiction can feel strange or even suspicious.",
+    "DoAndDont": {
+      "Do": "Assume they can read emotional subtext, and be straightforward. If something is uncomfortable, say so cleanly rather than trying to mask it.",
+      "Dont": "Don’t treat telepathy like a party trick, and don’t assume mind-reading equals permission. Also don’t shame their ceremony norms; what looks scandalous to you may look simply unguarded to them."
+    },
+    "Trivia": "A recurring Betazoid joke in the franchise is that what shocks Humans (titles, blunt honesty, wedding nudity) is treated on Betazed as perfectly ordinary—because the culture is built for people who can’t easily hide from each other."
   }
 ]
