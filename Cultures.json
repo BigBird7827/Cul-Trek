@@ -631,5 +631,93 @@
       "Dont": "Don’t perform trust as a shortcut—dramatic gestures, threats, or public accusations are easy to exploit. Don’t confuse “calm” with “safe,” and don’t let fear of infiltration become the goal; that is the environment the Dominion is best at shaping."
     },
     "Trivia": "Behind the scenes, DS9’s writers initially treated the Founders as intentionally mysterious and distant. The eventual reveal that the Dominion’s architects were the same species as Odo became a defining pivot point for the series’ long-form political and ethical arc."
+  },
+  {
+    "ID": "cul-talaxian",
+    "Name": "Talaxian",
+    "Identity": {
+      "SpeciesOrPeople": "Talaxian",
+      "Affiliation": [
+        "Talaxian government",
+        "Talaxian diaspora communities"
+      ],
+      "PrimaryHomeworlds": [
+        "Talax (Talaxian system)"
+      ],
+      "Regions": [
+        "Delta Quadrant",
+        "Talaxian system"
+      ]
+    },
+    "Profile": [
+      "Talaxian culture is strongly social: it prizes warmth, hospitality, and the practical work of keeping a community fed, connected, and emotionally held together. Voyager’s primary window into Talaxian life comes through Neelix, but the broader canon consistently frames Talaxians as people who measure success less by rank and more by how well one shows up for others in daily life.",
+      "Family is a core axis of identity. Traditions like Prixin explicitly celebrate family life and togetherness through food, stories, and communal gathering, reinforcing the idea that belonging is something actively maintained. Even away from home, Talaxians are shown recreating these touchstones—turning whatever space they inhabit into a place where relationships can be renewed.",
+      "Talaxian spirituality includes the Great Forest, an afterlife imagined as a sunlit reunion with ancestors guided by the Guiding Tree. This belief system functions as more than comfort; it supplies moral orientation, grief rituals, and a narrative of continuity that can survive displacement. When that framework is shaken, the impact is portrayed as existential rather than merely philosophical.",
+      "Modern Talaxian identity is also marked by trauma and survival. The Talaxian–Haakonian war culminated in the metreon cascade attack on the Talaxian moon Rinax, an event that devastated families, created long-term poisoning victims, and forced unconditional surrender. The cultural aftermath includes anger at the perpetrators, guilt among survivors, and the difficult labor of living forward when home feels compromised.",
+      "Displacement produces adaptability. Talaxians appear as traders, miners, and settlers who can build workable lives in unfamiliar regions, sometimes deliberately avoiding outside attention. This isn’t presented as rootlessness for its own sake; it reads as a strategy—keep the group safe, keep the children fed, and keep a path open back to community, even if “community” has to be rebuilt somewhere new.",
+      "At their best, Talaxians model a kind of everyday resilience: humor without denial, generosity without naivete, and a refusal to let catastrophe erase the basic rituals of being a people. The canon repeatedly ties this to food, celebration, and caregiving—small, repeatable acts that turn survival into culture rather than mere endurance."
+    ],
+    "Practices": [
+      {
+        "Name": "Prixin (family celebration)",
+        "Description": "A traditional, multi-day holiday centered on family and community gathering, marked by shared meals and conviviality. A canonical Prixin tradition includes fruit compote served in root nectar that is typically fermented ahead of the first night."
+      },
+      {
+        "Name": "Cooking as caretaking",
+        "Description": "Talaxian life frequently frames food as a social glue and a primary way of expressing care. Neelix’s role as ship’s cook and morale officer reflects a broader cultural instinct: feeding people is a way of keeping them together."
+      },
+      {
+        "Name": "Spiritual focus on the Great Forest",
+        "Description": "Talaxian spirituality teaches an afterlife called the Great Forest, centered on the Guiding Tree, where the newly dead meet loved ones and are led to their ancestors. Tokens and stories associated with the Guiding Tree serve as anchors for grief and remembrance."
+      },
+      {
+        "Name": "Diaspora settlement pragmatism",
+        "Description": "After war and occupation, Talaxians are shown forming small, self-reliant communities—miners, freighter crews, and settlers—often balancing openness with caution about outsiders."
+      },
+      {
+        "Name": "Survivor memory and accountability",
+        "Description": "The aftermath of Rinax includes cultural insistence on naming what happened and who caused it, while still grappling with whether reconciliation is possible. The canon frames this as an ongoing moral struggle rather than a settled political answer."
+      }
+    ],
+    "FoodAndDrink": [
+      "Leola root (and leola root dishes, including leola root stew)",
+      "Talaxian spice stew",
+      "Leola rice pilaf",
+      "Fruit compote served in root nectar (Prixin tradition)"
+    ],
+    "CanonAnchors": [
+      "VOY S1E1–2 — Caretaker: Introduces Neelix as a Talaxian and establishes Talaxian presence in the Delta Quadrant.",
+      "VOY S1E15 — Jetrel: Details the metreon cascade attack on Rinax, the war’s end, and the long-term cultural and medical aftermath.",
+      "VOY S4E12 — Mortal Coil: Explores Talaxian spirituality (the Great Forest and Guiding Tree) and the family festival Prixin.",
+      "VOY S7E23 — Homestead: Shows Talaxian settlers and the diaspora’s choices about safety, contact, and building a new home.",
+      "VOY S3E3 — The Chute: Displays Talaxian language/script in use.",
+      "VOY S7E20 — Author, Author: References a Talaxian proverb about taking a “third path” when choices are false binaries."
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Neelix",
+        "Kes",
+        "Dexa",
+        "Ma'Bor Jetrel"
+      ],
+      "Organizations": [
+        "Haakonian Order",
+        "Talaxian Defense Forces"
+      ],
+      "Planets": [
+        "Talax",
+        "Rinax"
+      ],
+      "Artifacts": [
+        "Metreon cascade",
+        "Guiding Tree"
+      ]
+    },
+    "Misconceptions": "Talaxians are sometimes reduced to a single stereotype: cheerful, harmless, and uncomplicated. Canon repeatedly complicates that read. Their warmth and humor coexist with war trauma, displacement, and moral injury, and their strongest cultural through-line is not naivete but persistence—maintaining community rituals and care practices even when history has made trust difficult.",
+    "DoAndDont": {
+      "Do": "Show up with practical help, share food in good faith, and take family and remembrance seriously. If you’re welcomed into a Talaxian gathering, participate—story, laughter, and honest emotion are part of the social contract.",
+      "Dont": "Don’t treat their optimism as ignorance or make light of Rinax and its aftermath. Don’t confuse friendliness with a lack of boundaries, especially with diaspora communities that have learned caution the hard way."
+    },
+    "Trivia": "Talaxian cultural beats are frequently delivered through Neelix-focused stories, using food, festivals, and faith (especially the Great Forest) as narrative tools to explore grief, belonging, and the work of keeping a crew— or a diaspora—functioning as family."
   }
 ]
