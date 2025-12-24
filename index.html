@@ -29,12 +29,16 @@
     radial-gradient(1200px 800px at 20% 15%, rgba(88, 140, 255, 0.20), transparent 55%),
     radial-gradient(900px 600px at 85% 25%, rgba(212, 179, 94, 0.14), transparent 60%),
     linear-gradient(135deg, var(--bg0), var(--bg1));
-    min-height: 100vh;
-    overflow-x: hidden;
+    height: 100vh;
+    overflow: hidden;
     }
     .wrap {
     width: min(1260px, calc(100% - 28px));
     margin: 16px auto 22px;
+    height: calc(100vh - 38px);
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
     }
     .topbar {
     display: flex;
@@ -146,6 +150,8 @@
     grid-template-columns: 400px 1fr;
     gap: 14px;
     margin-top: 14px;
+    flex: 1;
+    min-height: 0;
     }
     .panel {
     border-radius: var(--radius);
@@ -153,6 +159,9 @@
     background: linear-gradient(180deg, var(--panel), var(--panel2));
     box-shadow: var(--shadow);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
     }
     .panelhead {
     padding: 12px 14px;
@@ -169,7 +178,13 @@
     text-shadow: 0 1px 0 rgba(0,0,0,0.35);
     font-size: 16px;
     }
-    .panelbody { padding: 12px; }
+    .panelbody {
+    padding: 12px;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    }
     .list {
     display: grid;
     grid-template-columns: 1fr;
@@ -669,8 +684,10 @@
     card.appendChild(sigil);
     card.appendChild(main);
     function select() {
+    if (state.selectedId === c.id) return;
     state.selectedId = c.id;
     render();
+    elDetail.scrollTop = 0;
     }
     card.addEventListener('click', select);
     card.addEventListener('keydown', function(e) {
@@ -829,18 +846,22 @@ var relatedWrap = document.createElement('div');
     });
     }
     elSearch.addEventListener('input', function(e) {
+    var prev = state.selectedId;
     state.query = e.target.value || '';
     var items = getFiltered();
     if (items.length && (!state.selectedId || !items.some(function(x) { return x.id === state.selectedId; }))) {
     state.selectedId = items[0].id;
     }
     render();
+    if (state.selectedId !== prev) elDetail.scrollTop = 0;
     });
     elClear.addEventListener('click', function() {
+    var prev = state.selectedId;
     state.query = '';
     elSearch.value = '';
     if (cultures.length) state.selectedId = cultures[0].id;
     render();
+    if (state.selectedId !== prev) elDetail.scrollTop = 0;
     elSearch.focus();
     });
     load();
