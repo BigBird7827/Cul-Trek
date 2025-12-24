@@ -542,5 +542,94 @@
       "Dont": "Don’t insult the Union or its leaders casually, and don’t assume privacy where security services are active. Avoid treating Cardassian pride as a joke, because that can escalate a conversation from disagreement into perceived disrespect."
     },
     "Trivia": "Kanar is repeatedly shown in different colors and consistencies on screen, suggesting either distinct varieties or batches rather than a single standardized beverage."
+  },
+  {
+    "ID": "cul-founders",
+    "Name": "Founders",
+    "Identity": {
+      "SpeciesOrPeople": "Changelings (Founders of the Dominion)",
+      "Affiliation": [
+        "Dominion"
+      ],
+      "PrimaryHomeworlds": [
+        "Founders' homeworld (Great Link; Omarion Nebula)"
+      ],
+      "Regions": [
+        "Gamma Quadrant",
+        "Dominion space"
+      ]
+    },
+    "Profile": [
+      "The Founders are a Changeling people from the Gamma Quadrant whose society is built around the Great Link: a shared, intermingled state in which individual identity remains distinct, but experience and perspective are literally communal. In practice, the Link functions as home, government, and memory—where personal boundaries soften, decisions gain consensus weight, and the sense of “we” is continuously renewed.",
+      "Their political worldview is shaped by a long history of persecution by “solids.” Canon presents this as the origin of a hard doctrine: safety comes from control. The Dominion is the Founders’ answer to chaos—an empire designed to prevent the kinds of fear-driven violence they once suffered by imposing stability, predictability, and obedience on every subject race it can reach.",
+      "Founder statecraft is indirect by design. They cultivate loyal intermediaries who handle day-to-day administration and enforcement while insulating the Great Link from routine exposure. Shapeshifting makes this distance more than bureaucracy: when they choose, Founders can supervise through infiltration, testing institutions from the inside and turning paranoia itself into a strategic weapon.",
+      "A distinctive cultural contradiction is that the Founders still seek knowledge of the outside—just not on the outside’s terms. They sent one hundred infant Changelings into the galaxy to live among other species and return with lived understanding. The program treats solitude as a tool: individual Changelings are pushed into separation so the Link can later absorb the results, expanding the collective with experiences it can’t generate in isolation.",
+      "Their ethics toward their own kind are unusually absolute in comparison to their ethics toward others. A deep norm against Changeling-on-Changeling harm underwrites internal cohesion, but it also makes “betrayal” a category that triggers severe response. Odo’s story highlights how the Link frames deviation not simply as wrongdoing, but as contamination—something that must be judged, corrected, or, if necessary, excised to protect the whole.",
+      "By the end of the Dominion War era, the Founders are shown to be both formidable and vulnerable: their secrecy can be breached, their leaders can be reached through proxies, and even the Great Link can be attacked indirectly. The result is a culture forced to confront a central tension—whether security can be achieved without domination, and whether trust is possible after generations of building a civilization on fear."
+    ],
+    "Practices": [
+      {
+        "Name": "Linking (the Great Link)",
+        "Description": "Changelings merge in their liquid state to share sensation, memory, and perspective. Linking is treated as restorative and socially foundational—how the Founders reaffirm unity, transmit communal consensus, and experience the “shape” of their society from the inside."
+      },
+      {
+        "Name": "Doctrine of control",
+        "Description": "The Founders articulate a core belief that order and safety come from “guiding” solids and breaking their attachment to freedom. In practice, this becomes a governing principle: security is prioritized over autonomy, and stability is pursued through hierarchical structure."
+      },
+      {
+        "Name": "Proxy rule",
+        "Description": "Dominion governance is executed through client species and carefully maintained chains of command, allowing the Great Link to remain distant while still dictating strategic decisions. This separation protects the Founders while keeping subject societies dependent."
+      },
+      {
+        "Name": "Infiltration and testing",
+        "Description": "Shapeshifting enables Founders (and Dominion agents) to enter solid institutions, study them, and manipulate outcomes. The cultural effect is systemic mistrust: even routine politics can become a theater of suspicion, loyalty tests, and internal fracture."
+      },
+      {
+        "Name": "The Hundred",
+        "Description": "One hundred infant Changelings were sent out to live among other species, gather experience, and eventually return to the Great Link. The program frames exile as education: solitude produces knowledge that the Link can later absorb, while an instinctive drive to return keeps the diaspora tethered to home."
+      }
+    ],
+    "FoodAndDrink": [
+      "None required in natural state (Changelings do not need to take sustenance).",
+      "When impersonating solids, they can simulate eating and drinking, but the experience is not necessary for survival and may be unsatisfying."
+    ],
+    "CanonAnchors": [
+      "DS9 S2E26 — The Jem'Hadar: Introduces the Dominion’s mysterious rulers and frames the Founders as a looming, semi-mythic power.",
+      "DS9 S3E1–2 — The Search, Parts I–II: Reveals the Founders are Changelings; centers the Great Link and the Founders’ controlling philosophy.",
+      "DS9 S3E21 — The Die is Cast: The Obsidian Order and Tal Shiar strike into the Omarion Nebula; the attack is revealed as a Dominion trap.",
+      "DS9 S3E26 — The Adversary: Establishes the practical danger of Changeling infiltration and the difficulty of detection by sensors.",
+      "DS9 S4E11–12 — Homefront / Paradise Lost: Founder-driven paranoia nearly destabilizes Earth through fear of infiltration.",
+      "DS9 S4E26 — Broken Link: Odo is punished by the Great Link and forced into solid form after Changeling-on-Changeling harm.",
+      "DS9 S7E17 — Extreme Measures: Confirms Section 31’s morphogenic virus and the moral conflict inside Starfleet over its use.",
+      "DS9 S7E25–26 — What You Leave Behind: Odo returns to cure the Great Link and the Dominion War ends."
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Odo",
+        "Female Changeling",
+        "Laas",
+        "Weyoun"
+      ],
+      "Organizations": [
+        "Dominion",
+        "Section 31",
+        "Tal Shiar",
+        "Obsidian Order"
+      ],
+      "Planets": [
+        "Founders' homeworld (rogue planet in the Omarion Nebula)",
+        "Varala"
+      ],
+      "Artifacts": [
+        "quantum stasis field generator",
+        "blood screening protocols"
+      ]
+    },
+    "Misconceptions": "The Founders are often flattened into a single stereotype: perfect infiltrators who rule purely for conquest. Canon frames something sharper and more unsettling—an entire civilization organized around trauma-driven security logic. Their power is real, but it is also dependent on secrecy, proxies, and the constant management of fear, both in their subjects and in themselves.",
+    "DoAndDont": {
+      "Do": "Assume every interaction is a probe for leverage: be precise, verify claims, and keep your own procedures consistent. Treat identity and chain-of-custody as first-class concerns, and separate evidence from panic before you act.",
+      "Dont": "Don’t perform trust as a shortcut—dramatic gestures, threats, or public accusations are easy to exploit. Don’t confuse “calm” with “safe,” and don’t let fear of infiltration become the goal; that is the environment the Dominion is best at shaping."
+    },
+    "Trivia": "Behind the scenes, DS9’s writers initially treated the Founders as intentionally mysterious and distant. The eventual reveal that the Dominion’s architects were the same species as Odo became a defining pivot point for the series’ long-form political and ethical arc."
   }
 ]
