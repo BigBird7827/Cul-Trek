@@ -2,6 +2,7 @@
   {
     "ID": "cul-klingon",
     "Name": "Klingon",
+    "ImageURL": "",
     "Identity": {
       "SpeciesOrPeople": "Klingon",
       "Affiliation": [
@@ -78,6 +79,7 @@
   {
     "ID": "cul-vulcan",
     "Name": "Vulcan",
+    "ImageURL": "",
     "Identity": {
       "SpeciesOrPeople": "Vulcan",
       "Affiliation": [
@@ -152,6 +154,7 @@
   {
     "ID": "cul-human",
     "Name": "Human",
+    "ImageURL": "",
     "Identity": {
       "SpeciesOrPeople": "Humans (Terrans)",
       "Affiliation": [
@@ -229,6 +232,7 @@
   {
     "ID": "cul-borg",
     "Name": "Borg",
+    "ImageURL": "",
     "Identity": {
       "SpeciesOrPeople": "Borg (cybernetic drones; the Borg Collective)",
       "Affiliation": [
@@ -306,6 +310,7 @@
   {
     "ID": "cul-ferengi",
     "Name": "Ferengi",
+    "ImageURL": "",
     "Identity": {
       "SpeciesOrPeople": "Ferengi (Ferengi Alliance)",
       "Affiliation": [
@@ -385,6 +390,7 @@
   {
     "ID": "cul-romulan",
     "Name": "Romulan",
+    "ImageURL": "",
     "Identity": {
       "SpeciesOrPeople": "Romulans (Romulan Star Empire)",
       "Affiliation": [
@@ -464,6 +470,7 @@
   {
     "ID": "cul-cardassian",
     "Name": "Cardassian",
+    "ImageURL": "",
     "Identity": {
       "SpeciesOrPeople": "Cardassians (Cardassian Union)",
       "Affiliation": [
@@ -546,6 +553,7 @@
   {
     "ID": "cul-founders",
     "Name": "Founders",
+    "ImageURL": "",
     "Identity": {
       "SpeciesOrPeople": "Changelings (Founders of the Dominion)",
       "Affiliation": [
@@ -635,6 +643,7 @@
   {
     "ID": "cul-talaxian",
     "Name": "Talaxian",
+    "ImageURL": "",
     "Identity": {
       "SpeciesOrPeople": "Talaxian",
       "Affiliation": [
@@ -719,5 +728,270 @@
       "Dont": "Don’t treat their optimism as ignorance or make light of Rinax and its aftermath. Don’t confuse friendliness with a lack of boundaries, especially with diaspora communities that have learned caution the hard way."
     },
     "Trivia": "Talaxian cultural beats are frequently delivered through Neelix-focused stories, using food, festivals, and faith (especially the Great Forest) as narrative tools to explore grief, belonging, and the work of keeping a crew— or a diaspora—functioning as family."
+  },
+  {
+    "ID": "cul-bajoran",
+    "Name": "Bajorans",
+    "ImageURL": "",
+    "Identity": {
+      "SpeciesOrPeople": "Bajoran (Bajora)",
+      "Affiliation": [
+        "Bajoran Provisional Government / Bajoran Republic",
+        "Bajoran religious orders (Vedek Assembly)"
+      ],
+      "PrimaryHomeworlds": [
+        "Bajor"
+      ],
+      "Regions": [
+        "Alpha Quadrant",
+        "Bajoran system"
+      ]
+    },
+    "Profile": [
+      "Bajoran culture is defined by continuity under pressure: an ancient artistic and spiritual tradition that survives conquest, occupation, and diaspora by treating identity as something practiced daily rather than inherited passively. By the late 24th century, Bajorans are not simply “recovering” from history; they are actively deciding what parts of their past remain binding, what must be reinterpreted, and what must be abandoned for society to function.",
+      "Faith is the most visible public language of Bajoran life. The Prophets are worshiped as the protectors of Bajor, and religious experience is woven into civic reality through rites, blessings, pilgrimages, and the authority of the Kai and the Vedek Assembly. For many Bajorans, belief is not a private preference but a shared framework that shapes moral duties, social etiquette, and political legitimacy.",
+      "The Celestial Temple—known to outsiders as the Bajoran wormhole—sits at the intersection of myth and strategic fact. Its discovery thrust Bajor onto the interstellar stage, but it also reframed Bajoran religion in a uniquely literal way: their gods are associated with a real, reachable phenomenon, and sacred artifacts like the Orbs are treated as conduits to contact and revelation rather than symbolic relics alone.",
+      "The Cardassian Occupation remains the central wound around which modern Bajoran politics turn. The Occupation’s forced labor and systemic brutality produced a fierce resistance movement and a long tail of trauma: arguments over collaborators versus freedom fighters, disputes about justice versus stability, and the psychological habit of reading every policy debate through the lens of survival.",
+      "Bajoran society carries deep pre-Occupation structures that never completely disappear. The D’jarra caste system was set aside during the Occupation so all Bajorans could fight to liberate their world, and it remained largely dormant afterward because too many lives had been reshaped by war. Even so, the idea of “where someone belongs” persists culturally—sometimes as tradition, sometimes as prejudice, and sometimes as a political tool.",
+      "Bajoran identity is also intensely personal and visible. The Bajoran earring functions as a religious symbol and a marker of family, and before the Occupation it could indicate D’jarra affiliation. Alongside it, concepts like the pagh (life force) and practices like the ear-touch blessing language make spirituality tangible in everyday interactions—something you can be addressed about, tested on, or comforted by in a single gesture."
+    ],
+    "Practices": [
+      {
+        "Name": "Veneration of the Prophets",
+        "Description": "Bajoran religious life centers on the Prophets, with ritual language, blessings, and moral duties framed as alignment with the Prophets’ will. Religious authority is formalized through the Kai and the Vedek Assembly, and spiritual legitimacy can have direct political consequences."
+      },
+      {
+        "Name": "Link to the Celestial Temple",
+        "Description": "The Bajoran wormhole is treated as the Celestial Temple: a sacred place tied to prophecy, revelation, and the Prophets themselves. Pilgrimage thinking and prophetic interpretation shape how Bajorans understand major events, including war, leadership, and social change."
+      },
+      {
+        "Name": "Use of the Orbs (Tears of the Prophets)",
+        "Description": "The Orbs are revered artifacts associated with the Prophets and the Celestial Temple, sought for guidance and profound spiritual experiences. Access to the Orbs historically involved religious protocol, with the Vedek Assembly connected to their stewardship."
+      },
+      {
+        "Name": "“Pagh is strong” blessing language",
+        "Description": "Bajorans describe spiritual vitality as the pagh. Spiritual leaders may assess or affirm someone’s pagh through an ear-grasp gesture, using it as both blessing and social signal—supportive in comfort, but also capable of carrying judgment or authority."
+      },
+      {
+        "Name": "Earring as faith and family marker",
+        "Description": "The Bajoran earring is individualized and bears a family symbol. It is usually worn on the right ear (though some wear it on the left), and in earlier eras it also communicated D’jarra affiliation—making it a compact symbol of lineage, belief, and social placement."
+      },
+      {
+        "Name": "Post-Occupation civic rebuilding",
+        "Description": "After Cardassian withdrawal, Bajor rebuilds through a provisional state structure working alongside religious institutions. The cultural practice here is negotiation itself: balancing faith authority, secular governance, and the unresolved moral ledger of the Occupation."
+      }
+    ],
+    "FoodAndDrink": [
+      "Hasperat (spicy Bajoran wrap)",
+      "Springwine (fermented kava juice)",
+      "Jumja stick",
+      "Bajoran ale (synthale)"
+    ],
+    "CanonAnchors": [
+      "TNG S5E3 — Ensign Ro: Establishes Bajoran refugee context and the Bajoran earring as cultural/religious identifier.",
+      "DS9 S1E1–2 — Emissary: Introduces Bajoran faith language (pagh), the Bajoran Resistance’s aftermath, and the discovery of the Bajoran wormhole/Celestial Temple.",
+      "DS9 S2E23–25 — The Homecoming / The Circle / The Siege: Shows the fragility of the Bajoran Provisional Government and the political use of religion and identity.",
+      "DS9 S4E5 — Accession: Directly addresses the D’jarra system and the tension between tradition and a changed post-Occupation society.",
+      "DS9 S6E26 — Tears of the Prophets: Demonstrates how Bajoran religious stakes can become interstellar stakes.",
+      "DS9 S7E25–26 — What You Leave Behind: Resolves the Prophets/Pah-wraiths conflict and closes the Dominion War era impact on Bajor."
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Kira Nerys",
+        "Ro Laren",
+        "Kai Opaka",
+        "Kai Winn Adami",
+        "Vedek Bareil Antos",
+        "Shakaar Edon",
+        "Benjamin Sisko (Emissary)"
+      ],
+      "Organizations": [
+        "Vedek Assembly",
+        "Bajoran Resistance",
+        "Bajoran Provisional Government / Bajoran Republic",
+        "Cardassian Union"
+      ],
+      "Planets": [
+        "Bajor"
+      ],
+      "Artifacts": [
+        "Bajoran earring",
+        "Orbs of the Prophets"
+      ]
+    },
+    "Misconceptions": "Bajorans are sometimes treated as “just religious” or “just victims of the Occupation.” Canon presents something broader: a people whose faith is a public institution, whose politics are inseparable from recovery, and whose identity includes art, history, and debate over what tradition means after it has been used both to preserve and to divide.",
+    "DoAndDont": {
+      "Do": "Treat faith markers and blessing language with respect, and understand that religion and government often share legitimacy on Bajor. When discussing the Occupation, separate facts from rumor and recognize that “collaborator” is not a casual label in Bajoran memory.",
+      "Dont": "Don’t weaponize spiritual terms to win arguments, and don’t assume every Bajoran holds identical views on tradition, Federation membership, or post-Occupation justice. Don’t reduce the earring to fashion; it can carry family and social meaning."
+    },
+    "Trivia": "Bajoran culture first entered on-screen as a refugee and resistance context in TNG, then became the civic-and-spiritual backbone of DS9, where the earring, the Vedek Assembly/Kai structure, and the Celestial Temple were expanded into long-form story engines."
+  },
+  {
+    "ID": "cul-trill",
+    "Name": "Trill",
+    "ImageURL": "",
+    "Identity": {
+      "SpeciesOrPeople": "Trill (humanoid Trill and Trill symbionts; joined Trill hosts)",
+      "Affiliation": [
+        "Trill government",
+        "Trill Symbiosis Commission"
+      ],
+      "PrimaryHomeworlds": [
+        "Trill"
+      ],
+      "Regions": [
+        "Alpha Quadrant",
+        "Trill system"
+      ]
+    },
+    "Profile": [
+      "Trill culture is shaped by a rare social reality: two sentient species share one world and, for a select minority, one life. Humanoid Trill may be “joined” with a Trill symbiont, forming a single continuing person whose memories and skills span multiple host lifetimes. The joined individual is neither host nor symbiont alone, but a blended identity expected to grow by seeking new experiences rather than repeating old patterns.",
+      "This continuity creates prestige and pressure. Joined Trill often carry reputations that stretch across generations, and Trill society developed institutions to prevent joining from turning into an inherited aristocracy. The Trill Symbiosis Commission controls the selection and training of candidates, the stewardship of symbionts, and nearly every formal aspect of joining—making it both cultural guardian and political gatekeeper.",
+      "The physical heart of Trill symbiosis is underground. Symbionts naturally live in nutrient-rich pools within the Caves of Mak’ala, tended by Trill guardians. Joining is treated as a high-stakes medical and cultural rite: the symbiont must be protected, the host must be psychologically stable, and the combined individual must be able to integrate past lives without losing functional selfhood.",
+      "One of the most distinctive Trill laws is the taboo on reassociation: joined Trill are forbidden from resuming romantic relationships that their symbiont previously had in earlier host lifetimes. The stated purpose is cultural—joining is meant to expand experience, not to re-run prior lives—so the society tries to prevent life-after-life dynasties of power and intimacy. The penalty is severe: exile from Trill society, which can effectively doom the symbiont to die with its current host rather than be transferred.",
+      "Trill identity is also visible in everyday life. Many Trill display distinctive spots along the temples and down the body, which become a quiet marker of heritage in multi-species environments. Among Trill themselves, however, the deeper social dividing line is not appearance but status: unjoined Trill form the overwhelming majority, while joined Trill live under heightened scrutiny and expectation.",
+      "In practice, Trill culture is a constant negotiation between personal autonomy and collective responsibility. Joining offers extraordinary continuity, but it depends on secrecy, regulation, and shared norms strong enough to keep centuries of memory from dominating a society built to include people who live only one life."
+    ],
+    "Practices": [
+      {
+        "Name": "Joining (host–symbiont union)",
+        "Description": "A Trill host is surgically joined with a Trill symbiont, forming a single blended person with access to multiple lifetimes of memory and skills. The process is culturally prestigious and medically complex, with strict preparation and oversight."
+      },
+      {
+        "Name": "Symbiosis Commission stewardship",
+        "Description": "The Symbiosis Commission oversees candidate testing, host preparation, symbiont care, and transfer protocols. Its role shapes Trill society by deciding who may join and by enforcing cultural rules tied to joining."
+      },
+      {
+        "Name": "Life-story continuity and “new experience” ethos",
+        "Description": "Joined Trill are expected to diversify their lives—new careers, new relationships, new perspectives—rather than replaying prior host patterns. This expectation is reinforced socially and, in some areas, legally."
+      },
+      {
+        "Name": "Reassociation taboo",
+        "Description": "Joined Trill are forbidden from resuming past romantic relationships from earlier host lifetimes. The taboo is framed as protection against entrenched dynasties and repetition, and violations can bring exile."
+      },
+      {
+        "Name": "Symbiont pool communion",
+        "Description": "Within the symbiont pools, joined Trill can encounter and be confronted by suppressed memories or prior host personalities, reinforcing the idea that joining is an ongoing integration rather than a one-time event."
+      }
+    ],
+    "FoodAndDrink": [
+      "Raktajino is not Trill (avoid mixing cuisines)",
+      "Trill cuisine varies by region; most on-screen Trill cultural focus centers on joining rather than signature dishes"
+    ],
+    "CanonAnchors": [
+      "TNG S4E23 — The Host: Introduces Trill joining to the audience and shows the host–symbiont continuity concept.",
+      "DS9 S1E8 — Dax: Establishes Trill legal/medical aspects of joined identity and the Symbiosis Commission’s role.",
+      "DS9 S2E4 — Invasive Procedures: Shows symbiont transfer as high stakes and socially/ethically fraught.",
+      "DS9 S3E4 — Equilibrium: Centers the Caves of Mak’ala and the consequences of suppressed past-host memories.",
+      "DS9 S4E6 — Rejoined: Defines the reassociation taboo and its punishment in Trill society.",
+      "DS9 S7E9 — Field of Fire: Explores how a dangerous prior host identity can surface and the risks of memory continuity."
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Jadzia Dax",
+        "Ezri Dax",
+        "Curzon Dax",
+        "Lenara Kahn"
+      ],
+      "Organizations": [
+        "Trill Symbiosis Commission",
+        "Trill Guardians"
+      ],
+      "Planets": [
+        "Trill",
+        "Mak'ala (capital region)"
+      ],
+      "Artifacts": [
+        "Symbiont pools (Caves of Mak’ala)",
+        "Isoboramine (linked to joined Trill physiology)"
+      ]
+    },
+    "Misconceptions": "Trill are sometimes reduced to “the spotted species,” or joined Trill are treated as a simple form of reincarnation. Canon presents joining as a regulated, high-risk symbiosis between two sentient species, producing a single continuing person who must actively integrate multiple lives while living under cultural rules designed to keep that continuity from becoming a hereditary elite.",
+    "DoAndDont": {
+      "Do": "Treat a joined Trill as a whole person in the present, while respecting that their history may include lifetimes of experience. If Trill Symbiosis Commission protocol is involved, assume confidentiality and formality matter.",
+      "Dont": "Don’t assume you’re speaking to a prior host, and don’t pressure a joined Trill to relive or “perform” old relationships. Don’t treat reassociation rules as casual trivia; violations can have life-and-death consequences for a symbiont."
+    },
+    "Trivia": "Trill joining first appeared on-screen in TNG, then DS9 expanded it into a full social system: symbiont pools, institutional oversight by the Symbiosis Commission, and the reassociation taboo became recurring story engines for identity, ethics, and politics."
+  },
+  {
+    "ID": "cul-ocampa",
+    "Name": "Ocampa",
+    "ImageURL": "",
+    "Identity": {
+      "SpeciesOrPeople": "Ocampa (Ocampan)",
+      "Affiliation": [
+        "Ocampa society (underground city)",
+        "Caretaker’s protectorate (historical)"
+      ],
+      "PrimaryHomeworlds": [
+        "Ocampa (planet)"
+      ],
+      "Regions": [
+        "Delta Quadrant",
+        "Ocampa system",
+        "Near the Caretaker’s array"
+      ]
+    },
+    "Profile": [
+      "The Ocampa are a Delta Quadrant humanoid species whose modern society was shaped by catastrophe and paternalistic rescue. Canon explains that their planet’s atmosphere was devastated long before Voyager arrives; in response, the Nacene known as the Caretaker led the Ocampa into tunnels and established a vast underground city, supplying food, water, power, and protection from orbit via the Caretaker’s array. citeturn0search0turn0search6turn0search20",
+      "Life underground created a culture oriented around safety, scarcity management, and reliance on systems the Ocampa themselves did not fully control. The Caretaker sealed them behind a protective force barrier and maintained resources, but that security came with isolation—limiting exploration and leaving the society vulnerable if the caretaker system failed. citeturn0search0turn0search3turn0search20",
+      "Ocampan biology is a defining cultural constraint. On-screen canon describes a normal lifespan of about nine years, with telepathic and latent psionic abilities that can be unusually strong in certain individuals. This compression of life stages pushes Ocampa social development toward accelerated adulthood, intense attachment, and a heightened urgency around meaning, mentorship, and legacy. citeturn0search4turn0search12",
+      "Reproduction is tied to a single, once-in-a-lifetime biological event called the elogium. Canon states that it typically occurs between ages four and five, and that an Ocampan female must conceive during that limited window if she is to have a child; the process involves a mitral sac developing in the posterior neck and can produce severe physiological stress. This creates cultural pressures around partnership, readiness, and communal support at a very specific life moment. citeturn0search15turn0search2",
+      "By the time Voyager encounters them, Ocampa security is entangled with regional politics. The Kazon seek the Caretaker’s array, and the Caretaker—dying and unable to continue—tries to prevent his technology from falling into Kazon hands. Captain Janeway ultimately destroys the array, trading Voyager’s chance to return home for the Ocampa’s protection from Kazon control, but leaving their long-term future dependent on their own adaptation. citeturn0search20turn0search3turn0search26",
+      "Ocampan identity in Federation-facing stories is most often voiced through Kes: curiosity, gentleness, and an underlying resilience that appears when sheltered assumptions meet a wider galaxy. Canon uses the Ocampa to explore what a ‘protected’ society owes itself once its protector is gone—and how a short-lived people chooses what to become when time is their tightest resource. citeturn0search4turn0search20"
+    ],
+    "Practices": [
+      {
+        "Name": "Underground-city communal living",
+        "Description": "Ocampan society is organized around a constructed subterranean city with shared systems for water, power, and food distribution. The environment reinforces communal norms and collective responsibility for resource stewardship. citeturn0search0"
+      },
+      {
+        "Name": "Reliance on caretaker infrastructure",
+        "Description": "For generations, the Ocampa depended on energy and protection provided from the Caretaker’s array and the barrier enclosing their city, producing a cultural habit of negotiated dependency and a fear of outside predation. citeturn0search0turn0search6"
+      },
+      {
+        "Name": "Telepathic etiquette and mental discipline",
+        "Description": "The Ocampa are described as telepathic with latent psychic ability; social behavior often assumes heightened emotional awareness and the need for mental boundaries, especially as individual abilities manifest. citeturn0search4turn0search12"
+      },
+      {
+        "Name": "Elogium support customs",
+        "Description": "The elogium is a single life-stage event in which an Ocampan female becomes capable of conceiving; because the window is limited and physically taxing, the society treats it as a high-importance period requiring support, preparation, and guidance. citeturn0search15"
+      },
+      {
+        "Name": "Mentorship across compressed lifespans",
+        "Description": "With a typical nine-year lifespan, the culture emphasizes teaching and transferring practical knowledge early, and treating adulthood as a rapid transition rather than a long phase. citeturn0search4"
+      }
+    ],
+    "FoodAndDrink": [
+      "Ocampan food culture is largely depicted through caretaker-provided supplies rather than signature named dishes on-screen. citeturn0search0"
+    ],
+    "CanonAnchors": [
+      "VOY S1E1–2 — Caretaker: Establishes the Ocampa homeworld’s atmosphere crisis, the underground city, the Caretaker’s role, and the array’s importance. citeturn0search20turn0search3",
+      "VOY S2E4 — Elogium: Defines the elogium and the one-time reproductive window in Ocampan biology. citeturn0search15",
+      "VOY S2E10 — Cold Fire: Expands Ocampan psychic potential and shows how power and identity can diverge from the homeworld’s sheltered norms. citeturn0search16",
+      "VOY S3E21 — Before and After: Uses Ocampan aging/lifespan stakes as core plot pressure for Kes. citeturn0search4"
+    ],
+    "RelatedEntries": {
+      "People": [
+        "Kes",
+        "The Caretaker (Nacene)"
+      ],
+      "Organizations": [
+        "Nacene (Caretakers)"
+      ],
+      "Planets": [
+        "Ocampa (planet)"
+      ],
+      "Artifacts": [
+        "Caretaker’s array",
+        "Force barrier (underground city)"
+      ]
+    },
+    "Misconceptions": "Ocampa are sometimes treated as simply ‘naïve’ or ‘helpless.’ Canon shows a society shaped by enforced safety: dependence was engineered by circumstances and caretaker design, and the real cultural question is how a short-lived people rebuilds agency once the protective system that kept them alive is removed. citeturn0search0turn0search20",
+    "DoAndDont": {
+      "Do": "Treat Ocampan autonomy as the priority: offer information, choices, and practical support that helps them build self-sustaining infrastructure, and be mindful of how quickly life stages move for them. citeturn0search4",
+      "Dont": "Don’t replicate the Caretaker’s paternalism by making decisions for them ‘for their own good,’ and don’t assume telepathy means consent or emotional transparency—mental boundaries still matter. citeturn0search4turn0search12"
+    },
+    "Trivia": "On-screen, the Ocampa are primarily introduced through Kes and the Voyager pilot’s ethical choice: destroy the array to keep it from the Kazon, even though it strands Voyager far from home. citeturn0search20turn0search26"
   }
 ]
