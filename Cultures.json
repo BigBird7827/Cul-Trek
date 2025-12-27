@@ -21,7 +21,10 @@
       "Klingons preserve identity through ceremony, poetry, and performance alongside warfare. Legendary figures such as Kahless the Unforgettable are invoked as touchstones for legitimacy and conduct, and rites around adulthood and marriage present commitment as something proven through endurance and shared hardship. Belief about the honored dead reaching Sto-vo-kor gives the culture a long horizon: how one lives is treated as inseparable from how one will be remembered, sung about, and judged.",
       "Klingon society places heavy weight on family reputation, ancestry, and duty to one’s House. Status is negotiated in the open: skill, courage, and reliability in crisis matter, and insults that touch a family name can escalate into formal challenges rather than private arguments. The Great Houses provide identity and leverage, and their rivalries can shape careers, alliances, and legal outcomes; the High Council turns tradition into governance, linking personal conduct to public standing. Because honor is communal, Klingons may accept personal sacrifice to protect a House’s future, and disgrace can be socially devastating. At the same time, everyday life includes mentorship, competitive fellowship, story, song, and the repeated testing of character in small ways—keeping one’s word, paying debts, honoring oaths, and showing composure when provoked.",
       "Klingon–Federation relations shift across eras from hostility to peace and cooperation, with major treaties such as the Khitomer Accords forming a foundation for reconciliation. Even during alliance periods, internal Klingon politics and differing assumptions about honor can strain cooperation: Klingons often prize decisive action and personal accountability, while Starfleet may emphasize procedure, diplomacy, and restraint. Cultural misunderstanding is common—what Starfleet reads as reckless aggression may be, to Klingons, an honest willingness to stand and be counted—yet trusted personal bonds between officers and shared defense against common threats repeatedly pull the relationship back toward partnership.",
-      "Common misreads include: Honor is the same as aggression; All Klingons share one outlook; Tradition means they cannot change."
+      "Common misreads include: Honor is the same as aggression; All Klingons share one outlook; Tradition means they cannot change.",
+      "Klingon politics is structured around a feudal House system, where lineage and patronage matter almost as much as battlefield success. The most powerful Houses are represented on the Klingon High Council, and shifts in House alliances can change the Empire’s direction quickly—especially during leadership transitions or succession crises. Public ceremony is part of governance: open councils, formal challenges, and carefully witnessed oaths are all mechanisms for making power feel legitimate.",
+      "Honor in Klingon life has an institutional edge. The High Council can impose formal disgrace—discommendation—stripping a Klingon (and often their family) of standing, turning reputation into a legal and social penalty rather than a private feeling. That threat makes daily conduct intensely consequential: what you say in public, how you treat guests, and whether you accept responsibility can echo for generations.",
+      "Klingon spirituality and identity are closely tied to legendary history, especially Kahless as a founding figure. References to Kahless aren’t only devotional; they show up in law, leadership rhetoric, and personal self-image. Even Klingons who treat faith skeptically often still speak the language of Kahless and a warrior’s afterlife because those stories function as shared cultural glue."
     ],
     "Practices": [
       {
@@ -35,17 +38,29 @@
       {
         "Name": "Klingon marriage rites",
         "Description": "Klingon weddings are strongly ritualized, often involving traditional recitation, formal roles, and social tests that treat the ceremony as a serious cultural performance rather than a private exchange of vows. House expectations can loom over the event, and the ritual can require the couple to demonstrate unity under pressure rather than romance in public. Marriage is framed as duty, lineage, and reputation as much as affection. The ceremony asserts that commitment is proven through endurance and clarity of intent—two people are binding themselves in a way that reflects on their families and may affect House standing. When a Klingon wedding goes poorly, it is not merely awkward; it can be read as a sign that the union lacks the discipline and strength the culture expects."
+      },
+      {
+        "Name": "Discommendation (formal disgrace)",
+        "Description": "Discommendation is a High Council action that publicly strips a Klingon of personal and/or family honor. Because a House’s reputation is communal, the shame can spill across relatives and allies. The practice functions as both punishment and warning: it signals that the Empire is withdrawing recognition, not just expressing disapproval."
+      },
+      {
+        "Name": "Council ceremony and the politics of legitimacy",
+        "Description": "Major decisions are commonly framed as ritual: council proceedings, formal declarations, and public affirmation of leadership. Even when Klingon politics are ruthless, legitimacy is expected to be seen and witnessed—oaths spoken aloud, challenges answered directly, and tradition invoked as a public record of intent."
       }
     ],
     "FoodAndDrink": [
-      "Klingon cuisine is associated with intense flavors and bold presentation, and meals can function as a social test of toughness and sincerity. Common examples include gagh (a well-known dish of serpent worms), racht, heart of targ, and rokeg blood pie, along with other referenced foods such as bregit lung and pipius claw; the emphasis on freshness and texture can challenge outsiders’ expectations, and Klingons may treat willingness to partake as a sign of comfort with their ways. Drinks carry cultural meaning in celebration and camaraderie: bloodwine is strongly associated with Klingon gatherings and is traditionally served warm, and warnog is a familiar point of reference as Klingon beer. Sharing food and drink often helps establish credibility—participation can be taken as respect, while refusal may be read as discomfort depending on context."
+      "Klingon cuisine is associated with intense flavors and bold presentation, and meals can function as a social test of toughness and sincerity. Common examples include gagh (a well-known dish of serpent worms), racht, heart of targ, and rokeg blood pie, along with other referenced foods such as bregit lung and pipius claw; the emphasis on freshness and texture can challenge outsiders’ expectations, and Klingons may treat willingness to partake as a sign of comfort with their ways. Drinks carry cultural meaning in celebration and camaraderie: bloodwine is strongly associated with Klingon gatherings and is traditionally served warm, and warnog is a familiar point of reference as Klingon beer. Sharing food and drink often helps establish credibility—participation can be taken as respect, while refusal may be read as discomfort depending on context.",
+      "Klingon meals often function as a social test: bold flavors, strong drinks, and direct table talk are used to measure nerve and sincerity. Hosts may push guests toward shared dishes or traditional preparations, not to intimidate for its own sake, but to see whether a person can meet the moment without evasions."
     ],
     "CanonAnchors": [
       "TNG S3E17 — Sins of the Father: A clear look at Great House politics and the mechanics of honor, disgrace, and inherited reputation, showing how personal choices become legal and political judgments inside the Empire.",
       "TNG S2E8 — A Matter of Honor: Riker’s exchange service highlights Klingon command expectations, blunt social norms, and how belonging is tested through conduct at the table and on duty.",
       "TNG S6E23 — Rightful Heir: Explores faith and legitimacy through Kahless, showing how spiritual tradition and political authority can collide and reshape personal identity.",
       "TNG S7E21 — Firstborn: Depicts the Rite of Ascension and pressures on Klingon youth, illustrating that not every Klingon fits the warrior ideal the culture celebrates.",
-      "DS9 S6E7 — You Are Cordially Invited: A practical view of Klingon marriage as tradition and social obligation, with ritual requirements and public tests shaping what the union means."
+      "DS9 S6E7 — You Are Cordially Invited: A practical view of Klingon marriage as tradition and social obligation, with ritual requirements and public tests shaping what the union means.",
+      "TNG S3E17 — Sins of the Father: House politics, inherited stigma, and Council judgment define the stakes of Klingon honor.",
+      "TNG S4E7 — Reunion: Personal loyalty and political legitimacy collide amid leadership conflict.",
+      "TNG S5E16 — Ethics: Klingon duty and beliefs about death shape a moral conflict about autonomy and suffering."
     ],
     "RelatedEntries": {
       "People": [
@@ -69,12 +84,12 @@
         "d'k tahg"
       ]
     },
-    "Misconceptions": "Klingons are often stereotyped as mindless brawlers who value violence for its own sake. In, they can be aggressive and competitive, but the culture also prizes poetry, ritual, loyalty, and the public keeping of one’s word; “honor” is argued, performed, and enforced through social rules as much as through combat.",
+    "Misconceptions": "Klingons are often stereotyped as mindless brawlers who value violence for its own sake. In, they can be aggressive and competitive, but the culture also prizes poetry, ritual, loyalty, and the public keeping of one’s word; “honor” is argued, performed, and enforced through social rules as much as through combat.\n\nNot every Klingon is a constant brawler. Even within warrior culture there are expectations for discipline, eloquence, and restraint when the moment calls for it, and many Klingons judge a person more by steadiness under pressure than by volume or swagger.",
     "DoAndDont": {
       "Do": "Be direct, keep your promises, and show respect for reputation and oaths; competence and courage count more than flattery. If you must disagree, do it plainly and be ready to stand behind your position.",
       "Dont": "Don’t insult a person’s House, family, or integrity casually, and don’t hide behind evasive language. Avoid treating their traditions as jokes, or assuming that every situation requires proving dominance."
     },
-    "Trivia": "The most fully developed form of the Klingon language was created for the films by linguist Marc Okrand, who also coached actors on pronunciation and dialogue for multiple Star Trek productions."
+    "Trivia": "The most fully developed form of the Klingon language was created for the films by linguist Marc Okrand, who also coached actors on pronunciation and dialogue for multiple Star Trek productions.\n\nKlingon governance is strongly tied to the High Council and the Great Houses, and formal disgrace (discommendation) can be used as an institutional tool to strip honor from an individual or family."
   },
   {
     "ID": "cul-vulcan",
@@ -98,7 +113,10 @@
       "Privacy is a defining norm. Deeply personal matters—bonding, telepathic intimacy, and family commitments—are handled discreetly, with trust signaled through specific rituals and carefully bounded forms of closeness. The outward reserve is often misread as coldness, but it is frequently intended as respect and restraint: limiting one’s emotional impact on others and keeping intimate life protected rather than performed.",
       "Education and self-mastery are central to Vulcan daily life. Training in mental disciplines begins early, and many Vulcans study with teachers or masters to refine meditation, focus, and emotional regulation; public conduct tends to be formal and measured, and disagreements are often framed as questions of logic and evidence rather than displays of feeling. Family life can reflect tradition and obligation: tradition includes arranged engagements and long-standing commitments, and personal choices are weighed against duty, reputation, and cultural continuity. Telepathic practices carry special weight because of their intimacy—consent and discretion are treated as essential—and the mind meld is depicted as a serious act rather than casual contact, sometimes even surrounded by stigma in certain eras. Institutions of learning and service are prestigious, and competence is often treated as an ethical obligation to apply reason responsibly.",
       "Vulcans have long-standing ties to Starfleet and the Federation, frequently contributing scientific expertise, diplomatic caution, and a preference for measured escalation. Cultural differences can create friction—especially around emotional expression, improvisation, and risk tolerance—but shared principles and sustained cooperation usually reinforce the partnership. Vulcans may be perceived as judgmental when attempting to prevent harm through caution, while Vulcans may perceive Starfleet as reckless when it values speed over deliberation; the relationship works best when both sides recognize that the same ethical goal—reducing harm—can produce different instincts about how to act.",
-      "Common misreads include: Vulcans have no emotions; Logic means lack of compassion; All Vulcans think alike."
+      "Common misreads include: Vulcans have no emotions; Logic means lack of compassion; All Vulcans think alike.",
+      "Modern Vulcan society is deeply shaped by Surak’s reforms and the cultural project of mastering emotion through logic and discipline. Logic is not treated as a personality quirk but as an ethical obligation: a way to prevent the violence and instability that nearly destroyed Vulcan civilization in its pre-Surak past.",
+      "Vulcans often communicate with intentional restraint—measured speech, controlled body language, and formal greeting customs—because they regard emotional leakage as discourteous and strategically unhelpful. That restraint can read as coldness to outsiders, but among Vulcans it is frequently read as respect and self-control.",
+      "Some Vulcans pursue Kolinahr, a quasi-monastic discipline meant to purge remaining vestigial emotions. It is respected but not required; Vulcan culture includes a range of commitments to the ideal of “pure logic,” from everyday meditation to lifelong ascetic practice."
     ],
     "Practices": [
       {
@@ -112,17 +130,29 @@
       {
         "Name": "Kolinahr training",
         "Description": "A demanding mental discipline pursued by some Vulcans to purge remaining emotional disturbances and pursue a state of pure logic through sustained meditation and study. Participation is not universal, and the path is depicted as a rigorous commitment rather than a simple certification. Kolinahr represents an idealized endpoint of Vulcan self-mastery and the belief that logic requires continual practice. It also underscores diversity within Vulcan society: some strive for absolute emotional purgation, while others pursue balance, service, and practical discipline without seeking that extreme."
+      },
+      {
+        "Name": "Logic disciplines and meditation",
+        "Description": "Daily meditation and structured mental exercises are central to Vulcan life. These practices are framed as maintenance, not mysticism: the point is to keep passions from driving decisions, especially in high-stakes environments like command, science, and diplomacy."
+      },
+      {
+        "Name": "Privacy around pon farr",
+        "Description": "Pon farr is treated as intensely private. Vulcans generally avoid discussing it openly and often consider it inappropriate to involve outsiders in another Vulcan’s pon farr unless circumstances leave no alternative, which is one reason it can be misunderstood in mixed crews."
       }
     ],
     "FoodAndDrink": [
-      "Vulcan cuisine is typically depicted as simple and functional, with traditional staples becoming cultural shorthand for restraint. Common examples include plomeek soup (and plomeek broth), which is often described as bland and associated with routine meals, along with other named foods such as gespar, halak, pok tar, tevmel, and redspice. Beverages identified in Vulcan contexts include plomeek tea and spice tea, and references also include tea, mocha, brandy, and port. In, Vulcan food-and-drink moments frequently serve as character cues: preference for plain staples can signal commitment to discipline, while variations and exceptions underline that Vulcan life includes individuality within strong social norms."
+      "Vulcan cuisine is typically depicted as simple and functional, with traditional staples becoming cultural shorthand for restraint. Common examples include plomeek soup (and plomeek broth), which is often described as bland and associated with routine meals, along with other named foods such as gespar, halak, pok tar, tevmel, and redspice. Beverages identified in Vulcan contexts include plomeek tea and spice tea, and references also include tea, mocha, brandy, and port. In, Vulcan food-and-drink moments frequently serve as character cues: preference for plain staples can signal commitment to discipline, while variations and exceptions underline that Vulcan life includes individuality within strong social norms.",
+      "Vulcan food culture tends to favor simplicity and nourishment over indulgence. Shared meals can be formal and quiet, with an emphasis on moderation; the social signal is reliability and calm rather than exuberant hospitality."
     ],
     "CanonAnchors": [
       "TOS S2E1 — Amok Time: A cornerstone depiction of Vulcan ritual life and privacy, introducing pon farr and showing how tradition and obligation can override ordinary professional routines.",
       "TOS S3E22 — The Savage Curtain: Uses Surak as a philosophical reference point, reinforcing logic as an intentional response to Vulcan history and a foundation for cultural identity.",
       "Film — Star Trek: The Motion Picture: Connects Vulcan spiritual discipline to kolinahr and depicts ceremonial and monastic aspects of Vulcan life as lived practice.",
       "ENT S2E14 — Stigma: Explores stigma around mind meld practice and the social consequences of taboo, highlighting reputation and institutional power inside Vulcan society.",
-      "TNG S3E23 — Sarek: Shows Vulcan emotional discipline under strain and frames mind-to-mind contact as intimate, powerful, and personally costly."
+      "TNG S3E23 — Sarek: Shows Vulcan emotional discipline under strain and frames mind-to-mind contact as intimate, powerful, and personally costly.",
+      "TOS S2E1 — Amok Time: Establishes pon farr, its secrecy, and how it can upend a Vulcan’s life if mishandled.",
+      "ENT S4E9 — Kir'Shara: Links Surak-era history and the political stakes of Vulcan philosophy.",
+      "TNG S3E7 — Sarek: Explores the tension between Vulcan emotional discipline and the reality of aging and intimacy."
     ],
     "RelatedEntries": {
       "People": [
@@ -144,12 +174,12 @@
         "Kir'Shara"
       ]
     },
-    "Misconceptions": "Vulcans are often mislabeled as emotionless or incapable of empathy. consistently treats them as highly emotional by nature, but culturally committed to rigorous control, privacy, and disciplined habits that keep feeling from steering decisions or harming others.",
+    "Misconceptions": "Vulcans are often mislabeled as emotionless or incapable of empathy. consistently treats them as highly emotional by nature, but culturally committed to rigorous control, privacy, and disciplined habits that keep feeling from steering decisions or harming others.\n\nVulcan logic is not the absence of feeling—it’s an active practice of management. Many Vulcans experience strong emotions; the cultural difference is that they treat self-control as a duty and train it like a skill.",
     "DoAndDont": {
       "Do": "Speak precisely, respect privacy, and give them room to deliberate; measured tone reads as courtesy, not coldness. When trust is offered through a ritual or personal disclosure, treat it as significant.",
       "Dont": "Don’t bait them into emotional displays or assume restraint equals dishonesty. Avoid pressing into intimate topics (bonding, telepathy, family matters) as casual conversation."
     },
-    "Trivia": "Leonard Nimoy created the Vulcan salute for \"Amok Time,\" drawing inspiration from a Jewish priestly blessing gesture he remembered from childhood."
+    "Trivia": "Leonard Nimoy created the Vulcan salute for \"Amok Time,\" drawing inspiration from a Jewish priestly blessing gesture he remembered from childhood.\n\nKolinahr training is described as quasi-monastic and can take years, while pon farr occurs on a cycle (commonly described as every seven years of adult life) and is considered extremely private."
   },
   {
     "ID": "cul-human",
@@ -174,7 +204,10 @@
       "In the 22nd–24th centuries, Humans are repeatedly depicted as adaptable generalists. They are rarely described as physically or technologically exceptional compared to their neighbors, but they tend to integrate ideas quickly, improvise under pressure, and translate disparate perspectives into workable compromises. That flexibility becomes a cultural asset in diplomacy, where Humans often act as mediators between species with rigid traditions or long-standing grudges.",
       "Human society is shown as post-scarcity in everyday life across much of the Federation era: material need is minimized, education and personal growth are emphasized, and careers are often framed as service, curiosity, and self-actualization. Identity is still diverse—regional histories and languages remain visible—yet “Humanity” is treated as a single political community through United Earth and as a leading constituency inside the Federation.",
       "Political influence is tied to Earth’s institutional density: Starfleet Headquarters and Starfleet Academy are located in San Francisco, and Federation-level leadership is associated with Paris. Humans are present throughout Federation governance and Starfleet command structures, which also makes them a frequent point of contact for other species—admired by some for openness and criticized by others for impatience, optimism, or a tendency to assume cooperation is the default state.",
-      "Despite the hopeful tone, Human culture retains recognizable tensions. Humans can be stubborn, emotionally expressive, and prone to moral certainty, and Starfleet’s exploratory ideal is repeatedly tested by security crises, wartime choices, and the limits of principle. Often treats those tests as the point: the “Human” identity is not purity of logic or ritual honor, but the willingness to argue, learn, and keep choosing a better version of itself."
+      "Despite the hopeful tone, Human culture retains recognizable tensions. Humans can be stubborn, emotionally expressive, and prone to moral certainty, and Starfleet’s exploratory ideal is repeatedly tested by security crises, wartime choices, and the limits of principle. Often treats those tests as the point: the “Human” identity is not purity of logic or ritual honor, but the willingness to argue, learn, and keep choosing a better version of itself.",
+      "Human culture in the 22nd–24th centuries is often depicted as unusually adaptive and coalition-driven: Humans build institutions that let diverse people cooperate at scale, even when values conflict. That tendency becomes a defining reputation within Starfleet and the Federation—Humans as mediators, generalists, and bridge-builders.",
+      "Earth’s political identity evolves into United Earth after global unification and First Contact in 2063. Later, Earth becomes a core Federation member, and the culture frequently frames its own history as a lesson in turning rivalry into shared purpose.",
+      "Starfleet Academy on Earth becomes a prominent cultural engine for Humans and many other species, serving as both an educational institution and a shared myth of service, exploration, and civic duty."
     ],
     "Practices": [
       {
@@ -192,18 +225,30 @@
       {
         "Name": "Earth heritage and continuity",
         "Description": "Even in a unified world, Humans keep strong attachments to local history—cities, languages, literature, music, and foodways. This shows up in travel choices, personal rituals, and the way Humans use old Earth references as identity markers in multicultural crews."
+      },
+      {
+        "Name": "Academy tradition and service pathways",
+        "Description": "Starfleet Academy is repeatedly framed as the main training ground for Starfleet officers. Over time it becomes more than a school: a cultural rite of passage, an identity marker, and a place where Humans learn to live with (and lead alongside) aliens as a normal part of adulthood."
+      },
+      {
+        "Name": "United Earth civic identity",
+        "Description": "United Earth functions as a planetary authority and a symbol of post-crisis reconstruction. The idea that Earth ‘got its act together’ after catastrophe is treated as a moral narrative Humans export into diplomacy and Federation-building."
       }
     ],
     "FoodAndDrink": [
       "Human food culture is highly pluralistic and travels with them., Humans eat everything from simple shipboard meals to regional cuisines and restaurant-style dining, and the replicator era turns “variety on demand” into a daily norm. When Humans share food with outsiders, it often functions as diplomacy-by-hospitality: inviting someone to taste Earth is an invitation to belong, at least for a moment.",
-      "Commonly referenced Human beverages and staples in Federation settings include tea and coffee traditions, along with items such as root beer and other familiar soft drinks; alcohol appears in social contexts, alongside non-alcoholic substitutes like synthehol. In, these familiar choices often serve as cultural contrast: a plain cup of tea can sit beside alien delicacies, quietly signaling that Humans are most themselves when they can keep one foot in the everyday while reaching for the stars."
+      "Commonly referenced Human beverages and staples in Federation settings include tea and coffee traditions, along with items such as root beer and other familiar soft drinks; alcohol appears in social contexts, alongside non-alcoholic substitutes like synthehol. In, these familiar choices often serve as cultural contrast: a plain cup of tea can sit beside alien delicacies, quietly signaling that Humans are most themselves when they can keep one foot in the everyday while reaching for the stars.",
+      "Human food culture is radically pluralistic—Earth cuisines and offworld adaptations mix freely. On mixed crews, Humans often use food as hospitality: sharing comfort dishes, adopting alien staples, and treating meals as a low-stakes place to build trust."
     ],
     "CanonAnchors": [
       "ENT: United Earth and the alliances that lead toward the Federation (First Contact legacy; early coalition-building).",
       "ENT: \"United\": Humans appear alongside Vulcans, Andorians, and Tellarites in the path to Federation founding.",
       "Star Trek VI: \"The Undiscovered Country\": Federation leadership is associated with Paris on Earth.",
       "DS9: \"Homefront\" / \"Paradise Lost\": Earth as political center and the strain of security crises on Federation ideals.",
-      "TNG / DS9 / VOY (general): Replicator-era daily life and mixed crews highlight Human cultural plurality."
+      "TNG / DS9 / VOY (general): Replicator-era daily life and mixed crews highlight Human cultural plurality.",
+      "ENT — multiple episodes: Depicts United Earth, early Starfleet, and the cultural shift after First Contact.",
+      "TNG S5E19 — The First Duty: References Starfleet Academy’s role and culture.",
+      "ENT S4E6 — Storm Front, Part II: Notes Academy existence in the 2140s and early graduates."
     ],
     "RelatedEntries": {
       "People": [],
@@ -222,12 +267,12 @@
         "Universal translator"
       ]
     },
-    "Misconceptions": "Humans are sometimes seen as naïve idealists who assume cooperation is automatic, or as “Federation-default” to the point of cultural dominance. shows both the optimism and the strain: Human-led institutions can be principled and inclusive, but they’re repeatedly tested by fear, war, and political pressure.",
+    "Misconceptions": "Humans are sometimes seen as naïve idealists who assume cooperation is automatic, or as “Federation-default” to the point of cultural dominance. shows both the optimism and the strain: Human-led institutions can be principled and inclusive, but they’re repeatedly tested by fear, war, and political pressure.\n\nHumans aren’t ‘special’ because of biology; the franchise tends to portray them as special because of social habits—risk tolerance, alliance-building, and a willingness to improvise new institutions when old ones fail.",
     "DoAndDont": {
       "Do": "Lead with curiosity and hospitality; Humans often treat shared work, shared meals, and candid conversation as normal ways to build trust. Expect diversity—background, humor, and personal ritual vary widely even within the same crew.",
       "Dont": "Don’t mistake friendliness for lack of boundaries, and don’t assume a single “Human way” represents everyone. Avoid treating Earth’s norms as the default for other cultures when working in mixed settings."
     },
-    "Trivia": "In Star Trek usage, \"Terran\" is a common adjective for Humans and Earth-derived things, reflecting Terra as the Latin name for Earth."
+    "Trivia": "In Star Trek usage, \"Terran\" is a common adjective for Humans and Earth-derived things, reflecting Terra as the Latin name for Earth.\n\nMemory Alpha describes United Earth as a unified planetary authority formed in the 22nd century after First Contact in 2063, and notes Starfleet Academy on Earth existing by the 2140s and becoming Federation Starfleet’s training grounds after 2161."
   },
   {
     "ID": "cul-borg",
@@ -251,7 +296,10 @@
       "Assimilation is both conquest and manufacturing. A target is evaluated for distinctiveness, then converted into a drone and integrated into the network; individuality is treated as noise, and the Collective speaks and acts as “we.” This produces a society with extreme functional specialization—drones are tools of the whole—while also giving the Borg rapid coordination and the ability to deploy consistent tactics at scale.",
       "Borg organization is distributed through constant connectivity. Drones communicate via subspace-linked systems, and even when the Collective presents a single “voice,” it behaves like a network rather than a conventional chain of command. Later-era also depicts a Borg Queen: a unique drone that can serve as a focal point and personified interface for the Collective, allowing the hive to act through an individual presence without abandoning the idea of a shared mind.",
       "Daily life is utilitarian. Drones do not live around family units, ceremony, or leisure; instead, they cycle between tasking and regeneration. Regeneration alcoves function as storage and recovery spaces when drones are not needed for immediate work, reinforcing the sense that a Borg body is maintained as an instrument for Collective objectives.",
-      "Because the Borg treat cultures as raw material, they are feared as an existential threat: contact is framed as inevitable loss of autonomy. At the same time, repeatedly shows seams in the system—drones can be severed, liberated, or regain individuality under specific conditions—highlighting that “perfection” depends on continuous control rather than on the inherent absence of self."
+      "Because the Borg treat cultures as raw material, they are feared as an existential threat: contact is framed as inevitable loss of autonomy. At the same time, repeatedly shows seams in the system—drones can be severed, liberated, or regain individuality under specific conditions—highlighting that “perfection” depends on continuous control rather than on the inherent absence of self.",
+      "The Collective operates as a distributed intelligence built from billions of linked minds, with drones functioning as nodes that execute tasks and share information. Individual identity is systematically suppressed, and language reflects that: drones speak in collective terms, presenting decisions as the will of the Collective rather than personal preference.",
+      "Borg organization is layered, with unimatrices representing high-level structures. The Borg Queen is often depicted as a central coordinating voice or nexus for the Collective—an embodiment that can negotiate, threaten, or manipulate in ways a purely faceless hive mind cannot.",
+      "Resistance within Borg space is often framed as an information problem: anomalies are identified, isolated, and either corrected or purged. That is why phenomena like Unimatrix Zero matter culturally—they represent a crack where individuality can persist even while a drone remains physically assimilated."
     ],
     "Practices": [
       {
@@ -269,11 +317,20 @@
       {
         "Name": "Perfection through integration",
         "Description": "Innovation is pursued by absorbing what already exists—biological traits, technical designs, and knowledge—then standardizing it into Borg systems across ships, bodies, and infrastructure."
+      },
+      {
+        "Name": "Unimatrix hierarchy",
+        "Description": "Borg space is organized into large structural groupings sometimes described as unimatrices. These structures help explain how a single Collective can coordinate vast operations across light-years without collapsing into noise, and why certain nodes (like a Queen’s nexus) carry disproportionate strategic importance."
+      },
+      {
+        "Name": "Unimatrix Zero (collective dreamspace)",
+        "Description": "Unimatrix Zero is a virtual construct in which certain drones regain a sense of self while regenerating. Its existence demonstrates that individuality can re-emerge under specific conditions, and it becomes a focal point for drone resistance and Borg countermeasures."
       }
     ],
     "FoodAndDrink": [
       "Borg culture has no visible culinary tradition. Drones are depicted as being sustained and maintained through their cybernetic systems, with “living” time split between task execution and regeneration rather than shared meals or hospitality.",
-      "The closest analogue to sustenance is energy and maintenance: regeneration alcoves and onboard systems keep drones functional, emphasizing efficiency over taste, choice, or social eating."
+      "The closest analogue to sustenance is energy and maintenance: regeneration alcoves and onboard systems keep drones functional, emphasizing efficiency over taste, choice, or social eating.",
+      "Borg drones do not meaningfully participate in food culture. Nutrient intake is utilitarian, and the closest thing to a “meal” is scheduled replenishment alongside regeneration cycles—one more function to be optimized rather than enjoyed."
     ],
     "CanonAnchors": [
       "TNG — \"Q Who\": First major encounter; establishes the Borg as a Collective threat.",
@@ -281,7 +338,10 @@
       "Film — Star Trek: First Contact: Borg Queen depiction and assimilation as body-horror, plus a direct assault on Earth’s timeline.",
       "VOY — \"Scorpion\" (Parts I–II): Borg limits and the Species 8472 crisis; diplomacy with Voyager under existential pressure.",
       "VOY — \"Dark Frontier\": Borg Queen-centered narratives and the cost of liberation (Seven of Nine’s history).",
-      "VOY — \"Endgame\": Transwarp infrastructure as strategic advantage and a decisive attempt to cripple it."
+      "VOY — \"Endgame\": Transwarp infrastructure as strategic advantage and a decisive attempt to cripple it.",
+      "TNG S3E26 — The Best of Both Worlds, Parts I–II: Defines assimilation as both physical conversion and cultural erasure.",
+      "VOY S6E26–S7E1 — Unimatrix Zero, Parts I–II: Shows a hidden space where individuality persists and sparks organized resistance.",
+      "VOY S7E25–26 — Endgame: Pivotal late-stage depiction of Borg vulnerability and strategic disruption."
     ],
     "RelatedEntries": {
       "People": [
@@ -300,12 +360,12 @@
         "Transwarp hub"
       ]
     },
-    "Misconceptions": "A common misread is that the Borg are a simple robot empire run by a single ruler. In, they are primarily a distributed Collective of drones linked into a shared hive mind, sometimes personified by a Borg Queen as a focal interface, but still operating as a network rather than a conventional hierarchy.",
+    "Misconceptions": "A common misread is that the Borg are a simple robot empire run by a single ruler. In, they are primarily a distributed Collective of drones linked into a shared hive mind, sometimes personified by a Borg Queen as a focal interface, but still operating as a network rather than a conventional hierarchy.\n\nThe Borg aren’t “just robots.” They are living beings forcibly integrated into a collective system. That’s why liberation stories matter: the tragedy is cultural and personal, not only technological.",
     "DoAndDont": {
       "Do": "Treat Borg contact as a containment problem: minimize exposure, harden systems, and prioritize rapid evacuation and quarantine where possible. When engaging tactically, plan for adaptation and assume repeated attempts will be met with countermeasures.",
       "Dont": "Don’t assume negotiation or deterrence works the way it does with conventional states, and don’t underestimate the risk of assimilation from brief contact. Avoid relying on a single trick; the Collective is built to learn fast."
     },
-    "Trivia": "During development, the Borg concept began as an insectoid hive species, but the depiction was changed to cybernetic drones largely because of television budget constraints."
+    "Trivia": "During development, the Borg concept began as an insectoid hive species, but the depiction was changed to cybernetic drones largely because of television budget constraints.\n\nMemory Alpha describes the Borg Queen as acting as a central processor or nexus, and describes unimatrices as high-level organizational structures within the Collective."
   },
   {
     "ID": "cul-ferengi",
@@ -328,7 +388,10 @@
       "Ferengi culture is built around commerce as both identity and moral language: profit is treated as virtue, negotiation as social skill, and business as the place where intelligence, courage, and status are proven. The Rules of Acquisition function like a shared of sayings and principles—quoted, debated, and used to justify decisions—so even personal relationships can get framed as deals, investments, or liabilities.",
       "Government and business are tightly braided. The Ferengi Alliance is led by the Grand Nagus, and commercial life is policed through trade by-laws and regulators, most visibly the Ferengi Commerce Authority (FCA). In practice, this means “free enterprise” still has rules: licenses can be granted or revoked, contracts enforced, and penalties imposed when someone breaks the system that keeps profit flowing.",
       "Social life is transactional but not emotionless. Family and reputation matter, yet they are often measured in economic terms—inheritance, obligations, and the expected return on loyalty. shows constant attention to leverage: who owes whom, what information is worth, and what a concession signals about strength or desperation.",
-      "Deep Space Nine, in particular, treats Ferengi society as something that can argue with itself. Episodes centered on Quark’s family and Ferenginar show how official rules collide with practical reality—especially around gender restrictions, corruption, and the hidden costs of exploitation—while still keeping the culture’s core premise intact: most problems are assumed to be solvable through the logic of profit, until lived consequences force a reckoning."
+      "Deep Space Nine, in particular, treats Ferengi society as something that can argue with itself. Episodes centered on Quark’s family and Ferenginar show how official rules collide with practical reality—especially around gender restrictions, corruption, and the hidden costs of exploitation—while still keeping the culture’s core premise intact: most problems are assumed to be solvable through the logic of profit, until lived consequences force a reckoning.",
+      "Ferengi society treats commerce as culture: negotiation is social language, profit is moral scorekeeping, and business is a family matter. The Rules of Acquisition are positioned as sacred precepts and are often quoted the way other societies quote scripture.",
+      "The Rules evolved over time—by the mid-22nd century there are references to 173 rules, while later eras cite 285. Ferengi institutions enforce this commercial worldview in practice, including licensing, regulation, and punishment for violations that threaten the system’s credibility.",
+      "Political leadership is intertwined with economics. The Grand Nagus is a cultural figure as much as a head of state, and agencies like the Ferengi Commerce Authority can shape who rises and falls by controlling access to legal commerce."
     ],
     "Practices": [
       {
@@ -346,18 +409,30 @@
       {
         "Name": "Bargaining ritual",
         "Description": "Haggling is not just tolerated but expected; opening offers are performative, concessions signal strength or desperation, and the negotiation itself is a test of competence."
+      },
+      {
+        "Name": "FCA oversight and liquidator politics",
+        "Description": "The Ferengi Commerce Authority (FCA) functions as a regulator and enforcement arm, with a Board of Liquidators that can influence major decisions such as confirming or rejecting a new Grand Nagus. This formalizes the idea that ‘business rules’ are the real constitution."
+      },
+      {
+        "Name": "Rules of Acquisition as everyday ethics",
+        "Description": "The Rules of Acquisition are treated as guiding principles for both business and personal conduct. Quoting a rule can end an argument, justify a hard choice, or signal social belonging—especially when the rules are used performatively in negotiations."
       }
     ],
     "FoodAndDrink": [
       "Tube grubs are a Ferengi delicacy, commonly eaten live (though they can also be prepared in other ways), and they show up repeatedly as a cultural marker rather than a novelty gag.",
-      "Slug-o-Cola is a Ferengi soft drink known for its odd composition—described as containing live algae—and it’s used on screen as a quick shorthand for Ferengi mass-market commerce and taste."
+      "Slug-o-Cola is a Ferengi soft drink known for its odd composition—described as containing live algae—and it’s used on screen as a quick shorthand for Ferengi mass-market commerce and taste.",
+      "Even food is often framed as a transaction: who pays, who owes, who is hosting, and what the meal implies. Hospitality can be genuine, but it is also an arena for testing leverage and boundaries—sometimes with playful games of bargaining over the smallest details."
     ],
     "CanonAnchors": [
       "DS9 — \"The Nagus\": Establishes Ferengi political/economic power and the cultural weight of profit.",
       "DS9 — \"Family Business\": FCA enforcement and Ferengi social rules collide with Ishka’s illegal profit-making.",
       "DS9 — \"Body Parts\": Contracts, penalties, and the consequences of FCA enforcement become personal.",
       "DS9 — \"Profit and Lace\": Ferengi gender norms and legal change become an explicit plot driver.",
-      "DS9 — \"The Dogs of War\": Late-series reforms and Rom’s rise to Grand Nagus."
+      "DS9 — \"The Dogs of War\": Late-series reforms and Rom’s rise to Grand Nagus.",
+      "DS9 S2E20 — The Maquis, Part I: Explicitly frames the Rules of Acquisition as the cultural basis of Ferengi business life.",
+      "ENT S1E19 — Acquisition: Shows the Rules cited as early as the 22nd century.",
+      "DS9 S6E13 — Profit and Lace: References FCA structures and the power of Ferengi regulatory culture."
     ],
     "RelatedEntries": {
       "People": [
@@ -380,12 +455,12 @@
         "Gold-pressed latinum"
       ]
     },
-    "Misconceptions": "Ferengi are often dismissed as a one-note culture of greed and bad faith. —especially in DS9—shows a society with a codified legal and social framework around commerce, where profit is treated as ethics, regulation exists to protect the system, and individuals can be both ruthless and sincerely loyal depending on what they believe they owe.",
+    "Misconceptions": "Ferengi are often dismissed as a one-note culture of greed and bad faith. —especially in DS9—shows a society with a codified legal and social framework around commerce, where profit is treated as ethics, regulation exists to protect the system, and individuals can be both ruthless and sincerely loyal depending on what they believe they owe.\n\nNot every Ferengi is a cartoon villain. Many are practical, loyal, and even generous—but they often express those traits through deals, favors, and obligations rather than through sentiment.",
     "DoAndDont": {
       "Do": "Assume negotiation is normal and come prepared with clear terms, limits, and a sense of what you’re willing to trade. Treat business competence as respect, and remember that reputation travels quickly through networks of favors and contracts.",
       "Dont": "Don’t open by moralizing about profit as if it’s self-evidently shameful, and don’t rely on vague promises when specific terms are expected. Avoid being casually generous in ways that create obligations you don’t intend to pay."
     },
-    "Trivia": "By the 22nd century references 173 Rules of Acquisition, while 24th-century Ferengi commonly cite 285—suggesting the “sacred” rulebook is continuously expanded over time."
+    "Trivia": "By the 22nd century references 173 Rules of Acquisition, while 24th-century Ferengi commonly cite 285—suggesting the “sacred” rulebook is continuously expanded over time.\n\nMemory Alpha notes the Rules of Acquisition were first written by Gint, and that the number cited on-screen grows across eras (e.g., 173 in the 22nd century, 285 by the 2370s)."
   },
   {
     "ID": "cul-romulan",
@@ -408,7 +483,10 @@
     "Profile": [
       "Romulan society is shaped by the idea that survival depends on control—of information, of appearances, and of the timing of action. In, the Romulan state is repeatedly described as secretive and suspicious of outsiders, with political life built around guarded speech, careful displays of strength, and the assumption that rivals are always probing for weakness.",
       "That public culture is reinforced by institutions designed to police loyalty. The Tal Shiar functions as an intelligence and internal security apparatus—often described as a secret police—making “state interests” feel personal and ever-present. Even when individual Romulans show warmth or honor, they do so inside a system that rewards discretion and punishes defiance.",
-      "Romulans are also defined by what they share with Vulcans. establishes them as biological cousins descended from those who rejected Surak’s reforms, which creates a distinctive tension: strong emotions and pride held alongside discipline, strategy, and ideological certainty. The result is a culture that prizes patience and long games, and that often treats diplomacy as another battlefield."
+      "Romulans are also defined by what they share with Vulcans. establishes them as biological cousins descended from those who rejected Surak’s reforms, which creates a distinctive tension: strong emotions and pride held alongside discipline, strategy, and ideological certainty. The result is a culture that prizes patience and long games, and that often treats diplomacy as another battlefield.",
+      "Romulan political culture prizes controlled information. Secrecy is not only tactical—it is social etiquette, a way to signal competence and protect family or faction interests. Public statements are often calibrated to preserve flexibility, leaving room to maneuver if circumstances shift.",
+      "The Romulan Senate is described as a central governing body, headed by a praetor and supported by proconsul and other ranks. That formal structure exists alongside powerful intelligence institutions, especially the Tal Shiar, which is frequently portrayed as a secret-police apparatus enforcing loyalty through fear.",
+      "A persistent undercurrent in modern Romulan history is the idea of reunification with Vulcan. Dissident movements seek Vulcan ideals and reform, and Ambassador Spock becomes deeply involved—creating both hope and paranoia within Romulan society."
     ],
     "Practices": [
       {
@@ -426,19 +504,31 @@
       {
         "Name": "Preference for the indirect approach",
         "Description": "frequently associates Romulan strategy with misdirection, covert preparation, and a willingness to let opponents overextend before committing."
+      },
+      {
+        "Name": "Tal Shiar loyalty enforcement",
+        "Description": "The Tal Shiar is repeatedly described as a ruthless intelligence and internal-security service. Its cultural impact is that ‘loyalty’ becomes a survival skill—people learn to speak in layers, keep confidences, and treat curiosity as dangerous in the wrong setting."
+      },
+      {
+        "Name": "Reform movements and coded signaling",
+        "Description": "Dissidents often rely on quiet networks, symbols, and controlled introductions to test safety. Even when a Romulan seeks openness, the path there is typically indirect—trust is built through proxies, favors, and carefully staged encounters."
       }
     ],
     "FoodAndDrink": [
       "Romulan ale is a famously potent, blue Romulan beverage that shows up as prized contraband and an unmistakable cultural signature in Federation contexts.",
       "Kali-fal is a Romulan drink known for its sharp aroma, described as opening one’s sinuses before the first sip; it appears in DS9-era diplomacy as a small but telling cultural detail.",
-      "Delvan pudding is explicitly named as a favorite of a Romulan praetor, offering one of the few direct examples of Romulan personal taste in food."
+      "Delvan pudding is explicitly named as a favorite of a Romulan praetor, offering one of the few direct examples of Romulan personal taste in food.",
+      "Romulan hospitality is often formal and watchful. Shared drinks or meals can be genuine, but they can also be structured as interviews: a chance to read posture, vocabulary, and how comfortably someone handles ambiguity."
     ],
     "CanonAnchors": [
       "TOS — \"Balance of Terror\": First major Romulan storyline and the Neutral Zone dynamic.",
       "TNG — \"The Defector\": Romulan loyalties, state pressure, and the cost of defiance.",
       "TNG — \"Face of the Enemy\": Tal Shiar power and internal coercion.",
       "DS9 — \"The Die is Cast\": Tal Shiar operations and Romulan intelligence culture.",
-      "DS9 — \"In the Pale Moonlight\": Romulan diplomacy, trust, and Romulan beverages as texture."
+      "DS9 — \"In the Pale Moonlight\": Romulan diplomacy, trust, and Romulan beverages as texture.",
+      "TNG S5E7 — Unification II: Connects reform networks to the reunification cause and shows how dangerous that idea is to authorities.",
+      "TNG S6E14 — Face of the Enemy: A close look at Romulan internal control and the atmosphere surrounding the Tal Shiar.",
+      "PIC S1E1 — Remembrance / PIC S1E2 — Maps and Legends: Depicts post-Romulus political fragmentation and continuing intelligence influence."
     ],
     "RelatedEntries": {
       "People": [
@@ -460,12 +550,12 @@
         "Romulan ale"
       ]
     },
-    "Misconceptions": "Romulans are often reduced to a stereotype of constant deception, as if every individual lies by nature. supports something more specific: secrecy and subterfuge are heavily incentivized by Romulan statecraft and internal security, so even honest Romulans learn to speak and act cautiously inside a system that treats openness as a vulnerability.",
+    "Misconceptions": "Romulans are often reduced to a stereotype of constant deception, as if every individual lies by nature. supports something more specific: secrecy and subterfuge are heavily incentivized by Romulan statecraft and internal security, so even honest Romulans learn to speak and act cautiously inside a system that treats openness as a vulnerability.\n\nRomulans aren’t ‘dishonorable by nature.’ Their norms are built around risk management—who can be trusted, when openness is safe, and how to protect one’s people in a state that rewards secrecy.",
     "DoAndDont": {
       "Do": "Be precise, patient, and consistent, and treat information as a form of currency. Clear boundaries and calm follow-through earn more respect than emotional appeals, and careful listening matters as much as what you say.",
       "Dont": "Don’t assume friendliness equals trust or that a quick concession will buy goodwill. Avoid pressing for personal vulnerability or “straight answers” as a first move, because it can read as either naiveté or a trap."
     },
-    "Trivia": "A replicated kali-fal failed to meet a Romulan senator’s expectations in DS9, and the shortfall was blamed on replicators being poor at reproducing Romulan beverages rather than on the recipe itself."
+    "Trivia": "A replicated kali-fal failed to meet a Romulan senator’s expectations in DS9, and the shortfall was blamed on replicators being poor at reproducing Romulan beverages rather than on the recipe itself.\n\nMemory Alpha describes the Romulan Senate hierarchy (praetor, proconsul, vice-proconsul) and characterizes the Tal Shiar as a secret-police-style organization."
   },
   {
     "ID": "cul-cardassian",
@@ -488,7 +578,10 @@
     "Profile": [
       "Cardassian culture is frequently presented through the lens of a powerful, security-focused state that expects discipline, service, and loyalty to the Union. repeatedly frames Cardassian public life as shaped by military and intelligence institutions, where authority is normalized and dissent carries real risk.",
       "Two structures in particular define the modern Cardassian reputation. Central Command functions as the military authority, while the Obsidian Order is depicted as a feared intelligence service whose surveillance and eliminations make “the state” feel omnipresent. Even when civilian government exists on paper, emphasizes how those organs of power have historically dominated daily life.",
-      "At the same time, Cardassians are not portrayed as simple villains. Their stories often hinge on duty, family obligation, and personal pride colliding with propaganda, occupation-era crimes, and the moral cost of authoritarian rule. DS9 especially explores how individuals can rationalize harm as patriotism—and how that same love of home and identity can also fuel remorse, resistance, and reform."
+      "At the same time, Cardassians are not portrayed as simple villains. Their stories often hinge on duty, family obligation, and personal pride colliding with propaganda, occupation-era crimes, and the moral cost of authoritarian rule. DS9 especially explores how individuals can rationalize harm as patriotism—and how that same love of home and identity can also fuel remorse, resistance, and reform.",
+      "Cardassian culture often frames the state as family at planetary scale: duty, sacrifice, and obedience are praised as moral virtues. That ideology shows up in education, art, and everyday language—citizens are trained to see personal hardship as proof of devotion.",
+      "The Cardassian Union’s power structure is portrayed as a tension between civilian councils and military authority. Central Command functions as the military authority, while intelligence services like the Obsidian Order create an atmosphere of constant surveillance that shapes how Cardassians speak and behave in public.",
+      "Cardassian literature and storytelling frequently reinforce state virtue. Works like The Never Ending Sacrifice are described as archetypal: multigenerational epics in which characters prove goodness by serving Cardassia until death, signaling how culture and propaganda can merge."
     ],
     "Practices": [
       {
@@ -506,19 +599,31 @@
       {
         "Name": "Pride and honor language",
         "Description": "Cardassians often frame choices in terms of duty, reputation, and what the Union ‘deserves,’ even when those ideas are used to excuse coercion or aggression."
+      },
+      {
+        "Name": "Obsidian Order surveillance culture",
+        "Description": "The Obsidian Order is portrayed as a feared and efficient intelligence service. Its presence turns ‘privacy’ into a scarce resource and makes self-censorship feel normal—Cardassians learn to keep opinions aligned with state narratives, or at least to hide dissent behind careful phrasing."
+      },
+      {
+        "Name": "Central Command vs. civilian governance",
+        "Description": "Cardassian political life is often defined by the push-and-pull between civilian councils and military command. Even when a civilian body exists on paper, the military and intelligence apparatus can dominate decision-making, shaping the culture toward discipline and conformity."
       }
     ],
     "FoodAndDrink": [
       "Kanar is a Cardassian liquor with a thick consistency and a reputation for being an acquired taste, appearing repeatedly as a small but memorable marker of Cardassian social space.",
       "Yamok sauce is a widely used Cardassian condiment, and calls out specific dishes such as tojal in yamok sauce as a Cardassian delicacy.",
-      "Regova eggs are referenced as part of traditional Cardassian fare served in a DS9 context, reinforcing that Cardassian cuisine is treated as distinct rather than merely “alien food.”"
+      "Regova eggs are referenced as part of traditional Cardassian fare served in a DS9 context, reinforcing that Cardassian cuisine is treated as distinct rather than merely “alien food.”",
+      "Cardassian meals tend to be formal and hierarchical, with serving and seating acting as social signals. Hospitality may come with unspoken expectations—loyalty, information, or gratitude—reflecting a culture where relationships are often interpreted through power and obligation."
     ],
     "CanonAnchors": [
       "TNG — \"The Wounded\": First major Cardassian storyline and the Federation–Cardassian tension.",
       "TNG — \"Chain of Command\": Cardassian interrogation, state power, and propaganda pressure.",
       "DS9 — \"Duet\": Occupation guilt, identity, and the human cost of the Union’s past.",
       "DS9 — \"The Wire\": Cardassian intelligence culture through Garak’s history.",
-      "DS9 — \"The Die is Cast\": Obsidian Order power and the costs of secrecy."
+      "DS9 — \"The Die is Cast\": Obsidian Order power and the costs of secrecy.",
+      "DS9 S3E20 — Improbable Cause / DS9 S3E21 — The Die is Cast: Depicts Obsidian Order operations and the costs of secrecy-driven politics.",
+      "DS9 S5E15 — By Inferno’s Light: Shows the Union’s vulnerability to larger powers and the consequences of strategic alliances.",
+      "DS9 S7E25–26 — What You Leave Behind: The collapse of Dominion-aligned Cardassia frames cultural trauma and rebuilding."
     ],
     "RelatedEntries": {
       "People": [
@@ -543,12 +648,12 @@
         "Yamok sauce"
       ]
     },
-    "Misconceptions": "Cardassians are often treated as uniformly cruel, as if every Cardassian personally endorses occupation and oppression. instead shows a society heavily shaped by institutions and incentives, where fear, pride, and propaganda can push ordinary people into complicity, and where individuals can still display loyalty, tenderness, shame, and genuine moral conflict inside an authoritarian system.",
+    "Misconceptions": "Cardassians are often treated as uniformly cruel, as if every Cardassian personally endorses occupation and oppression. instead shows a society heavily shaped by institutions and incentives, where fear, pride, and propaganda can push ordinary people into complicity, and where individuals can still display loyalty, tenderness, shame, and genuine moral conflict inside an authoritarian system.\n\nCardassians aren’t universally cruel; many are proud, affectionate, and deeply loyal. The difference is that loyalty is often expressed through service and obedience, not through personal freedom or open disagreement.",
     "DoAndDont": {
       "Do": "Be formal, prepared, and respectful of rank and procedure, and take public statements seriously as signals of what the state wants seen. If you negotiate, keep records, terms, and outcomes clear, because ambiguity can be used against you.",
       "Dont": "Don’t insult the Union or its leaders casually, and don’t assume privacy where security services are active. Avoid treating Cardassian pride as a joke, because that can escalate a conversation from disagreement into perceived disrespect."
     },
-    "Trivia": "Kanar is repeatedly shown in different colors and consistencies on screen, suggesting either distinct varieties or batches rather than a single standardized beverage."
+    "Trivia": "Kanar is repeatedly shown in different colors and consistencies on screen, suggesting either distinct varieties or batches rather than a single standardized beverage.\n\nMemory Alpha notes that Central Command officially reported to a civilian Detapa Council, but in practice power was shared and contested with Central Command and the Obsidian Order."
   },
   {
     "ID": "cul-founders",
@@ -573,7 +678,10 @@
       "Founder statecraft is indirect by design. They cultivate loyal intermediaries who handle day-to-day administration and enforcement while insulating the Great Link from routine exposure. Shapeshifting makes this distance more than bureaucracy: when they choose, Founders can supervise through infiltration, testing institutions from the inside and turning paranoia itself into a strategic weapon.",
       "A distinctive cultural contradiction is that the Founders still seek knowledge of the outside—just not on the outside’s terms. They sent one hundred infant Changelings into the galaxy to live among other species and return with lived understanding. The program treats solitude as a tool: individual Changelings are pushed into separation so the Link can later absorb the results, expanding the collective with experiences it can’t generate in isolation.",
       "Their ethics toward their own kind are unusually absolute in comparison to their ethics toward others. A deep norm against Changeling-on-Changeling harm underwrites internal cohesion, but it also makes “betrayal” a category that triggers severe response. Odo’s story highlights how the Link frames deviation not simply as wrongdoing, but as contamination—something that must be judged, corrected, or, if necessary, excised to protect the whole.",
-      "By the end of the Dominion War era, the Founders are shown to be both formidable and vulnerable: their secrecy can be breached, their leaders can be reached through proxies, and even the Great Link can be attacked indirectly. The result is a culture forced to confront a central tension—whether security can be achieved without domination, and whether trust is possible after generations of building a civilization on fear."
+      "By the end of the Dominion War era, the Founders are shown to be both formidable and vulnerable: their secrecy can be breached, their leaders can be reached through proxies, and even the Great Link can be attacked indirectly. The result is a culture forced to confront a central tension—whether security can be achieved without domination, and whether trust is possible after generations of building a civilization on fear.",
+      "Founder identity is anchored in the Great Link: a communal liquid state in which individuality can blur and consensus becomes physical experience. This is not just social bonding—it is where cultural memory and shared trauma are reinforced and continuously refreshed.",
+      "Dominion ideology is explicitly framed around Founder history of persecution by ‘solids.’ That story is used to justify control as self-defense: order imposed on others is portrayed as the price of Founder survival.",
+      "The Great Link’s location and discovery become strategic events in the Dominion War era, including a failed attack by Romulan and Cardassian intelligence services—highlighting how Founder culture is inseparable from the Dominion’s military and political architecture."
     ],
     "Practices": [
       {
@@ -595,11 +703,20 @@
       {
         "Name": "The Hundred",
         "Description": "One hundred infant Changelings were sent out to live among other species, gather experience, and eventually return to the Great Link. The program frames exile as education: solitude produces knowledge that the Link can later absorb, while an instinctive drive to return keeps the diaspora tethered to home."
+      },
+      {
+        "Name": "Persecution narrative as doctrine",
+        "Description": "Founder policy is often justified with a simple cultural story: when Changelings traveled openly, solids feared them and attacked. The lesson drawn is that solids cannot be trusted with power, so control must be centralized and preventative rather than reactive."
+      },
+      {
+        "Name": "The Great Link as social ‘home’",
+        "Description": "Unlike solids who build cities, Founders ‘return’ to society by literally becoming it—linking in liquid form. The Link is the closest analogue to a capital, a parliament, and a church at once, because it is where identity, memory, and belonging are experienced directly."
       }
     ],
     "FoodAndDrink": [
       "None required in natural state (Changelings do not need to take sustenance).",
-      "When impersonating solids, they can simulate eating and drinking, but the experience is not necessary for survival and may be unsatisfying."
+      "When impersonating solids, they can simulate eating and drinking, but the experience is not necessary for survival and may be unsatisfying.",
+      "Food is culturally optional. When a Changeling eats while impersonating a solid, it is primarily performance—useful for blending in, building trust, or gathering information—rather than nutrition."
     ],
     "CanonAnchors": [
       "DS9 S2E26 — The Jem'Hadar: Introduces the Dominion’s mysterious rulers and frames the Founders as a looming, semi-mythic power.",
@@ -609,7 +726,10 @@
       "DS9 S4E11–12 — Homefront / Paradise Lost: Founder-driven paranoia nearly destabilizes Earth through fear of infiltration.",
       "DS9 S4E26 — Broken Link: Odo is punished by the Great Link and forced into solid form after Changeling-on-Changeling harm.",
       "DS9 S7E17 — Extreme Measures: Confirms Section 31’s morphogenic virus and the moral conflict inside Starfleet over its use.",
-      "DS9 S7E25–26 — What You Leave Behind: Odo returns to cure the Great Link and the Dominion War ends."
+      "DS9 S7E25–26 — What You Leave Behind: Odo returns to cure the Great Link and the Dominion War ends.",
+      "DS9 S3E1–2 — The Search, Parts I–II: First deep cultural look at the Founders and the Great Link’s centrality.",
+      "DS9 S3E21 — The Die is Cast: Shows the Great Link as a strategic target and the Dominion’s ability to turn attacks into traps.",
+      "DS9 S4E26 — Broken Link: Explores Founder control, punishment, and the personal cost of exile from the Link."
     ],
     "RelatedEntries": {
       "People": [
@@ -633,12 +753,12 @@
         "blood screening protocols"
       ]
     },
-    "Misconceptions": "The Founders are often flattened into a single stereotype: perfect infiltrators who rule purely for conquest. frames something sharper and more unsettling—an entire civilization organized around trauma-driven security logic. Their power is real, but it is also dependent on secrecy, proxies, and the constant management of fear, both in their subjects and in themselves.",
+    "Misconceptions": "The Founders are often flattened into a single stereotype: perfect infiltrators who rule purely for conquest. frames something sharper and more unsettling—an entire civilization organized around trauma-driven security logic. Their power is real, but it is also dependent on secrecy, proxies, and the constant management of fear, both in their subjects and in themselves.\n\nChangelings aren’t automatically hostile. Their hostility is culturally constructed from collective memory and doctrine—fear of being hunted turned into preemptive control.",
     "DoAndDont": {
       "Do": "Assume every interaction is a probe for leverage: be precise, verify claims, and keep your own procedures consistent. Treat identity and chain-of-custody as first-class concerns, and separate evidence from panic before you act.",
       "Dont": "Don’t perform trust as a shortcut—dramatic gestures, threats, or public accusations are easy to exploit. Don’t confuse “calm” with “safe,” and don’t let fear of infiltration become the goal; that is the environment the Dominion is best at shaping."
     },
-    "Trivia": "In production,, DS9’s writers initially treated the Founders as intentionally mysterious and distant. The eventual reveal that the Dominion’s architects were the same species as Odo became a defining pivot point for the series’ long-form political and ethical arc."
+    "Trivia": "In production,, DS9’s writers initially treated the Founders as intentionally mysterious and distant. The eventual reveal that the Dominion’s architects were the same species as Odo became a defining pivot point for the series’ long-form political and ethical arc.\n\nMemory Alpha describes the Founders as existing mainly as the Great Link and records their persecution history as a core part of Dominion philosophy."
   },
   {
     "ID": "cul-talaxian",
@@ -664,7 +784,10 @@
       "Talaxian spirituality includes the Great Forest, an afterlife imagined as a sunlit reunion with ancestors guided by the Guiding Tree. This belief system functions as more than comfort; it supplies moral orientation, grief rituals, and a narrative of continuity that can survive displacement. When that framework is shaken, the impact is portrayed as existential rather than merely philosophical.",
       "Modern Talaxian identity is also marked by trauma and survival. The Talaxian–Haakonian war culminated in the metreon cascade attack on the Talaxian moon Rinax, an event that devastated families, created long-term poisoning victims, and forced unconditional surrender. The cultural aftermath includes anger at the perpetrators, guilt among survivors, and the difficult labor of living forward when home feels compromised.",
       "Displacement produces adaptability. Talaxians appear as traders, miners, and settlers who can build workable lives in unfamiliar regions, sometimes deliberately avoiding outside attention. This isn’t presented as rootlessness for its own sake; it reads as a strategy—keep the group safe, keep the children fed, and keep a path open back to community, even if “community” has to be rebuilt somewhere new.",
-      "At their best, Talaxians model a kind of everyday resilience: humor without denial, generosity without naivete, and a refusal to let catastrophe erase the basic rituals of being a people. The repeatedly ties this to food, celebration, and caregiving—small, repeatable acts that turn survival into culture rather than mere endurance."
+      "At their best, Talaxians model a kind of everyday resilience: humor without denial, generosity without naivete, and a refusal to let catastrophe erase the basic rituals of being a people. The repeatedly ties this to food, celebration, and caregiving—small, repeatable acts that turn survival into culture rather than mere endurance.",
+      "Talaxian culture (as mostly shown through Neelix and Talaxian diaspora) emphasizes warmth, hospitality, and practical optimism—especially in hard circumstances. Community support and ‘making do’ become identity, not just coping mechanisms.",
+      "Food and trade are central cultural expressions. Cooking is treated as caretaking, morale work, and diplomacy; sharing a meal is often how Talaxians turn strangers into allies in the Delta Quadrant’s unstable politics.",
+      "Talaxian history is marked by displacement and loss, which can sharpen a culture’s emphasis on gratitude and chosen family. Even when the tone is upbeat, there is often an undercurrent of survivor memory and responsibility."
     ],
     "Practices": [
       {
@@ -686,13 +809,23 @@
       {
         "Name": "Survivor memory and accountability",
         "Description": "The aftermath of Rinax includes cultural insistence on naming what happened and who caused it, while still grappling with whether reconciliation is possible. The frames this as an ongoing moral struggle rather than a settled political answer."
+      },
+      {
+        "Name": "Voyager-era ‘morale officer’ role",
+        "Description": "Neelix’s self-made role aboard Voyager demonstrates a Talaxian pattern: turning hospitality into civic function. Cooking, news, introductions, and emotional support become a cultural service—an attempt to keep a community coherent under stress."
+      },
+      {
+        "Name": "Leola root pragmatism",
+        "Description": "Leola root is introduced as an unglamorous but nutrient-rich staple. The cultural signal is not culinary refinement but resilience: if something keeps your people healthy, you learn to cook it, joke about it, and keep moving."
       }
     ],
     "FoodAndDrink": [
       "Leola root (and leola root dishes, including leola root stew)",
       "Talaxian spice stew",
       "Leola rice pilaf",
-      "Fruit compote served in root nectar (Prixin tradition)"
+      "Fruit compote served in root nectar (Prixin tradition)",
+      "Leola root becomes a Voyager-era symbol of Talaxian practicality: not loved by everyone, but promoted as a reliable source of nutrients.",
+      "Talaxian spices are treated as a point of pride and a flavor signature—an easy way to bring ‘home’ into unfamiliar kitchens and to make shared meals feel personal."
     ],
     "CanonAnchors": [
       "VOY S1E1–2 — Caretaker: Introduces Neelix as a Talaxian and establishes Talaxian presence in the Delta Quadrant.",
@@ -700,7 +833,10 @@
       "VOY S4E12 — Mortal Coil: Explores Talaxian spirituality (the Great Forest and Guiding Tree) and the family festival Prixin.",
       "VOY S7E23 — Homestead: Shows Talaxian settlers and the diaspora’s choices about safety, contact, and building a new home.",
       "VOY S3E3 — The Chute: Displays Talaxian language/script in use.",
-      "VOY S7E20 — Author, Author: References a Talaxian proverb about taking a “third path” when choices are false binaries."
+      "VOY S7E20 — Author, Author: References a Talaxian proverb about taking a “third path” when choices are false binaries.",
+      "VOY S1E11 — State of Flux: Introduces leola root as a Voyager staple through Neelix’s cooking.",
+      "VOY S1E1–2 — Caretaker: Establishes the Talaxian/Ocampa pairing and the survival-driven tone of early Delta Quadrant life.",
+      "VOY S7E23 — Homestead: Frames Talaxian community-building and chosen-family themes at the end of Neelix’s arc."
     ],
     "RelatedEntries": {
       "People": [
@@ -722,12 +858,12 @@
         "Guiding Tree"
       ]
     },
-    "Misconceptions": "Talaxians are sometimes reduced to a single stereotype: cheerful, harmless, and uncomplicated. repeatedly complicates that read. Their warmth and humor coexist with war trauma, displacement, and moral injury, and their strongest cultural through-line is not naivete but persistence—maintaining community rituals and care practices even when history has made trust difficult.",
+    "Misconceptions": "Talaxians are sometimes reduced to a single stereotype: cheerful, harmless, and uncomplicated. repeatedly complicates that read. Their warmth and humor coexist with war trauma, displacement, and moral injury, and their strongest cultural through-line is not naivete but persistence—maintaining community rituals and care practices even when history has made trust difficult.\n\nTalaxians aren’t ‘just comic relief.’ Their cheerfulness is often a deliberate survival strategy—keeping people fed, connected, and less likely to fall apart.",
     "DoAndDont": {
       "Do": "Show up with practical help, share food in good faith, and take family and remembrance seriously. If you’re welcomed into a Talaxian gathering, participate—story, laughter, and honest emotion are part of the social contract.",
       "Dont": "Don’t treat their optimism as ignorance or make light of Rinax and its aftermath. Don’t confuse friendliness with a lack of boundaries, especially with diaspora communities that have learned caution the hard way."
     },
-    "Trivia": "Talaxian cultural beats are frequently delivered through Neelix-focused stories, using food, festivals, and faith (especially the Great Forest) as narrative tools to explore grief, belonging, and the work of keeping a crew— or a diaspora—functioning as family."
+    "Trivia": "Talaxian cultural beats are frequently delivered through Neelix-focused stories, using food, festivals, and faith (especially the Great Forest) as narrative tools to explore grief, belonging, and the work of keeping a crew— or a diaspora—functioning as family.\n\nLeola root is described as unpleasant-tasting and often mildewed, but also as a strong source of vitamins and minerals; Talaxian spices are named as a recognizable flavor marker."
   },
   {
     "ID": "cul-bajoran",
@@ -753,7 +889,10 @@
       "The Celestial Temple—known to outsiders as the Bajoran wormhole—sits at the intersection of myth and strategic fact. Its discovery thrust Bajor onto the interstellar stage, but it also reframed Bajoran religion in a uniquely literal way: their gods are associated with a real, reachable phenomenon, and sacred artifacts like the Orbs are treated as conduits to contact and revelation rather than symbolic relics alone.",
       "The Cardassian Occupation remains the central wound around which modern Bajoran politics turn. The Occupation’s forced labor and systemic brutality produced a fierce resistance movement and a long tail of trauma: arguments over collaborators versus freedom fighters, disputes about justice versus stability, and the psychological habit of reading every policy debate through the lens of survival.",
       "Bajoran society carries deep pre-Occupation structures that never completely disappear. The D’jarra caste system was set aside during the Occupation so all Bajorans could fight to liberate their world, and it remained largely dormant afterward because too many lives had been reshaped by war. Even so, the idea of “where someone belongs” persists culturally—sometimes as tradition, sometimes as prejudice, and sometimes as a political tool.",
-      "Bajoran identity is also intensely personal and visible. The Bajoran earring functions as a religious symbol and a marker of family, and before the Occupation it could indicate D’jarra affiliation. Alongside it, concepts like the pagh (life force) and practices like the ear-touch blessing language make spirituality tangible in everyday interactions—something you can be addressed about, tested on, or comforted by in a single gesture."
+      "Bajoran identity is also intensely personal and visible. The Bajoran earring functions as a religious symbol and a marker of family, and before the Occupation it could indicate D’jarra affiliation. Alongside it, concepts like the pagh (life force) and practices like the ear-touch blessing language make spirituality tangible in everyday interactions—something you can be addressed about, tested on, or comforted by in a single gesture.",
+      "Bajoran identity is inseparable from faith. The Prophets are not distant mythology; they are treated as living guides connected to the Bajoran wormhole (the Celestial Temple), and religious language spills into politics, ethics, and everyday greetings.",
+      "Spiritual concepts like the pagh (life force) and practices like the ear-touching assessment of a person’s pagh create an intimate, embodied religion. Faith is not only belief—it is social recognition, comfort, and sometimes scrutiny.",
+      "Bajoran history includes long spans of cultural achievement and trauma, especially the Occupation. Post-Occupation Bajor must rebuild civic institutions while negotiating how much religion should guide the state and how to handle collaborators, resistance heroes, and lingering wounds."
     ],
     "Practices": [
       {
@@ -779,13 +918,23 @@
       {
         "Name": "Post-Occupation civic rebuilding",
         "Description": "After Cardassian withdrawal, Bajor rebuilds through a provisional state structure working alongside religious institutions. The cultural practice here is negotiation itself: balancing faith authority, secular governance, and the unresolved moral ledger of the Occupation."
+      },
+      {
+        "Name": "Pagh reading",
+        "Description": "Bajoran spiritual leaders are said to be able to assess the strength of an individual’s pagh by touching the ear. It is a small physical gesture that can feel intensely personal, because it implies that faith can be perceived and judged."
+      },
+      {
+        "Name": "D’jarra (caste system memory)",
+        "Description": "The d’jarra caste system historically assigned people to life paths based on birth. Even after its decline, the idea lingers as a cultural pressure point: tradition versus choice, and whether spiritual history should dictate modern identity."
       }
     ],
     "FoodAndDrink": [
       "Hasperat (spicy Bajoran wrap)",
       "Springwine (fermented kava juice)",
       "Jumja stick",
-      "Bajoran ale (synthale)"
+      "Bajoran ale (synthale)",
+      "Bajoran hospitality often shows up in comfort food and ritual meals shared in family spaces, where stories of the Occupation and the Resistance can be treated as living memory rather than distant history.",
+      "Meals can be intertwined with faith markers—blessings, devotional objects nearby, or the habit of interpreting significant events as signs from the Prophets."
     ],
     "CanonAnchors": [
       "TNG S5E3 — Ensign Ro: Establishes Bajoran refugee context and the Bajoran earring as cultural/religious identifier.",
@@ -793,7 +942,10 @@
       "DS9 S2E23–25 — The Homecoming / The Circle / The Siege: Shows the fragility of the Bajoran Provisional Government and the political use of religion and identity.",
       "DS9 S4E5 — Accession: Directly addresses the D’jarra system and the tension between tradition and a changed post-Occupation society.",
       "DS9 S6E26 — Tears of the Prophets: Demonstrates how Bajoran religious stakes can become interstellar stakes.",
-      "DS9 S7E25–26 — What You Leave Behind: Resolves the Prophets/Pah-wraiths conflict and closes the Dominion War era impact on Bajor."
+      "DS9 S7E25–26 — What You Leave Behind: Resolves the Prophets/Pah-wraiths conflict and closes the Dominion War era impact on Bajor.",
+      "DS9 S1E1–2 — Emissary: Frames the Prophets, the wormhole as the Celestial Temple, and the cultural stakes of faith.",
+      "DS9 S4E3 — The Visitor: Shows how Bajoran community and memory can shape personal life across decades.",
+      "DS9 S5E10 — Rapture: Depicts religious experience and political pressure around spiritual legitimacy."
     ],
     "RelatedEntries": {
       "People": [
@@ -819,12 +971,12 @@
         "Orbs of the Prophets"
       ]
     },
-    "Misconceptions": "Bajorans are sometimes treated as “just religious” or “just victims of the Occupation.” Often something broader: a people whose faith is a public institution, whose politics are inseparable from recovery, and whose identity includes art, history, and debate over what tradition means after it has been used both to preserve and to divide.",
+    "Misconceptions": "Bajorans are sometimes treated as “just religious” or “just victims of the Occupation.” Often something broader: a people whose faith is a public institution, whose politics are inseparable from recovery, and whose identity includes art, history, and debate over what tradition means after it has been used both to preserve and to divide.\n\nBajorans aren’t uniformly orthodox. Bajor contains skeptics, reformers, fundamentalists, and pragmatists; the shared trait is that faith is culturally central even when personally contested.",
     "DoAndDont": {
       "Do": "Treat faith markers and blessing language with respect, and understand that religion and government often share legitimacy on Bajor. When discussing the Occupation, separate facts from rumor and recognize that “collaborator” is not a casual label in Bajoran memory.",
       "Dont": "Don’t weaponize spiritual terms to win arguments, and don’t assume every Bajoran holds identical views on tradition, Federation membership, or post-Occupation justice. Don’t reduce the earring to fashion; it can carry family and social meaning."
     },
-    "Trivia": "Bajoran culture first entered as a refugee and resistance context in TNG, then became the civic-and-spiritual backbone of DS9, where the earring, the Vedek Assembly/Kai structure, and the Celestial Temple were expanded into long-form story engines."
+    "Trivia": "Bajoran culture first entered as a refugee and resistance context in TNG, then became the civic-and-spiritual backbone of DS9, where the earring, the Vedek Assembly/Kai structure, and the Celestial Temple were expanded into long-form story engines.\n\nMemory Alpha describes the pagh as Bajoran life force replenished by the Prophets, and identifies d’jarra as a historical caste system that assigned occupation by birth."
   },
   {
     "ID": "cul-trill",
@@ -850,7 +1002,10 @@
       "The physical heart of Trill symbiosis is underground. Symbionts naturally live in nutrient-rich pools within the Caves of Mak’ala, tended by Trill guardians. Joining is treated as a high-stakes medical and cultural rite: the symbiont must be protected, the host must be psychologically stable, and the combined individual must be able to integrate past lives without losing functional selfhood.",
       "One of the most distinctive Trill laws is the taboo on reassociation: joined Trill are forbidden from resuming romantic relationships that their symbiont previously had in earlier host lifetimes. The stated purpose is cultural—joining is meant to expand experience, not to re-run prior lives—so the society tries to prevent life-after-life dynasties of power and intimacy. The penalty is severe: exile from Trill society, which can effectively doom the symbiont to die with its current host rather than be transferred.",
       "Trill identity is also visible in everyday life. Many Trill display distinctive spots along the temples and down the body, which become a quiet marker of heritage in multi-species environments. Among Trill themselves, however, the deeper social dividing line is not appearance but status: unjoined Trill form the overwhelming majority, while joined Trill live under heightened scrutiny and expectation.",
-      "In practice, Trill culture is a constant negotiation between personal autonomy and collective responsibility. Joining offers extraordinary continuity, but it depends on secrecy, regulation, and shared norms strong enough to keep centuries of memory from dominating a society built to include people who live only one life."
+      "In practice, Trill culture is a constant negotiation between personal autonomy and collective responsibility. Joining offers extraordinary continuity, but it depends on secrecy, regulation, and shared norms strong enough to keep centuries of memory from dominating a society built to include people who live only one life.",
+      "Trill society is defined by the relationship between humanoid hosts and symbionts, with the Symbiosis Commission overseeing selection, training, and the ethics of joining. Joining is both personal transformation and public trust, because the joined individual carries a living cultural archive.",
+      "Ritual and governance intersect around the symbiont pools, where symbionts are cared for and where the idea of continuity becomes literal. Host candidates are screened for temperament and resilience, reflecting how seriously Trill culture treats the psychological stakes of multiple lifetimes in one body.",
+      "Ceremonies like the zhian’tara (rite of closure) allow a joined Trill to meet prior hosts through temporary ‘hosting’ by volunteers. It’s both therapy and community practice: a controlled way to honor, integrate, and sometimes negotiate with the people living inside one’s memory."
     ],
     "Practices": [
       {
@@ -872,10 +1027,19 @@
       {
         "Name": "Symbiont pool communion",
         "Description": "Within the symbiont pools, joined Trill can encounter and be confronted by suppressed memories or prior host personalities, reinforcing the idea that joining is an ongoing integration rather than a one-time event."
+      },
+      {
+        "Name": "Symbiosis Commission testing and guardianship",
+        "Description": "The Commission oversees the joining process, including a rigorous host testing regime and the guardianship of symbionts in their pools. The culture signals that joining is a privilege with public consequences, not simply a personal choice."
+      },
+      {
+        "Name": "Zhian’tara (rite of closure)",
+        "Description": "In zhian’tara, volunteers temporarily host personalities of previous hosts so the current host can meet them. The practice functions as closure, integration, and accountability—acknowledging that past lives can pull the present in different directions."
       }
     ],
     "FoodAndDrink": [
-      "Trill cuisine varies by region; most Trill cultural focus centers on joining rather than signature dishes"
+      "Trill cuisine varies by region; most Trill cultural focus centers on joining rather than signature dishes",
+      "Trill food culture is less foregrounded than Trill social ethics, but shared meals often function as ‘normalizing’ spaces where a joined Trill is treated as a person—not only as a symbol—despite carrying multiple lifetimes."
     ],
     "CanonAnchors": [
       "TNG S4E23 — The Host: Introduces Trill joining and shows the host–symbiont continuity concept.",
@@ -883,7 +1047,11 @@
       "DS9 S2E4 — Invasive Procedures: Shows symbiont transfer as high stakes and socially/ethically fraught.",
       "DS9 S3E4 — Equilibrium: Centers the Caves of Mak’ala and the consequences of suppressed past-host memories.",
       "DS9 S4E6 — Rejoined: Defines the reassociation taboo and its punishment in Trill society.",
-      "DS9 S7E9 — Field of Fire: Explores how a dangerous prior host identity can surface and the risks of memory continuity."
+      "DS9 S7E9 — Field of Fire: Explores how a dangerous prior host identity can surface and the risks of memory continuity.",
+      "DS9 S1E8 — Dax: Introduces Trill joining as both biography and controversy.",
+      "DS9 S2E4 — Invasive Procedures: Explores the ethics and coercion risks around symbionts.",
+      "DS9 S3E4 — Equilibrium: Addresses memory, identity, and the hidden costs of carrying many lives.",
+      "DS9 S3E22 — Facets: Depicts zhian’tara as a cultural and psychological practice."
     ],
     "RelatedEntries": {
       "People": [
@@ -905,12 +1073,12 @@
         "Isoboramine (linked to joined Trill physiology)"
       ]
     },
-    "Misconceptions": "Trill are sometimes reduced to “the spotted species,” or joined Trill are treated as a simple form of reincarnation. Often joining as a regulated, high-risk symbiosis between two sentient species, producing a single continuing person who must actively integrate multiple lives while living under cultural rules designed to keep that continuity from becoming a hereditary elite.",
+    "Misconceptions": "Trill are sometimes reduced to “the spotted species,” or joined Trill are treated as a simple form of reincarnation. Often joining as a regulated, high-risk symbiosis between two sentient species, producing a single continuing person who must actively integrate multiple lives while living under cultural rules designed to keep that continuity from becoming a hereditary elite.\n\nJoined Trill aren’t a ‘new person’ who replaces the old one. Trill culture frames joining as integration—host identity remains real, but it now negotiates with a larger internal history.",
     "DoAndDont": {
       "Do": "Treat a joined Trill as a whole person in the present, while respecting that their history may include lifetimes of experience. If Trill Symbiosis Commission protocol is involved, assume confidentiality and formality matter.",
       "Dont": "Don’t assume you’re speaking to a prior host, and don’t pressure a joined Trill to relive or “perform” old relationships. Don’t treat reassociation rules as casual trivia; violations can have life-and-death consequences for a symbiont."
     },
-    "Trivia": "Trill joining first appeared in TNG, then DS9 expanded it into a full social system: symbiont pools, institutional oversight by the Symbiosis Commission, and the reassociation taboo became recurring story engines for identity, ethics, and politics."
+    "Trivia": "Trill joining first appeared in TNG, then DS9 expanded it into a full social system: symbiont pools, institutional oversight by the Symbiosis Commission, and the reassociation taboo became recurring story engines for identity, ethics, and politics.\n\nMemory Alpha states the Symbiosis Commission oversees nearly all aspects of joining, and describes zhian’tara as a rite where prior hosts are temporarily embodied by volunteers."
   },
   {
     "ID": "cul-ocampa",
@@ -937,7 +1105,10 @@
       "Ocampan biology is a defining cultural constraint. describes a normal lifespan of about nine years, with telepathic and latent psionic abilities that can be unusually strong in certain individuals. This compression of life stages pushes Ocampa social development toward accelerated adulthood, intense attachment, and a heightened urgency around meaning, mentorship, and legacy.",
       "Reproduction is tied to a single, once-in-a-lifetime biological event called the elogium. states that it typically occurs between ages four and five, and that an Ocampan female must conceive during that limited window if she is to have a child; the process involves a mitral sac developing in the posterior neck and can produce severe physiological stress. This creates cultural pressures around partnership, readiness, and communal support at a very specific life moment.",
       "By the time Voyager encounters them, Ocampa security is entangled with regional politics. The Kazon seek the Caretaker’s array, and the Caretaker—dying and unable to continue—tries to prevent his technology from falling into Kazon hands. Captain Janeway ultimately destroys the array, trading Voyager’s chance to return home for the Ocampa’s protection from Kazon control, but leaving their long-term future dependent on their own adaptation.",
-      "Ocampan identity in Federation-facing stories is most often voiced through Kes: curiosity, gentleness, and an underlying resilience that appears when sheltered assumptions meet a wider galaxy. uses the Ocampa to explore what a ‘protected’ society owes itself once its protector is gone—and how a short-lived people chooses what to become when time is their tightest resource."
+      "Ocampan identity in Federation-facing stories is most often voiced through Kes: curiosity, gentleness, and an underlying resilience that appears when sheltered assumptions meet a wider galaxy. uses the Ocampa to explore what a ‘protected’ society owes itself once its protector is gone—and how a short-lived people chooses what to become when time is their tightest resource.",
+      "Ocampa life is defined by a compressed lifespan and rapid maturation. This shapes culture toward mentorship, urgent learning, and intense relationships—there is less time for prolonged adolescence or long political careers.",
+      "Voyager-era canon presents an Ocampa underground city sustained by Caretaker technology after atmospheric catastrophe. That dependency influences social norms: careful resource stewardship, communal responsibility, and anxiety about outside interference.",
+      "Elogium—the once-in-a-lifetime reproductive window for Ocampan females—adds additional cultural pressure. Because it happens early (commonly stated around ages four to five), Ocampa communities must support life-changing decisions on a timeline that would feel impossible to most species."
     ],
     "Practices": [
       {
@@ -959,16 +1130,28 @@
       {
         "Name": "Mentorship across compressed lifespans",
         "Description": "With a typical nine-year lifespan, the culture emphasizes teaching and transferring practical knowledge early, and treating adulthood as a rapid transition rather than a long phase."
+      },
+      {
+        "Name": "Elogium support structures",
+        "Description": "Elogium is described as occurring only once in an Ocampan female’s life, typically at a very young age, and is tied to whether she can conceive. Cultural support around elogium therefore blends medical care, family guidance, and community decision-making at high speed."
+      },
+      {
+        "Name": "Telepathic growth and etiquette",
+        "Description": "Ocampa are often described as having latent or developing mental abilities. As those abilities grow, etiquette becomes practical: consent, privacy, and emotional boundaries matter in a society where thoughts can bleed into one another more easily."
       }
     ],
     "FoodAndDrink": [
-      "Ocampan food culture is largely depicted through caretaker-provided supplies rather than signature named dishes."
+      "Ocampan food culture is largely depicted through caretaker-provided supplies rather than signature named dishes.",
+      "Ocampan food culture is often described through the lens of their enclosed environment and scarce resources. Meals can emphasize cultivated produce and communal sharing, shaped by the necessity of living sustainably underground."
     ],
     "CanonAnchors": [
       "VOY S1E1–2 — Caretaker: Establishes the Ocampa homeworld’s atmosphere crisis, the underground city, the Caretaker’s role, and the array’s importance.",
       "VOY S2E4 — Elogium: Defines the elogium and the one-time reproductive window in Ocampan biology.",
       "VOY S2E10 — Cold Fire: Expands Ocampan psychic potential and shows how power and identity can diverge from the homeworld’s sheltered norms.",
-      "VOY S3E21 — Before and After: Uses Ocampan aging/lifespan stakes as core plot pressure for Kes."
+      "VOY S3E21 — Before and After: Uses Ocampan aging/lifespan stakes as core plot pressure for Kes.",
+      "VOY S1E4 — Elogium: Establishes elogium and the early-life reproductive window.",
+      "VOY S1E1–2 — Caretaker: Introduces Ocampa dependency on Caretaker infrastructure and the underground city.",
+      "VOY S1E9 — State of Flux: Reinforces early Delta Quadrant survival pressures shared by Ocampa and Voyager’s crew."
     ],
     "RelatedEntries": {
       "People": [
@@ -986,12 +1169,12 @@
         "Force barrier (underground city)"
       ]
     },
-    "Misconceptions": "Ocampa are sometimes treated as simply ‘naïve’ or ‘helpless.’ shows a society shaped by enforced safety: dependence was engineered by circumstances and caretaker design, and the real cultural question is how a short-lived people rebuilds agency once the protective system that kept them alive is removed.",
+    "Misconceptions": "Ocampa are sometimes treated as simply ‘naïve’ or ‘helpless.’ shows a society shaped by enforced safety: dependence was engineered by circumstances and caretaker design, and the real cultural question is how a short-lived people rebuilds agency once the protective system that kept them alive is removed.\n\nOcampa aren’t ‘childlike’ because they’re naive; they develop quickly. The mismatch is that their lifespan compresses maturity into a timeline other species aren’t used to, which can make their choices look abrupt or unfamiliar.",
     "DoAndDont": {
       "Do": "Treat Ocampan autonomy as the priority: offer information, choices, and practical support that helps them build self-sustaining infrastructure, and be mindful of how quickly life stages move for them.",
       "Dont": "Don’t replicate the Caretaker’s paternalism by making decisions for them ‘for their own good,’ and don’t assume telepathy means consent or emotional transparency—mental boundaries still matter."
     },
-    "Trivia": ", the Ocampa are primarily introduced through Kes and the Voyager pilot’s ethical choice: destroy the array to keep it from the Kazon, even though it strands Voyager far from home."
+    "Trivia": ", the Ocampa are primarily introduced through Kes and the Voyager pilot’s ethical choice: destroy the array to keep it from the Kazon, even though it strands Voyager far from home.\n\nMemory Alpha describes elogium as a once-in-a-lifetime event (often around ages four to five) and ties it directly to an Ocampa female’s ability to conceive."
   },
   {
     "ID": "cul-andorian",
@@ -1018,7 +1201,10 @@
       "Honor isn’t only a vibe; it’s codified. The Ushaan is a formal dueling code with extensive rules, treated as a serious social mechanism rather than casual violence. When it appears on-screen, it’s less about romance and more about boundaries: there are lines you don’t cross, and if you do, there’s a ritual way to settle it—sometimes with consequences that can’t be taken back.",
       "Andorian history also includes a long arc from rivalry to alliance. They’re one of the founding members of the United Federation of Planets, and part of that story is learning to work with old adversaries without losing themselves. The result is a culture that can be intensely suspicious—and still capable of choosing partnership when the alternative is stagnation or mutual destruction.",
       "Family and kin networks matter, but Andorian social life is often shown through relationships of service: comrades, captains, squads, and the people you’d trust with your life on the wrong side of a border. In that space, affection is often expressed through teasing, challenges, and tests—less ‘soft talk’ and more ‘prove you’re solid, then you’re in.’",
-      "Under all of it is a practical, icy-world mindset: plan for hard conditions, keep your gear ready, and don’t waste time pretending problems aren’t real. Andorians can be warm, even tender, but they tend to save it for the inner circle—and once you’re in that circle, the loyalty can be fierce."
+      "Under all of it is a practical, icy-world mindset: plan for hard conditions, keep your gear ready, and don’t waste time pretending problems aren’t real. Andorians can be warm, even tender, but they tend to save it for the inner circle—and once you’re in that circle, the loyalty can be fierce.",
+      "Andorian culture (as shown in Enterprise-era canon) combines militarized tradition with fierce pride in independence. Reputation is earned through service and steadfastness, and blunt speech is often treated as honesty rather than rudeness.",
+      "The Andorian Imperial Guard is a major cultural institution, shaping values around competence, loyalty, and readiness. Guard identity can function like a civic religion: a place where personal honor and communal defense meet.",
+      "The ushaan code embodies Andorian seriousness about honor. It is framed as a formal duel tradition with extensive rules, emphasizing that even lethal conflict is expected to follow a disciplined framework."
     ],
     "Practices": [
       {
@@ -1040,17 +1226,29 @@
       {
         "Name": "Remembrance of fallen Guard",
         "Description": "When an Imperial Guard member dies offworld, it can be customary for companions to take their blood back to Andoria for remembrance at the Wall of Heroes—an example of how service and memory are tightly linked."
+      },
+      {
+        "Name": "Ushaan rules tradition",
+        "Description": "Ushaan is described as a duel code demanding a fight to the death with an ushaan-tor while combatants are tethered. Memory Alpha notes an enormous body of rules and amendments around it, highlighting how ‘honor’ is regulated, not improvised."
+      },
+      {
+        "Name": "Federation founding identity",
+        "Description": "Andoria’s role as a founding member of the Federation becomes part of modern Andorian identity: pride in sovereignty paired with a commitment to shared defense and exploration, sometimes with friction when allied priorities conflict."
       }
     ],
     "FoodAndDrink": [
-      "Andorian cuisine is only lightly detailed on-screen; when it is referenced, it tends to fit their cold-world practicality—hearty food, strong drink, and shared meals used to cement bonds."
+      "Andorian cuisine is only lightly detailed on-screen; when it is referenced, it tends to fit their cold-world practicality—hearty food, strong drink, and shared meals used to cement bonds.",
+      "Andorian cuisine is less frequently spotlighted on-screen, but cold-world identity often shows up in the way Andorians talk about comfort, endurance, and ‘what counts as real living’—including a preference for direct, no-nonsense hospitality."
     ],
     "CanonAnchors": [
       "ENT S1E7 — The Andorian Incident: Andorian–Vulcan tension, P'Jem, and Shran-era Guard presence.",
       "ENT S2E15 — Cease Fire: Diplomatic crisis that highlights Andorian pride and political stakes.",
       "ENT S4E14 — The Aenar: Introduces the Aenar and deepens Andorian society beyond the military surface.",
       "ENT S4E21 — The Breach: Andorian politics and duty pressures within a broader coalition context.",
-      "ENT S4E22 — United: Ushaan duel stakes and Wall of Heroes reference."
+      "ENT S4E22 — United: Ushaan duel stakes and Wall of Heroes reference.",
+      "ENT S4E3 — The Forge / ENT S4E4 — Awakening / ENT S4E5 — Kir'Shara: Andorian–Vulcan tensions and alliance politics.",
+      "ENT S4E12 — Babel One / ENT S4E13 — United / ENT S4E14 — The Aenar: Deep dive into Andorian military culture and social bonds.",
+      "ENT S2E16 — The Seventh: Highlights intelligence work and the cost of long conflict."
     ],
     "RelatedEntries": {
       "People": [
@@ -1074,12 +1272,12 @@
         "Wall of Heroes"
       ]
     },
-    "Misconceptions": "Andorians are often reduced to “the aggressive blue ones.” They can be aggressive, sure—but the deeper pattern is a culture built around reliability. The sharpness is usually about boundaries and honesty, not mindless hostility, and the loyalty they offer (once earned) is one of their defining traits.",
+    "Misconceptions": "Andorians are often reduced to “the aggressive blue ones.” They can be aggressive, sure—but the deeper pattern is a culture built around reliability. The sharpness is usually about boundaries and honesty, not mindless hostility, and the loyalty they offer (once earned) is one of their defining traits.\n\nAndorian bluntness isn’t mindless aggression. It’s a social preference for clarity—especially in high-risk environments—combined with pride in competence.",
     "DoAndDont": {
       "Do": "Be direct, keep your promises, and show competence rather than trying to charm your way through. If you disagree, say it plainly and back it up.",
       "Dont": "Don’t condescend, don’t hide behind vague politeness, and don’t confuse blunt speech with lack of feeling. Also don’t joke about honor rituals unless you’re very sure you understand the context."
     },
-    "Trivia": "Much of what fans think of as “modern Andorian culture” is shaped by Enterprise-era stories that treat them as both proud rivals and essential coalition builders—setting up their place as a Federation founding member."
+    "Trivia": "Much of what fans think of as “modern Andorian culture” is shaped by Enterprise-era stories that treat them as both proud rivals and essential coalition builders—setting up their place as a Federation founding member.\n\nMemory Alpha notes Andoria became a founding member of the Federation in 2161, and describes ushaan as having extensive rules and amendments."
   },
   {
     "ID": "cul-betazoid",
@@ -1104,7 +1302,10 @@
       "Betazed also has visible status markers that look flamboyant to outsiders. Noble house titles and ceremonial honors exist, and public figures like Lwaxana Troi treat them as part tradition, part theater, part real social currency. The point isn’t just vanity; it’s identity—family lineage, duties, and a very Betazoid comfort with making personal life public.",
       "Courtship and marriage traditions can be startling if you expect Human norms. A Betazoid custom includes children being genetically bonded to a future spouse, and weddings are described as celebrations of love where participants may be traditionally nude. To Betazoids, that’s not scandal; it’s an honest, unarmored way of showing up for a major life moment.",
       "Telepathy also creates compassion pressure. If you can feel what people are feeling, cruelty is harder to excuse—at least in theory. In practice, Betazoid life still includes conflict and hypocrisy, but their cultural tools for dealing with it tend to involve emotional acknowledgment first and argument second.",
-      "Finally, Betazoid biology influences culture in ways that show up in stories: most are fully telepathic, but mixed heritage can change how abilities manifest, and certain mid-life physiological phases can affect sexuality and behavior. Those facts become social realities—topics people plan around, joke about, and occasionally weaponize in politics or relationships."
+      "Finally, Betazoid biology influences culture in ways that show up in stories: most are fully telepathic, but mixed heritage can change how abilities manifest, and certain mid-life physiological phases can affect sexuality and behavior. Those facts become social realities—topics people plan around, joke about, and occasionally weaponize in politics or relationships.",
+      "Betazoid culture is heavily shaped by telepathy as a normal social sense rather than a special ability. That changes the baseline of etiquette: intent matters, emotional honesty is expected, and deception is both harder and more culturally charged.",
+      "Ritual life includes distinctive wedding customs, including the use of a ‘gift box’ as a bonding gift prior to marriage. These traditions highlight how Betazoids can treat intimacy and disclosure as celebration rather than vulnerability.",
+      "Betazoid openness doesn’t mean they lack boundaries. Rather, boundaries are negotiated differently: privacy is often about consent and context—what is shared, with whom, and when—rather than about a strict wall between inner life and public life."
     ],
     "Practices": [
       {
@@ -1126,10 +1327,19 @@
       {
         "Name": "The Phase (mid-life physiological shift)",
         "Description": "A mid-life physiological phase (noted for Betazoid and half-Betazoid females) can amplify libido and behavior, becoming a known life-stage event people recognize and plan around."
+      },
+      {
+        "Name": "Betazoid wedding gift box tradition",
+        "Description": "A Betazoid gift box is described as a bonding gift sent prior to a wedding, capable of delivering messages. The practice underlines how Betazoids ritualize emotional disclosure and commitment through symbolic objects."
+      },
+      {
+        "Name": "Telepathic consent norms",
+        "Description": "Because thoughts and feelings can be perceived, social health depends on consent. Many Betazoids treat invasive mental probing as rude or hostile, and they value signaling—verbal or empathic—about what a conversation is ‘for’ and how open it should be."
       }
     ],
     "FoodAndDrink": [
-      "Betazoid cuisine is not heavily emphasized on-screen; Betazoid cultural moments are more often about telepathy, etiquette, and ceremony than signature dishes."
+      "Betazoid cuisine is not heavily emphasized on-screen; Betazoid cultural moments are more often about telepathy, etiquette, and ceremony than signature dishes.",
+      "Betazoid cuisine is not heavily detailed on-screen, but social meals tend to be intimate and conversation-forward, with the expectation that people will speak openly and let emotions be visible rather than hidden."
     ],
     "CanonAnchors": [
       "TNG S1E11 — Haven: Betazoid marriage customs, genetic bonding tradition, and wedding expectations.",
@@ -1137,7 +1347,10 @@
       "TNG S4E22 — Half a Life: Betazoid fashion tradition is referenced in the context of Lwaxana Troi.",
       "TNG S5E20 — Cost of Living: Betazoid family culture through Lwaxana, ceremony, and social tone.",
       "TNG S7E7 — Dark Page: Deeper look at Betazoid family trauma and emotional processing.",
-      "Star Trek: Nemesis: Betazoid wedding nudity tradition is referenced in dialogue/context."
+      "Star Trek: Nemesis: Betazoid wedding nudity tradition is referenced in dialogue/context.",
+      "TNG S1E11 — Haven: Establishes Betazoid wedding customs and the gift box tradition.",
+      "TNG S4E12 — The Wounded: Touches on Betazoid social expectations around honesty and emotional perception.",
+      "TNG S6E12 — Ship in a Bottle: Uses Troi’s empathic skill as a cultural lens on consent and manipulation."
     ],
     "RelatedEntries": {
       "People": [
@@ -1157,11 +1370,11 @@
         "House titles (Sacred Chalice of Rixx; Holy Rings of Betazed)"
       ]
     },
-    "Misconceptions": "Betazoids are sometimes treated as mind-readers who must be serene saints. In reality, telepathy doesn’t remove ego or desire—it just makes them harder to hide. Their culture leans into that: honesty, intimacy, and emotional visibility are normal, while secrecy and polite fiction can feel strange or even suspicious.",
+    "Misconceptions": "Betazoids are sometimes treated as mind-readers who must be serene saints. In reality, telepathy doesn’t remove ego or desire—it just makes them harder to hide. Their culture leans into that: honesty, intimacy, and emotional visibility are normal, while secrecy and polite fiction can feel strange or even suspicious.\n\nTelepathy doesn’t make Betazoids automatically wise or harmless. It changes social pressure—people can still be petty, political, or cruel, but the cultural tools for dealing with that look different.",
     "DoAndDont": {
       "Do": "Assume they can read emotional subtext, and be straightforward. If something is uncomfortable, say so cleanly rather than trying to mask it.",
       "Dont": "Don’t treat telepathy like a party trick, and don’t assume mind-reading equals permission. Also don’t shame their ceremony norms; what looks scandalous to you may look simply unguarded to them."
     },
-    "Trivia": "A recurring Betazoid joke in the franchise is that what shocks Humans (titles, blunt honesty, wedding nudity) is treated on Betazed as perfectly ordinary—because the culture is built for people who can’t easily hide from each other."
+    "Trivia": "A recurring Betazoid joke in the franchise is that what shocks Humans (titles, blunt honesty, wedding nudity) is treated on Betazed as perfectly ordinary—because the culture is built for people who can’t easily hide from each other.\n\nMemory Alpha describes the Betazoid gift box as a bonding gift designed to be given to those who are to be married, and ties it to the wedding custom shown in TNG."
   }
 ]
